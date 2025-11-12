@@ -27,7 +27,7 @@ if [[ -v BUILD ]]; then
     docker build -t "${AUTHENTIK_IMAGE}:${AUTHENTIK_TAG}" .
 fi
 
-docker compose -f lifecycle/container/docker-compose.yml up --no-start
-docker compose -f lifecycle/container/docker-compose.yml start postgresql
-docker compose -f lifecycle/container/docker-compose.yml run -u root server test-all
-docker compose -f lifecycle/container/docker-compose.yml down -v
+docker compose -f lifecycle/container/compose.yml up --no-start
+docker compose -f lifecycle/container/compose.yml start postgresql
+docker compose -f lifecycle/container/compose.yml run -u root server test-all
+docker compose -f lifecycle/container/compose.yml down -v
