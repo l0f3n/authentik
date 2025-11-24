@@ -1,4 +1,4 @@
-import "#admin/AdminInterface/AboutModal";
+import "#admin/about/AboutModal";
 import "#elements/ak-locale-context/ak-locale-context";
 import "#elements/banner/EnterpriseStatusBanner";
 import "#elements/banner/VersionBanner";
@@ -27,15 +27,15 @@ import { getURLParam, updateURLParams } from "#elements/router/RouteMatch";
 
 import { PageNavMenuToggle } from "#components/ak-page-navbar";
 
-import type { AboutModal } from "#admin/AdminInterface/AboutModal";
 import Styles from "#admin/AdminInterface/index.entrypoint.css";
 import { ROUTES } from "#admin/Routes";
 
 import { CapabilitiesEnum } from "@goauthentik/api";
 
 import { CSSResult, html, nothing, PropertyValues, TemplateResult } from "lit";
-import { customElement, property, query } from "lit/decorators.js";
+import { customElement, property } from "lit/decorators.js";
 import { classMap } from "lit/directives/class-map.js";
+import { createRef, ref } from "lit/directives/ref.js";
 
 import PFButton from "@patternfly/patternfly/components/Button/button.css";
 import PFDrawer from "@patternfly/patternfly/components/Drawer/drawer.css";
@@ -57,15 +57,17 @@ export class AdminInterface extends WithCapabilitiesConfig(WithSession(Authentic
     @property({ type: Boolean })
     public apiDrawerOpen = getURLParam("apiDrawerOpen", false);
 
-    @query("ak-about-modal")
-    public aboutModal?: AboutModal;
-
     @property({ type: Boolean, reflect: true })
     public sidebarOpen = false;
 
     #onPageNavMenuEvent = (event: PageNavMenuToggle) => {
         this.sidebarOpen = event.open;
     };
+
+    #aboutDialogRef = createRef<HTMLDialogElement>();
+    public get aboutDialog(): HTMLDialogElement | null {
+        return this.#aboutDialogRef.value ?? null;
+    }
 
     #sidebarMatcher: MediaQueryList;
     #sidebarMediaQueryListener = (event: MediaQueryListEvent) => {
@@ -204,11 +206,14 @@ export class AdminInterface extends WithCapabilitiesConfig(WithSession(Authentic
                                     : "display-none"}"
                                 ?hidden=${!this.apiDrawerOpen}
                             ></ak-api-drawer>
-                            <ak-about-modal></ak-about-modal>
                         </div>
                     </div>
-                </div></div
-        ></ak-locale-context>`;
+                </div>
+            </div>
+            <dialog ${ref(this.#aboutDialogRef)}>
+                <ak-about-modal></ak-about-modal>
+            </dialog>
+        </ak-locale-context>`;
     }
 }
 

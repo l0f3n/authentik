@@ -57,7 +57,7 @@ export class SidebarVersion extends WithLicenseSummary(WithVersion(AKElement)) {
             class="pf-c-button pf-m-plain"
             @click=${() => {
                 const int = rootInterface<AdminInterface>();
-                int?.aboutModal?.show();
+                int.aboutDialog?.showModal();
             }}
         >
             <p
