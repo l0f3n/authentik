@@ -90,14 +90,13 @@ run-worker:  ## Run the main authentik worker process
 
 core-i18n-extract:
 	uv run ak makemessages \
-		--add-location file \
 		--no-obsolete \
 		--ignore web \
 		--ignore internal \
 		--ignore ${GEN_API_TS} \
 		--ignore ${GEN_API_GO} \
 		--ignore website \
-		-l en
+		--all
 
 install: node-install docs-install core-install  ## Install all requires dependencies for `node`, `docs` and `core`
 
