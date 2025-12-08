@@ -2,7 +2,7 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # Melvin Snijders <mail@melvinsnijders.nl>, 2023
 # Michel Heusschen, 2023
@@ -13,21 +13,47 @@
 # Taeke <transifex.net@taeke.eu>, 2025
 # Dany Sluijk, 2025
 # Alex Kruidenberg <alexkruidenberg@hotmail.com>, 2025
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-01 15:07+0000\n"
+"Report-Msgid-Bugs-To: https://github.com/goauthentik/authentik/issues\n"
+"POT-Creation-Date: 2025-12-07 23:33+0000\n"
 "PO-Revision-Date: 2022-09-26 16:47+0000\n"
 "Last-Translator: Alex Kruidenberg <alexkruidenberg@hotmail.com>, 2025\n"
 "Language-Team: Dutch (https://app.transifex.com/authentik/teams/119923/nl/)\n"
+"Language: nl_NL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: nl_NL\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: authentik/admin/files/validation.py
+msgid "File name cannot be empty"
+msgstr ""
+
+#: authentik/admin/files/validation.py
+msgid ""
+"File name can only contain letters (a-z, A-Z), numbers (0-9), dots (.), hyphens (-), underscores "
+"(_), and forward slashes (/)"
+msgstr ""
+
+#: authentik/admin/files/validation.py
+msgid "File name cannot contain duplicate /"
+msgstr ""
+
+#: authentik/admin/files/validation.py
+msgid "Absolute paths are not allowed"
+msgstr ""
+
+#: authentik/admin/files/validation.py
+msgid "Parent directory references ('..') are not allowed"
+msgstr ""
+
+#: authentik/admin/files/validation.py
+msgid "Paths cannot start with '.'"
+msgstr ""
 
 #: authentik/admin/models.py
 msgid "Version history"
@@ -84,16 +110,14 @@ msgstr "Beheerd door authentik"
 
 #: authentik/blueprints/models.py
 msgid ""
-"Objects that are managed by authentik. These objects are created and updated"
-" automatically. This flag only indicates that an object can be overwritten "
-"by migrations. You can still modify the objects via the API, but expect "
-"changes to be overwritten in a later update."
+"Objects that are managed by authentik. These objects are created and updated automatically. This "
+"flag only indicates that an object can be overwritten by migrations. You can still modify the "
+"objects via the API, but expect changes to be overwritten in a later update."
 msgstr ""
-"Objecten die worden beheerd door authentik. Deze objecten worden automatisch"
-" aangemaakt en bijgewerkt. Deze vlag geeft alleen aan dat een object kan "
-"worden overschreven door migraties. U kunt de objecten nog steeds wijzigen "
-"via de API, maar verwacht dat wijzigingen in een latere update worden "
-"overschreven."
+"Objecten die worden beheerd door authentik. Deze objecten worden automatisch aangemaakt en "
+"bijgewerkt. Deze vlag geeft alleen aan dat een object kan worden overschreven door migraties. U "
+"kunt de objecten nog steeds wijzigen via de API, maar verwacht dat wijzigingen in een latere "
+"update worden overschreven."
 
 #: authentik/blueprints/models.py
 msgid "Blueprint Instance"
@@ -125,20 +149,13 @@ msgid "Remove blueprints which couldn't be fetched."
 msgstr ""
 
 #: authentik/brands/models.py
-msgid ""
-"Domain that activates this brand. Can be a superset, i.e. `a.b` for `aa.b` "
-"and `ba.b`"
-msgstr ""
-"Domein dat dit merk activeert. Kan een superset zijn, i.e. `a.b` voor `aa.b`"
-" en `ba.b`"
+msgid "Domain that activates this brand. Can be a superset, i.e. `a.b` for `aa.b` and `ba.b`"
+msgstr "Domein dat dit merk activeert. Kan een superset zijn, i.e. `a.b` voor `aa.b` en `ba.b`"
 
 #: authentik/brands/models.py
-msgid ""
-"When set, external users will be redirected to this application after "
-"authenticating."
+msgid "When set, external users will be redirected to this application after authenticating."
 msgstr ""
-"Wanneer ingesteld zullen externe gebruikers na authenticatie omgeleid worden"
-" naar deze applicatie."
+"Wanneer ingesteld zullen externe gebruikers na authenticatie omgeleid worden naar deze applicatie."
 
 #: authentik/brands/models.py
 msgid "Web Certificate used by the authentik Core webserver."
@@ -171,9 +188,8 @@ msgstr "Kan groep niet als bovenliggend van zichzelf instellen"
 
 #: authentik/core/api/providers.py
 msgid ""
-"When not set all providers are returned. When set to true, only backchannel "
-"providers are returned. When set to false, backchannel providers are "
-"excluded"
+"When not set all providers are returned. When set to true, only backchannel providers are "
+"returned. When set to false, backchannel providers are excluded"
 msgstr ""
 
 #: authentik/core/api/transactional_applications.py
@@ -211,8 +227,7 @@ msgstr "naam"
 
 #: authentik/core/models.py
 msgid "Users added to this group will be superusers."
-msgstr ""
-"Gebruikers die aan deze groep worden toegevoegd, worden supergebruikers."
+msgstr "Gebruikers die aan deze groep worden toegevoegd, worden supergebruikers."
 
 #: authentik/core/models.py
 msgid "Group"
@@ -242,8 +257,8 @@ msgstr "Supergebruiker status uitschakelen"
 msgid "User's display name."
 msgstr "Weergavenaam van de gebruiker."
 
-#: authentik/core/models.py authentik/providers/oauth2/models.py
-#: authentik/providers/saml/models.py authentik/rbac/models.py
+#: authentik/core/models.py authentik/providers/oauth2/models.py authentik/providers/saml/models.py
+#: authentik/rbac/models.py
 msgid "User"
 msgstr "Gebruiker"
 
@@ -251,8 +266,7 @@ msgstr "Gebruiker"
 msgid "Users"
 msgstr "Gebruikers"
 
-#: authentik/core/models.py
-#: authentik/stages/email/templates/email/password_reset.html
+#: authentik/core/models.py authentik/stages/email/templates/email/password_reset.html
 msgid "Reset Password"
 msgstr "Wachtwoord herstellen"
 
@@ -278,11 +292,11 @@ msgstr "Toon applicaties waar de gebruiker toegang to heeft"
 
 #: authentik/core/models.py
 msgid ""
-"Flow used for authentication when the associated application is accessed by "
-"an un-authenticated user."
+"Flow used for authentication when the associated application is accessed by an un-authenticated "
+"user."
 msgstr ""
-"Flow gebruikt voor authenticatie wanneer de bijbehorende applicatie wordt "
-"geopend door een niet-geauthenticeerde gebruiker."
+"Flow gebruikt voor authenticatie wanneer de bijbehorende applicatie wordt geopend door een niet-"
+"geauthenticeerde gebruiker."
 
 #: authentik/core/models.py
 msgid "Flow used when authorizing this provider."
@@ -293,12 +307,10 @@ msgid "Flow used ending the session from a provider."
 msgstr "Flow gebruikt bij het beëindigen van de sessie van een provider."
 
 #: authentik/core/models.py
-msgid ""
-"Accessed from applications; optional backchannel providers for protocols "
-"like LDAP and SCIM."
+msgid "Accessed from applications; optional backchannel providers for protocols like LDAP and SCIM."
 msgstr ""
-"Toegankelijk vanuit applicaties; optionele backchannel-providers voor "
-"protocollen zoals LDAP en SCIM."
+"Toegankelijk vanuit applicaties; optionele backchannel-providers voor protocollen zoals LDAP en "
+"SCIM."
 
 #: authentik/core/models.py
 msgid "Application's display Name."
@@ -334,51 +346,42 @@ msgstr "Gebruik de bron-specifieke identificator"
 
 #: authentik/core/models.py
 msgid ""
-"Link to a user with identical email address. Can have security implications "
-"when a source doesn't validate email addresses."
+"Link to a user with identical email address. Can have security implications when a source doesn't "
+"validate email addresses."
 msgstr ""
-"Koppel aan een gebruiker met een identiek e-mailadres. Kan "
-"beveiligingsimplicaties hebben wanneer een bron e-mailadressen niet "
-"valideert."
+"Koppel aan een gebruiker met een identiek e-mailadres. Kan beveiligingsimplicaties hebben wanneer "
+"een bron e-mailadressen niet valideert."
+
+#: authentik/core/models.py
+msgid "Use the user's email address, but deny enrollment when the email address already exists."
+msgstr ""
+"Gebruik het e-mailadres van de gebruiker, maar weiger inschrijving als het e-mailadres al bestaat."
 
 #: authentik/core/models.py
 msgid ""
-"Use the user's email address, but deny enrollment when the email address "
-"already exists."
+"Link to a user with identical username. Can have security implications when a username is used "
+"with another source."
 msgstr ""
-"Gebruik het e-mailadres van de gebruiker, maar weiger inschrijving als het "
-"e-mailadres al bestaat."
+"Koppel aan een gebruiker met dezelfde gebruikersnaam. Kan beveiligingsimplicaties hebben wanneer "
+"een gebruikersnaam wordt gebruikt met een andere bron."
+
+#: authentik/core/models.py
+msgid "Use the user's username, but deny enrollment when the username already exists."
+msgstr ""
+"Gebruik de gebruikersnaam van de gebruiker, maar weiger inschrijving als de gebruikersnaam al "
+"bestaat."
 
 #: authentik/core/models.py
 msgid ""
-"Link to a user with identical username. Can have security implications when "
-"a username is used with another source."
+"Link to a group with identical name. Can have security implications when a group name is used "
+"with another source."
 msgstr ""
-"Koppel aan een gebruiker met dezelfde gebruikersnaam. Kan "
-"beveiligingsimplicaties hebben wanneer een gebruikersnaam wordt gebruikt met"
-" een andere bron."
-
-#: authentik/core/models.py
-msgid ""
-"Use the user's username, but deny enrollment when the username already "
-"exists."
-msgstr ""
-"Gebruik de gebruikersnaam van de gebruiker, maar weiger inschrijving als de "
-"gebruikersnaam al bestaat."
-
-#: authentik/core/models.py
-msgid ""
-"Link to a group with identical name. Can have security implications when a "
-"group name is used with another source."
-msgstr ""
-"Koppel aan een groep met dezelfde naam. Dit kan beveiligingsimplicaties "
-"hebben als een groepsnaam gebruikt wordt met een andere bron."
+"Koppel aan een groep met dezelfde naam. Dit kan beveiligingsimplicaties hebben als een groepsnaam "
+"gebruikt wordt met een andere bron."
 
 #: authentik/core/models.py
 msgid "Use the group name, but deny enrollment when the name already exists."
-msgstr ""
-"Gebruik de groepsnaam, maar voer geen registratie uit wanneer de naam al "
-"bestaat."
+msgstr "Gebruik de groepsnaam, maar voer geen registratie uit wanneer de naam al bestaat."
 
 #: authentik/core/models.py
 msgid "Source's display Name."
@@ -390,8 +393,8 @@ msgstr "Interne naam van de bron, gebruikt in URL's."
 
 #: authentik/core/models.py
 msgid ""
-"When enabled, this source will be displayed as a prominent button on the "
-"login page, instead of a small icon."
+"When enabled, this source will be displayed as a prominent button on the login page, instead of a "
+"small icon."
 msgstr ""
 
 #: authentik/core/models.py
@@ -404,19 +407,16 @@ msgstr "Flow om te gebruiken bij het inschrijven van nieuwe gebruikers."
 
 #: authentik/core/models.py
 msgid ""
-"How the source determines if an existing user should be authenticated or a "
-"new user enrolled."
+"How the source determines if an existing user should be authenticated or a new user enrolled."
 msgstr ""
-"Hoe de bron bepaalt of een bestaande gebruiker moet worden geauthenticeerd "
-"of een nieuwe gebruiker moet worden ingeschreven."
+"Hoe de bron bepaalt of een bestaande gebruiker moet worden geauthenticeerd of een nieuwe "
+"gebruiker moet worden ingeschreven."
 
 #: authentik/core/models.py
-msgid ""
-"How the source determines if an existing group should be used or a new group"
-" created."
+msgid "How the source determines if an existing group should be used or a new group created."
 msgstr ""
-"Hoe de bron wordt bepaald als een bestaande groep moet worden gebruikt of "
-"een nieuwe groep wordt aangemaakt."
+"Hoe de bron wordt bepaald als een bestaande groep moet worden gebruikt of een nieuwe groep wordt "
+"aangemaakt."
 
 #: authentik/core/models.py authentik/providers/scim/models.py
 msgid "Token"
@@ -465,11 +465,11 @@ msgstr "Geauthenticeerde Sessies"
 #: authentik/core/sources/flow_manager.py
 #, python-brace-format
 msgid ""
-"Request to authenticate with {source} has been denied. Please authenticate "
-"with the source you've previously signed up with."
+"Request to authenticate with {source} has been denied. Please authenticate with the source you've "
+"previously signed up with."
 msgstr ""
-"Verzoek om te authenticeren met {source} is afgekeurd. Authenticeer "
-"alstublieft met de bron waarmee u zich eerder heeft ingeschreven."
+"Verzoek om te authenticeren met {source} is afgekeurd. Authenticeer alstublieft met de bron "
+"waarmee u zich eerder heeft ingeschreven."
 
 #: authentik/core/sources/flow_manager.py
 msgid "Configured flow does not exist."
@@ -497,19 +497,16 @@ msgstr ""
 msgid "Remove temporary users created by SAML Sources."
 msgstr ""
 
-#: authentik/core/templates/if/error.html
-#: authentik/policies/templates/policies/denied.html
+#: authentik/core/templates/if/error.html authentik/policies/templates/policies/denied.html
 msgid "Go home"
 msgstr "Ga naar startpagina"
 
-#: authentik/core/templates/login/base_full.html
-#: authentik/flows/templates/if/flow-sfe.html
+#: authentik/core/templates/login/base_full.html authentik/flows/templates/if/flow-sfe.html
 msgid "Powered by authentik"
 msgstr "Aangedreven door authentik"
 
 #: authentik/core/views/apps.py authentik/providers/oauth2/views/authorize.py
-#: authentik/providers/oauth2/views/device_init.py
-#: authentik/providers/saml/views/sso.py
+#: authentik/providers/oauth2/views/device_init.py authentik/providers/saml/views/sso.py
 #, python-format
 msgid "You're about to sign into %(application)s."
 msgstr "U staat op het punt om in te loggen bij %(application)s."
@@ -555,12 +552,10 @@ msgid "PEM-encoded Certificate data"
 msgstr "PEM-gecodeerde certificaatgegevens"
 
 #: authentik/crypto/models.py
-msgid ""
-"Optional Private Key. If this is set, you can use this keypair for "
-"encryption."
+msgid "Optional Private Key. If this is set, you can use this keypair for encryption."
 msgstr ""
-"Optionele privésleutel. Als deze is ingesteld, kunt u dit sleutelpaar "
-"gebruiken voor versleuteling."
+"Optionele privésleutel. Als deze is ingesteld, kunt u dit sleutelpaar gebruiken voor "
+"versleuteling."
 
 #: authentik/crypto/models.py
 msgid "Certificate-Key Pair"
@@ -568,6 +563,18 @@ msgstr "Certificaat-Sleutelpaar"
 
 #: authentik/crypto/models.py
 msgid "Certificate-Key Pairs"
+msgstr "Certificaat-Sleutelparen"
+
+#: authentik/crypto/models.py
+#, fuzzy
+#| msgid "Certificate-Key Pairs"
+msgid "View Certificate-Key pair's certificate"
+msgstr "Certificaat-Sleutelparen"
+
+#: authentik/crypto/models.py
+#, fuzzy
+#| msgid "Certificate-Key Pairs"
+msgid "View Certificate-Key pair's private key"
 msgstr "Certificaat-Sleutelparen"
 
 #: authentik/crypto/tasks.py
@@ -594,13 +601,11 @@ msgstr ""
 msgid "Agent Connectors"
 msgstr ""
 
-#: authentik/endpoints/connectors/agent/models.py
-#: authentik/providers/oauth2/models.py
+#: authentik/endpoints/connectors/agent/models.py authentik/providers/oauth2/models.py
 msgid "Device Token"
 msgstr "Apparaattoken"
 
-#: authentik/endpoints/connectors/agent/models.py
-#: authentik/providers/oauth2/models.py
+#: authentik/endpoints/connectors/agent/models.py authentik/providers/oauth2/models.py
 msgid "Device Tokens"
 msgstr "Apparaattokens"
 
@@ -668,6 +673,18 @@ msgstr ""
 msgid "Device access groups"
 msgstr ""
 
+#: authentik/endpoints/models.py
+#, fuzzy
+#| msgid "Consent Stage"
+msgid "Endpoint Stage"
+msgstr "Toestemmingsfase"
+
+#: authentik/endpoints/models.py
+#, fuzzy
+#| msgid "Consent Stages"
+msgid "Endpoint Stages"
+msgstr "Toestemmingsfasen"
+
 #: authentik/endpoints/tasks.py
 msgid "Sync endpoints."
 msgstr ""
@@ -692,19 +709,15 @@ msgstr "Licentie Gebruik"
 msgid "License Usage Records"
 msgstr "Licentie Gebruik Records"
 
-#: authentik/enterprise/policies/unique_password/models.py
-#: authentik/policies/password/models.py
+#: authentik/enterprise/policies/unique_password/models.py authentik/policies/password/models.py
 msgid "Field key to check, field keys defined in Prompt stages are available."
-msgstr ""
-"Veldsleutel om te controleren, veldsleutels gedefinieerd in Prompt-stadia "
-"zijn beschikbaar."
+msgstr "Veldsleutel om te controleren, veldsleutels gedefinieerd in Prompt-stadia zijn beschikbaar."
 
 #: authentik/enterprise/policies/unique_password/models.py
 msgid "Number of passwords to check against."
 msgstr ""
 
-#: authentik/enterprise/policies/unique_password/models.py
-#: authentik/policies/password/models.py
+#: authentik/enterprise/policies/unique_password/models.py authentik/policies/password/models.py
 msgid "Password not set in context"
 msgstr "Wachtwoord niet ingesteld in context"
 
@@ -725,9 +738,7 @@ msgid "User Password History"
 msgstr ""
 
 #: authentik/enterprise/policies/unique_password/tasks.py
-msgid ""
-"Check if any UniquePasswordPolicy exists, and if not, purge the password "
-"history table."
+msgid "Check if any UniquePasswordPolicy exists, and if not, purge the password history table."
 msgstr ""
 
 #: authentik/enterprise/policies/unique_password/tasks.py
@@ -759,11 +770,9 @@ msgid "Google Workspace Provider Groups"
 msgstr "Google Workspace Provider Groepen"
 
 #: authentik/enterprise/providers/google_workspace/models.py
-#: authentik/enterprise/providers/microsoft_entra/models.py
-#: authentik/providers/scim/models.py
+#: authentik/enterprise/providers/microsoft_entra/models.py authentik/providers/scim/models.py
 msgid "Property mappings used for group creation/updating."
-msgstr ""
-"Eigenschapsafbeeldingen gebruikt voor het maken/bijwerken van groepen."
+msgstr "Eigenschapsafbeeldingen gebruikt voor het maken/bijwerken van groepen."
 
 #: authentik/enterprise/providers/google_workspace/models.py
 msgid "Google Workspace Provider"
@@ -794,9 +803,7 @@ msgid "Sync a direct object (user, group) for Google Workspace provider."
 msgstr ""
 
 #: authentik/enterprise/providers/google_workspace/tasks.py
-msgid ""
-"Dispatch syncs for a direct object (user, group) for Google Workspace "
-"providers."
+msgid "Dispatch syncs for a direct object (user, group) for Google Workspace providers."
 msgstr ""
 
 #: authentik/enterprise/providers/google_workspace/tasks.py
@@ -804,9 +811,7 @@ msgid "Sync a related object (memberships) for Google Workspace provider."
 msgstr ""
 
 #: authentik/enterprise/providers/google_workspace/tasks.py
-msgid ""
-"Dispatch syncs for a related object (memberships) for Google Workspace "
-"providers."
+msgid "Dispatch syncs for a related object (memberships) for Google Workspace providers."
 msgstr ""
 
 #: authentik/enterprise/providers/microsoft_entra/models.py
@@ -850,9 +855,7 @@ msgid "Sync a direct object (user, group) for Microsoft Entra provider."
 msgstr ""
 
 #: authentik/enterprise/providers/microsoft_entra/tasks.py
-msgid ""
-"Dispatch syncs for a direct object (user, group) for Microsoft Entra "
-"providers."
+msgid "Dispatch syncs for a direct object (user, group) for Microsoft Entra providers."
 msgstr ""
 
 #: authentik/enterprise/providers/microsoft_entra/tasks.py
@@ -860,9 +863,7 @@ msgid "Sync a related object (memberships) for Microsoft Entra provider."
 msgstr ""
 
 #: authentik/enterprise/providers/microsoft_entra/tasks.py
-msgid ""
-"Dispatch syncs for a related object (memberships) for Microsoft Entra "
-"providers."
+msgid "Dispatch syncs for a related object (memberships) for Microsoft Entra providers."
 msgstr ""
 
 #: authentik/enterprise/providers/radius/api.py
@@ -873,8 +874,7 @@ msgstr ""
 msgid "Enterprise is required to use the OAuth mode."
 msgstr ""
 
-#: authentik/enterprise/providers/ssf/models.py
-#: authentik/providers/oauth2/models.py
+#: authentik/enterprise/providers/ssf/models.py authentik/providers/oauth2/models.py
 msgid "Signing Key"
 msgstr "Ondertekeningsleutel"
 
@@ -940,9 +940,8 @@ msgstr "Uw browser wordt geverifieerd..."
 
 #: authentik/enterprise/stages/mtls/models.py
 msgid ""
-"Configure certificate authorities to validate the certificate against. This "
-"option has a higher priority than the `client_certificate` option on "
-"`Brand`."
+"Configure certificate authorities to validate the certificate against. This option has a higher "
+"priority than the `client_certificate` option on `Brand`."
 msgstr ""
 
 #: authentik/enterprise/stages/mtls/models.py
@@ -967,11 +966,11 @@ msgstr ""
 
 #: authentik/enterprise/stages/source/models.py
 msgid ""
-"Amount of time a user can take to return from the source to continue the "
-"flow (Format: hours=-1;minutes=-2;seconds=-3)"
+"Amount of time a user can take to return from the source to continue the flow (Format: "
+"hours=-1;minutes=-2;seconds=-3)"
 msgstr ""
-"De hoeveelheid tijd die een gebruiker kan gebruiken om door te gaan met een "
-"flow (Formaat: uur=-1;minuten=-2;seconden=-3)"
+"De hoeveelheid tijd die een gebruiker kan gebruiken om door te gaan met een flow (Formaat: "
+"uur=-1;minuten=-2;seconden=-3)"
 
 #: authentik/enterprise/stages/source/models.py
 msgid "Source Stage"
@@ -1005,29 +1004,23 @@ msgstr "Generieke Webhook"
 msgid "Slack Webhook (Slack/Discord)"
 msgstr "Slack Webhook (Slack/Discord)"
 
-#: authentik/events/models.py
-#: authentik/stages/authenticator_validate/models.py
+#: authentik/events/models.py authentik/stages/authenticator_validate/models.py
 msgid "Email"
 msgstr "E-mail"
 
 #: authentik/events/models.py
-msgid ""
-"Only send notification once, for example when sending a webhook into a chat "
-"channel."
+msgid "Only send notification once, for example when sending a webhook into a chat channel."
 msgstr ""
-"Stuur de melding slechts eenmaal, bijvoorbeeld bij het verzenden van een "
-"webhook naar een chatkanaal."
+"Stuur de melding slechts eenmaal, bijvoorbeeld bij het verzenden van een webhook naar een "
+"chatkanaal."
 
 #: authentik/events/models.py
-msgid ""
-"Customize the body of the request. Mapping should return data that is JSON-"
-"serializable."
+msgid "Customize the body of the request. Mapping should return data that is JSON-serializable."
 msgstr ""
 
 #: authentik/events/models.py
 msgid ""
-"Configure additional headers to be sent. Mapping should return a dictionary "
-"of key-value pairs"
+"Configure additional headers to be sent. Mapping should return a dictionary of key-value pairs"
 msgstr ""
 
 #: authentik/events/models.py
@@ -1072,12 +1065,11 @@ msgstr "Meldingen"
 
 #: authentik/events/models.py
 msgid ""
-"Select which transports should be used to notify the user. If none are "
-"selected, the notification will only be shown in the authentik UI."
+"Select which transports should be used to notify the user. If none are selected, the notification "
+"will only be shown in the authentik UI."
 msgstr ""
-"Kies welke vervoersmiddelen moeten worden gebruikt om de gebruiker op de "
-"hoogte te stellen. Als er geen zijn geselecteerd, wordt de melding alleen "
-"getoond in de authentik-UI."
+"Kies welke vervoersmiddelen moeten worden gebruikt om de gebruiker op de hoogte te stellen. Als "
+"er geen zijn geselecteerd, wordt de melding alleen getoond in de authentik-UI."
 
 #: authentik/events/models.py
 msgid "Controls which severity level the created notifications will have."
@@ -1085,16 +1077,16 @@ msgstr "Regelt welk ernstniveau de aangemaakte meldingen zullen hebben."
 
 #: authentik/events/models.py
 msgid ""
-"Define which group of users this notification should be sent and shown to. "
-"If left empty, Notification won't ben sent."
+"Define which group of users this notification should be sent and shown to. If left empty, "
+"Notification won't ben sent."
 msgstr ""
-"Definieer welke groep gebruikers deze melding moet ontvangen en zien. Als "
-"dit leeg wordt gelaten, wordt er geen melding verzonden."
+"Definieer welke groep gebruikers deze melding moet ontvangen en zien. Als dit leeg wordt gelaten, "
+"wordt er geen melding verzonden."
 
 #: authentik/events/models.py
 msgid ""
-"When enabled, notification will be sent to user the user that triggered the "
-"event.When destination_group is configured, notification is sent to both."
+"When enabled, notification will be sent to user the user that triggered the event.When "
+"destination_group is configured, notification is sent to both."
 msgstr ""
 
 #: authentik/events/models.py
@@ -1118,9 +1110,7 @@ msgid "Dispatch new event notifications."
 msgstr ""
 
 #: authentik/events/tasks.py
-msgid ""
-"Check if policies attached to NotificationRule match event and dispatch "
-"notification tasks."
+msgid "Check if policies attached to NotificationRule match event and dispatch notification tasks."
 msgstr ""
 
 #: authentik/events/tasks.py
@@ -1206,36 +1196,29 @@ msgstr "Weergegeven als de titel op Flow-pagina's."
 
 #: authentik/flows/models.py
 msgid ""
-"Decides what this Flow is used for. For example, the Authentication flow is "
-"redirect to when an un-authenticated user visits authentik."
+"Decides what this Flow is used for. For example, the Authentication flow is redirect to when an "
+"un-authenticated user visits authentik."
 msgstr ""
-"Bepaalt waarvoor deze Flow wordt gebruikt. Bijvoorbeeld, de "
-"Authenticatieflow wordt gebruikt wanneer een niet-geauthenticeerde gebruiker"
-" authentik bezoekt."
+"Bepaalt waarvoor deze Flow wordt gebruikt. Bijvoorbeeld, de Authenticatieflow wordt gebruikt "
+"wanneer een niet-geauthenticeerde gebruiker authentik bezoekt."
 
 #: authentik/flows/models.py
 msgid "Background shown during execution"
 msgstr "Achtergrond weergegeven tijdens uitvoering"
 
 #: authentik/flows/models.py
-msgid ""
-"Enable compatibility mode, increases compatibility with password managers on"
-" mobile devices."
+msgid "Enable compatibility mode, increases compatibility with password managers on mobile devices."
 msgstr ""
-"Schakel compatibiliteitsmodus in, verhoogt de compatibiliteit met "
-"wachtwoordbeheerders op mobiele apparaten."
+"Schakel compatibiliteitsmodus in, verhoogt de compatibiliteit met wachtwoordbeheerders op mobiele "
+"apparaten."
 
 #: authentik/flows/models.py
 msgid "Configure what should happen when a flow denies access to a user."
-msgstr ""
-"Configureer wat er moet gebeuren wanneer een flow de toegang tot een "
-"gebruiker weigert."
+msgstr "Configureer wat er moet gebeuren wanneer een flow de toegang tot een gebruiker weigert."
 
 #: authentik/flows/models.py
 msgid "Required level of authentication and authorization to access a flow."
-msgstr ""
-"Vereist niveau van authenticatie en autorisatie om toegang te krijgen tot "
-"een flow."
+msgstr "Vereist niveau van authenticatie en autorisatie om toegang te krijgen tot een flow."
 
 #: authentik/flows/models.py
 msgid "Flows"
@@ -1267,16 +1250,14 @@ msgstr ""
 
 #: authentik/flows/models.py
 msgid ""
-"Configure how the flow executor should handle an invalid response to a "
-"challenge. RETRY returns the error message and a similar challenge to the "
-"executor. RESTART restarts the flow from the beginning, and "
-"RESTART_WITH_CONTEXT restarts the flow while keeping the current context."
+"Configure how the flow executor should handle an invalid response to a challenge. RETRY returns "
+"the error message and a similar challenge to the executor. RESTART restarts the flow from the "
+"beginning, and RESTART_WITH_CONTEXT restarts the flow while keeping the current context."
 msgstr ""
-"Configureer hoe de flowuitvoerder moet omgaan met een ongeldige reactie op "
-"een uitdaging. RETRY geeft het foutbericht en een soortgelijke uitdaging "
-"terug aan de uitvoerder. RESTART start de flow opnieuw vanaf het begin, en "
-"RESTART_WITH_CONTEXT start de flow opnieuw terwijl de huidige context "
-"behouden blijft."
+"Configureer hoe de flowuitvoerder moet omgaan met een ongeldige reactie op een uitdaging. RETRY "
+"geeft het foutbericht en een soortgelijke uitdaging terug aan de uitvoerder. RESTART start de "
+"flow opnieuw vanaf het begin, en RESTART_WITH_CONTEXT start de flow opnieuw terwijl de huidige "
+"context behouden blijft."
 
 #: authentik/flows/models.py
 msgid "Flow Stage Binding"
@@ -1288,11 +1269,11 @@ msgstr "Flowfasebindingen"
 
 #: authentik/flows/models.py
 msgid ""
-"Flow used by an authenticated user to configure this Stage. If empty, user "
-"will not be able to configure this stage."
+"Flow used by an authenticated user to configure this Stage. If empty, user will not be able to "
+"configure this stage."
 msgstr ""
-"Flow gebruikt door een geauthenticeerde gebruiker om deze fase te "
-"configureren. Als leeg, zal de gebruiker deze fase niet kunnen configureren."
+"Flow gebruikt door een geauthenticeerde gebruiker om deze fase te configureren. Als leeg, zal de "
+"gebruiker deze fase niet kunnen configureren."
 
 #: authentik/flows/models.py
 msgid "Flow Token"
@@ -1319,9 +1300,7 @@ msgid "Timeout for synchronization of a single page"
 msgstr ""
 
 #: authentik/lib/sync/outgoing/models.py
-msgid ""
-"When enabled, provider will not modify or create objects in the remote "
-"system."
+msgid "When enabled, provider will not modify or create objects in the remote system."
 msgstr ""
 
 #: authentik/lib/utils/time.py
@@ -1335,23 +1314,17 @@ msgid "The fields {field_names} must be used together."
 msgstr "Het veld {field_names} moet samen gebruikt worden."
 
 #: authentik/outposts/api/service_connections.py
-msgid ""
-"You can only use an empty kubeconfig when connecting to a local cluster."
-msgstr ""
-"U kunt alleen een lege kubeconfig gebruiken bij het verbinden met een lokale"
-" cluster."
+msgid "You can only use an empty kubeconfig when connecting to a local cluster."
+msgstr "U kunt alleen een lege kubeconfig gebruiken bij het verbinden met een lokale cluster."
 
 #: authentik/outposts/api/service_connections.py
 msgid "Invalid kubeconfig"
 msgstr "Ongeldige kubeconfig"
 
 #: authentik/outposts/models.py
-msgid ""
-"If enabled, use the local connection. Required Docker socket/Kubernetes "
-"Integration"
+msgid "If enabled, use the local connection. Required Docker socket/Kubernetes Integration"
 msgstr ""
-"Indien ingeschakeld, gebruik de lokale verbinding. Vereist Docker-"
-"socket/Kubernetes-integratie."
+"Indien ingeschakeld, gebruik de lokale verbinding. Vereist Docker-socket/Kubernetes-integratie."
 
 #: authentik/outposts/models.py
 msgid "Outpost Service-Connection"
@@ -1363,28 +1336,23 @@ msgstr "Buitenpost Service-verbindingen"
 
 #: authentik/outposts/models.py
 msgid ""
-"Can be in the format of 'unix://<path>' when connecting to a local docker "
-"daemon, or 'https://<hostname>:2376' when connecting to a remote system."
+"Can be in the format of 'unix://<path>' when connecting to a local docker daemon, or 'https://"
+"<hostname>:2376' when connecting to a remote system."
 msgstr ""
-"Kan in het formaat 'unix://<pad>' zijn bij het verbinden met een lokale "
-"dockerdaemon, of 'https://<hostname>:2376' bij het verbinden met een extern "
-"systeem."
+"Kan in het formaat 'unix://<pad>' zijn bij het verbinden met een lokale dockerdaemon, of 'https://"
+"<hostname>:2376' bij het verbinden met een extern systeem."
 
 #: authentik/outposts/models.py
 msgid ""
-"CA which the endpoint's Certificate is verified against. Can be left empty "
-"for no validation."
+"CA which the endpoint's Certificate is verified against. Can be left empty for no validation."
 msgstr ""
-"CA waartegen het certificaat van de eindpunt wordt geverifieerd. Kan leeg "
-"worden gelaten voor geen validatie."
+"CA waartegen het certificaat van de eindpunt wordt geverifieerd. Kan leeg worden gelaten voor "
+"geen validatie."
 
 #: authentik/outposts/models.py
-msgid ""
-"Certificate/Key used for authentication. Can be left empty for no "
-"authentication."
+msgid "Certificate/Key used for authentication. Can be left empty for no authentication."
 msgstr ""
-"Certificaat/Sleutel gebruikt voor authenticatie. Kan leeg worden gelaten "
-"voor geen authenticatie."
+"Certificaat/Sleutel gebruikt voor authenticatie. Kan leeg worden gelaten voor geen authenticatie."
 
 #: authentik/outposts/models.py
 msgid "Docker Service-Connection"
@@ -1395,12 +1363,9 @@ msgid "Docker Service-Connections"
 msgstr "Docker Service-verbindingen"
 
 #: authentik/outposts/models.py
-msgid ""
-"Paste your kubeconfig here. authentik will automatically use the currently "
-"selected context."
+msgid "Paste your kubeconfig here. authentik will automatically use the currently selected context."
 msgstr ""
-"Plak hier uw kubeconfig. Authentik zal automatisch de momenteel "
-"geselecteerde context gebruiken."
+"Plak hier uw kubeconfig. Authentik zal automatisch de momenteel geselecteerde context gebruiken."
 
 #: authentik/outposts/models.py
 msgid "Verify SSL Certificates of the Kubernetes API endpoint"
@@ -1416,12 +1381,11 @@ msgstr "Kubernetes Service-verbindingen"
 
 #: authentik/outposts/models.py
 msgid ""
-"Select Service-Connection authentik should use to manage this outpost. Leave"
-" empty if authentik should not handle the deployment."
+"Select Service-Connection authentik should use to manage this outpost. Leave empty if authentik "
+"should not handle the deployment."
 msgstr ""
-"Selecteer de Service-verbinding die authentik moet gebruiken om deze "
-"buitenpost te beheren. Laat leeg als authentik de implementatie niet moet "
-"afhandelen."
+"Selecteer de Service-verbinding die authentik moet gebruiken om deze buitenpost te beheren. Laat "
+"leeg als authentik de implementatie niet moet afhandelen."
 
 #: authentik/outposts/models.py
 msgid "Outpost"
@@ -1467,24 +1431,20 @@ msgstr "Dumme Beleid"
 msgid "Dummy Policies"
 msgstr "Dumme Beleid"
 
-#: authentik/policies/event_matcher/api.py
-#: authentik/policies/event_matcher/models.py
-msgid ""
-"Match events created by selected application. When left empty, all "
-"applications are matched."
+#: authentik/policies/event_matcher/api.py authentik/policies/event_matcher/models.py
+msgid "Match events created by selected application. When left empty, all applications are matched."
 msgstr ""
-"Overeenkomst met gebeurtenissen gemaakt door de geselecteerde toepassing. "
-"Als leeg gelaten, worden alle toepassingen overeenkomen."
+"Overeenkomst met gebeurtenissen gemaakt door de geselecteerde toepassing. Als leeg gelaten, "
+"worden alle toepassingen overeenkomen."
 
-#: authentik/policies/event_matcher/api.py
-#: authentik/policies/event_matcher/models.py
+#: authentik/policies/event_matcher/api.py authentik/policies/event_matcher/models.py
 msgid ""
-"Match events created by selected model. When left empty, all models are "
-"matched. When an app is selected, all the application's models are matched."
+"Match events created by selected model. When left empty, all models are matched. When an app is "
+"selected, all the application's models are matched."
 msgstr ""
-"Overeenkomst met gebeurtenissen gemaakt door het geselecteerde model. Als "
-"leeg gelaten, worden alle modellen overeenkomen. Wanneer een toepassing is "
-"geselecteerd, worden alle modellen van de toepassing overeenkomen."
+"Overeenkomst met gebeurtenissen gemaakt door het geselecteerde model. Als leeg gelaten, worden "
+"alle modellen overeenkomen. Wanneer een toepassing is geselecteerd, worden alle modellen van de "
+"toepassing overeenkomen."
 
 #: authentik/policies/event_matcher/api.py
 msgid "At least one criteria must be set."
@@ -1492,19 +1452,16 @@ msgstr "Minstens één criterium moet worden ingesteld."
 
 #: authentik/policies/event_matcher/models.py
 msgid ""
-"Match created events with this action type. When left empty, all action "
-"types will be matched."
+"Match created events with this action type. When left empty, all action types will be matched."
 msgstr ""
-"Overeenkomst met gemaakte gebeurtenissen met dit actietype. Als leeg "
-"gelaten, worden alle actietypen overeenkomen."
+"Overeenkomst met gemaakte gebeurtenissen met dit actietype. Als leeg gelaten, worden alle "
+"actietypen overeenkomen."
 
 #: authentik/policies/event_matcher/models.py
-msgid ""
-"Matches Event's Client IP (strict matching, for network matching use an "
-"Expression Policy)"
+msgid "Matches Event's Client IP (strict matching, for network matching use an Expression Policy)"
 msgstr ""
-"Komt overeen met het client-IP van de gebeurtenis (strikte overeenkomst, "
-"voor netwerkomgeving gebruik een Expressiebeleid)."
+"Komt overeen met het client-IP van de gebeurtenis (strikte overeenkomst, voor netwerkomgeving "
+"gebruik een Expressiebeleid)."
 
 #: authentik/policies/event_matcher/models.py
 msgid "Event Matcher Policy"
@@ -1589,8 +1546,7 @@ msgstr "Beleidsbinding Modellen"
 
 #: authentik/policies/models.py
 msgid "Negates the outcome of the policy. Messages are unaffected."
-msgstr ""
-"Maakt de uitkomst van het beleid ongedaan. Berichten worden niet beïnvloed."
+msgstr "Maakt de uitkomst van het beleid ongedaan. Berichten worden niet beïnvloed."
 
 #: authentik/policies/models.py
 msgid "Timeout after which Policy execution is terminated."
@@ -1610,11 +1566,11 @@ msgstr "Beleidsbindingen"
 
 #: authentik/policies/models.py
 msgid ""
-"When this option is enabled, all executions of this policy will be logged. "
-"By default, only execution errors are logged."
+"When this option is enabled, all executions of this policy will be logged. By default, only "
+"execution errors are logged."
 msgstr ""
-"Wanneer deze optie is ingeschakeld, worden alle uitvoeringen van dit beleid "
-"gelogd. Standaard worden alleen uitvoeringsfouten gelogd."
+"Wanneer deze optie is ingeschakeld, worden alle uitvoeringen van dit beleid gelogd. Standaard "
+"worden alleen uitvoeringsfouten gelogd."
 
 #: authentik/policies/models.py
 msgid "Policy"
@@ -1637,11 +1593,8 @@ msgid "How many times the password hash is allowed to be on haveibeenpwned"
 msgstr "Hoe vaak het wachtwoordhash op haveibeenpwned mag voorkomen"
 
 #: authentik/policies/password/models.py
-msgid ""
-"If the zxcvbn score is equal or less than this value, the policy will fail."
-msgstr ""
-"Als de zxcvbn-score gelijk is aan of lager is dan deze waarde, zal het "
-"beleid falen."
+msgid "If the zxcvbn score is equal or less than this value, the policy will fail."
+msgstr "Als de zxcvbn-score gelijk is aan of lager is dan deze waarde, zal het beleid falen."
 
 #: authentik/policies/password/models.py
 msgid "Invalid password."
@@ -1690,8 +1643,8 @@ msgstr ""
 
 #: authentik/policies/templates/policies/buffer.html
 msgid ""
-"You're already authenticating in another tab. This page will refresh once "
-"authentication is completed."
+"You're already authenticating in another tab. This page will refresh once authentication is "
+"completed."
 msgstr ""
 
 #: authentik/policies/templates/policies/buffer.html
@@ -1747,42 +1700,37 @@ msgstr "DN waarin objecten toegankelijk zijn."
 
 #: authentik/providers/ldap/models.py
 msgid ""
-"The start for uidNumbers, this number is added to the user.pk to make sure "
-"that the numbers aren't too low for POSIX users. Default is 2000 to ensure "
-"that we don't collide with local users uidNumber"
+"The start for uidNumbers, this number is added to the user.pk to make sure that the numbers "
+"aren't too low for POSIX users. Default is 2000 to ensure that we don't collide with local users "
+"uidNumber"
 msgstr ""
-"Het begin voor uidNumbers, dit nummer wordt toegevoegd aan user.pk om ervoor"
-" te zorgen dat de nummers niet te laag zijn voor POSIX-gebruikers. De "
-"standaardwaarde is 2000 om ervoor te zorgen dat we geen conflict hebben met "
-"lokale gebruikers uidNumber."
+"Het begin voor uidNumbers, dit nummer wordt toegevoegd aan user.pk om ervoor te zorgen dat de "
+"nummers niet te laag zijn voor POSIX-gebruikers. De standaardwaarde is 2000 om ervoor te zorgen "
+"dat we geen conflict hebben met lokale gebruikers uidNumber."
 
 #: authentik/providers/ldap/models.py
 msgid ""
-"The start for gidNumbers, this number is added to a number generated from "
-"the group.pk to make sure that the numbers aren't too low for POSIX groups. "
-"Default is 4000 to ensure that we don't collide with local groups or users "
-"primary groups gidNumber"
+"The start for gidNumbers, this number is added to a number generated from the group.pk to make "
+"sure that the numbers aren't too low for POSIX groups. Default is 4000 to ensure that we don't "
+"collide with local groups or users primary groups gidNumber"
 msgstr ""
-"Het begin voor gidNumbers, dit nummer wordt toegevoegd aan een nummer dat is"
-" gegenereerd uit group.pk om ervoor te zorgen dat de nummers niet te laag "
-"zijn voor POSIX-groepen. De standaardwaarde is 4000 om ervoor te zorgen dat "
-"we geen conflict hebben met lokale groepen of gebruikers primaire groepen "
-"gidNumber."
+"Het begin voor gidNumbers, dit nummer wordt toegevoegd aan een nummer dat is gegenereerd uit "
+"group.pk om ervoor te zorgen dat de nummers niet te laag zijn voor POSIX-groepen. De "
+"standaardwaarde is 4000 om ervoor te zorgen dat we geen conflict hebben met lokale groepen of "
+"gebruikers primaire groepen gidNumber."
 
 #: authentik/providers/ldap/models.py authentik/providers/radius/models.py
 msgid ""
-"When enabled, code-based multi-factor authentication can be used by "
-"appending a semicolon and the TOTP code to the password. This should only be"
-" enabled if all users that will bind to this provider have a TOTP device "
-"configured, as otherwise a password may incorrectly be rejected if it "
+"When enabled, code-based multi-factor authentication can be used by appending a semicolon and the "
+"TOTP code to the password. This should only be enabled if all users that will bind to this "
+"provider have a TOTP device configured, as otherwise a password may incorrectly be rejected if it "
 "contains a semicolon."
 msgstr ""
-"Indien ingeschakeld, kan codegebaseerde multi-factor authenticatie worden "
-"gebruikt door een puntkomma en de TOTP-code aan het wachtwoord toe te "
-"voegen. Dit moet alleen worden ingeschakeld als alle gebruikers die zich bij"
-" deze provider willen aanmelden een TOTP-apparaat geconfigureerd hebben, "
-"omdat anders een wachtwoord mogelijk onterecht wordt afgewezen als het een "
-"puntkomma bevat."
+"Indien ingeschakeld, kan codegebaseerde multi-factor authenticatie worden gebruikt door een "
+"puntkomma en de TOTP-code aan het wachtwoord toe te voegen. Dit moet alleen worden ingeschakeld "
+"als alle gebruikers die zich bij deze provider willen aanmelden een TOTP-apparaat geconfigureerd "
+"hebben, omdat anders een wachtwoord mogelijk onterecht wordt afgewezen als het een puntkomma "
+"bevat."
 
 #: authentik/providers/ldap/models.py
 msgid "LDAP Provider"
@@ -1819,18 +1767,15 @@ msgstr "Gebaseerd op de gebruikersnaam"
 
 #: authentik/providers/oauth2/constants.py
 msgid "Based on the User's Email. This is recommended over the UPN method."
-msgstr ""
-"Gebaseerd op het e-mailadres van de gebruiker. Dit wordt aanbevolen boven de"
-" UPN-methode."
+msgstr "Gebaseerd op het e-mailadres van de gebruiker. Dit wordt aanbevolen boven de UPN-methode."
 
 #: authentik/providers/oauth2/constants.py
 msgid ""
-"Based on the User's UPN, only works if user has a 'upn' attribute set. Use "
-"this method only if you have different UPN and Mail domains."
+"Based on the User's UPN, only works if user has a 'upn' attribute set. Use this method only if "
+"you have different UPN and Mail domains."
 msgstr ""
-"Gebaseerd op de UPN van de gebruiker, werkt alleen als de gebruiker een "
-"'upn'-attribuut heeft ingesteld. Gebruik deze methode alleen als u "
-"verschillende UPN- en Mail-domeinen heeft."
+"Gebaseerd op de UPN van de gebruiker, werkt alleen als de gebruiker een 'upn'-attribuut heeft "
+"ingesteld. Gebruik deze methode alleen als u verschillende UPN- en Mail-domeinen heeft."
 
 #: authentik/providers/oauth2/models.py
 msgid "Confidential"
@@ -1846,8 +1791,7 @@ msgstr "Hetzelfde identificatiemiddel wordt voor alle providers gebruikt"
 
 #: authentik/providers/oauth2/models.py
 msgid "Each provider has a different issuer, based on the application slug."
-msgstr ""
-"Elke provider heeft een andere uitgever, gebaseerd op de toepassingsslug."
+msgstr "Elke provider heeft een andere uitgever, gebaseerd op de toepassingsslug."
 
 #: authentik/providers/oauth2/models.py
 msgid "Strict URL comparison"
@@ -1914,12 +1858,10 @@ msgid "Scope used by the client"
 msgstr "Scope gebruikt door de cliënt"
 
 #: authentik/providers/oauth2/models.py
-msgid ""
-"Description shown to the user when consenting. If left empty, the user won't"
-" be informed."
+msgid "Description shown to the user when consenting. If left empty, the user won't be informed."
 msgstr ""
-"Beschrijving getoond aan de gebruiker bij toestemming. Als leeg gelaten, "
-"wordt de gebruiker niet geïnformeerd."
+"Beschrijving getoond aan de gebruiker bij toestemming. Als leeg gelaten, wordt de gebruiker niet "
+"geïnformeerd."
 
 #: authentik/providers/oauth2/models.py
 msgid "Scope Mapping"
@@ -1935,11 +1877,11 @@ msgstr "Clienttype"
 
 #: authentik/providers/oauth2/models.py
 msgid ""
-"Confidential clients are capable of maintaining the confidentiality of their"
-" credentials. Public clients are incapable"
+"Confidential clients are capable of maintaining the confidentiality of their credentials. Public "
+"clients are incapable"
 msgstr ""
-"Vertrouwelijke clients zijn in staat om de vertrouwelijkheid van hun "
-"referenties te behouden. Openbare clients zijn dat niet."
+"Vertrouwelijke clients zijn in staat om de vertrouwelijkheid van hun referenties te behouden. "
+"Openbare clients zijn dat niet."
 
 #: authentik/providers/oauth2/models.py
 msgid "Client ID"
@@ -1962,9 +1904,7 @@ msgid "Logout Method"
 msgstr ""
 
 #: authentik/providers/oauth2/models.py
-msgid ""
-"Backchannel logs out with server to server calls. Frontchannel uses iframes "
-"in your browser"
+msgid "Backchannel logs out with server to server calls. Frontchannel uses iframes in your browser"
 msgstr ""
 
 #: authentik/providers/oauth2/models.py
@@ -1973,48 +1913,45 @@ msgstr "Inclusief claims in id_token"
 
 #: authentik/providers/oauth2/models.py
 msgid ""
-"Include User claims from scopes in the id_token, for applications that don't"
-" access the userinfo endpoint."
+"Include User claims from scopes in the id_token, for applications that don't access the userinfo "
+"endpoint."
 msgstr ""
-"Inclusief Gebruikersclaims uit scopes in id_token, voor toepassingen die "
-"geen toegang hebben tot het userinfo-eindpunt."
+"Inclusief Gebruikersclaims uit scopes in id_token, voor toepassingen die geen toegang hebben tot "
+"het userinfo-eindpunt."
 
 #: authentik/providers/oauth2/models.py
 msgid ""
 "Access codes not valid on or after current time + this value (Format: "
 "hours=1;minutes=2;seconds=3)."
 msgstr ""
-"Toegangscodes zijn niet geldig op of na de huidige tijd + deze waarde "
-"(Formaat: uren=1;minuten=2;seconden=3)."
+"Toegangscodes zijn niet geldig op of na de huidige tijd + deze waarde (Formaat: "
+"uren=1;minuten=2;seconden=3)."
 
 #: authentik/providers/oauth2/models.py
 msgid ""
-"Tokens not valid on or after current time + this value (Format: "
-"hours=1;minutes=2;seconds=3)."
+"Tokens not valid on or after current time + this value (Format: hours=1;minutes=2;seconds=3)."
 msgstr ""
 "Tokens zijn niet geldig op of na de huidige tijd + deze waarde (Formaat: "
 "uren=1;minuten=2;seconden=3)."
 
 #: authentik/providers/oauth2/models.py
 msgid ""
-"When refreshing a token, if the refresh token is valid for less than this "
-"duration, it will be renewed. When set to seconds=0, token will always be "
-"renewed. (Format: hours=1;minutes=2;seconds=3)."
+"When refreshing a token, if the refresh token is valid for less than this duration, it will be "
+"renewed. When set to seconds=0, token will always be renewed. (Format: "
+"hours=1;minutes=2;seconds=3)."
 msgstr ""
 
 #: authentik/providers/oauth2/models.py
 msgid ""
-"Configure what data should be used as unique User Identifier. For most "
-"cases, the default should be fine."
+"Configure what data should be used as unique User Identifier. For most cases, the default should "
+"be fine."
 msgstr ""
-"Configureer welke gegevens moeten worden gebruikt als unieke "
-"gebruikersidentificatie. In de meeste gevallen is de standaardinstelling "
-"prima."
+"Configureer welke gegevens moeten worden gebruikt als unieke gebruikersidentificatie. In de "
+"meeste gevallen is de standaardinstelling prima."
 
 #: authentik/providers/oauth2/models.py
 msgid "Configure how the issuer field of the ID Token should be filled."
-msgstr ""
-"Configureer hoe het uitgeversveld van het ID-token moet worden ingevuld."
+msgstr "Configureer hoe het uitgeversveld van het ID-token moet worden ingevuld."
 
 #: authentik/providers/oauth2/models.py
 msgid "Key used to sign the tokens."
@@ -2025,18 +1962,13 @@ msgid "Encryption Key"
 msgstr ""
 
 #: authentik/providers/oauth2/models.py
-msgid ""
-"Key used to encrypt the tokens. When set, tokens will be encrypted and "
-"returned as JWEs."
+msgid "Key used to encrypt the tokens. When set, tokens will be encrypted and returned as JWEs."
 msgstr ""
 
 #: authentik/providers/oauth2/models.py
-msgid ""
-"Any JWT signed by the JWK of the selected source can be used to "
-"authenticate."
+msgid "Any JWT signed by the JWK of the selected source can be used to authenticate."
 msgstr ""
-"Elke JWT ondertekend door de JWK van de geselecteerde bron kan worden "
-"gebruikt voor authenticatie."
+"Elke JWT ondertekend door de JWK van de geselecteerde bron kan worden gebruikt voor authenticatie."
 
 #: authentik/providers/oauth2/models.py
 msgid "OAuth2/OpenID Provider"
@@ -2102,8 +2034,7 @@ msgstr ""
 msgid "Handle backchannel logout notifications dispatched via signal"
 msgstr ""
 
-#: authentik/providers/oauth2/views/authorize.py
-#: authentik/providers/saml/views/flows.py
+#: authentik/providers/oauth2/views/authorize.py authentik/providers/saml/views/flows.py
 #, python-brace-format
 msgid "Redirecting to {app}..."
 msgstr ""
@@ -2127,14 +2058,12 @@ msgstr "GitHub-compatibiliteit: Toegang tot uw Groepen"
 #: authentik/providers/proxy/api.py
 msgid "User and password attributes must be set when basic auth is enabled."
 msgstr ""
-"Gebruikers- en wachtwoordeigenschappen moeten worden ingesteld wanneer "
-"basisverificatie is ingeschakeld."
+"Gebruikers- en wachtwoordeigenschappen moeten worden ingesteld wanneer basisverificatie is "
+"ingeschakeld."
 
 #: authentik/providers/proxy/api.py
 msgid "Internal host cannot be empty when forward auth is disabled."
-msgstr ""
-"Interne host kan niet leeg zijn wanneer doorsturen van verificatie is "
-"uitgeschakeld."
+msgstr "Interne host kan niet leeg zijn wanneer doorsturen van verificatie is uitgeschakeld."
 
 #: authentik/providers/proxy/models.py
 msgid "Proxy Session"
@@ -2154,39 +2083,34 @@ msgstr "Interne host SSL-validatie"
 
 #: authentik/providers/proxy/models.py
 msgid ""
-"Enable support for forwardAuth in traefik and nginx auth_request. Exclusive "
-"with internal_host."
+"Enable support for forwardAuth in traefik and nginx auth_request. Exclusive with internal_host."
 msgstr ""
-"Schakel ondersteuning in voor forwardAuth in traefik en nginx auth_request. "
-"Uitsluitend met interne host."
+"Schakel ondersteuning in voor forwardAuth in traefik en nginx auth_request. Uitsluitend met "
+"interne host."
 
 #: authentik/providers/proxy/models.py
 msgid ""
-"Regular expressions for which authentication is not required. Each new line "
-"is interpreted as a new Regular Expression."
+"Regular expressions for which authentication is not required. Each new line is interpreted as a "
+"new Regular Expression."
 msgstr ""
-"Reguliere expressies waarvoor geen verificatie vereist is. Elke nieuwe regel"
-" wordt geïnterpreteerd als een nieuwe reguliere expressie."
+"Reguliere expressies waarvoor geen verificatie vereist is. Elke nieuwe regel wordt "
+"geïnterpreteerd als een nieuwe reguliere expressie."
 
 #: authentik/providers/proxy/models.py
 msgid ""
-"When enabled, this provider will intercept the authorization header and "
-"authenticate requests based on its value."
+"When enabled, this provider will intercept the authorization header and authenticate requests "
+"based on its value."
 msgstr ""
-"Wanneer ingeschakeld, zal deze provider de autorisatieheader onderscheppen "
-"en verzoeken verifiëren op basis van de waarde ervan."
+"Wanneer ingeschakeld, zal deze provider de autorisatieheader onderscheppen en verzoeken "
+"verifiëren op basis van de waarde ervan."
 
 #: authentik/providers/proxy/models.py
 msgid "Set HTTP-Basic Authentication"
 msgstr "Stel HTTP-Basisverificatie in"
 
 #: authentik/providers/proxy/models.py
-msgid ""
-"Set a custom HTTP-Basic Authentication header based on values from "
-"authentik."
-msgstr ""
-"Stel een aangepaste HTTP-Basisverificatieheader in op basis van waarden van "
-"authentik."
+msgid "Set a custom HTTP-Basic Authentication header based on values from authentik."
+msgstr "Stel een aangepaste HTTP-Basisverificatieheader in op basis van waarden van authentik."
 
 #: authentik/providers/proxy/models.py
 msgid "HTTP-Basic Username Key"
@@ -2194,23 +2118,19 @@ msgstr "HTTP-Basis Gebruikersnaamsleutel"
 
 #: authentik/providers/proxy/models.py
 msgid ""
-"User/Group Attribute used for the user part of the HTTP-Basic Header. If not"
-" set, the user's Email address is used."
+"User/Group Attribute used for the user part of the HTTP-Basic Header. If not set, the user's "
+"Email address is used."
 msgstr ""
-"Gebruikers-/Groepseigenschap gebruikt voor het gebruikersgedeelte van de "
-"HTTP-Basisheader. Als het niet is ingesteld, wordt het e-mailadres van de "
-"gebruiker gebruikt."
+"Gebruikers-/Groepseigenschap gebruikt voor het gebruikersgedeelte van de HTTP-Basisheader. Als "
+"het niet is ingesteld, wordt het e-mailadres van de gebruiker gebruikt."
 
 #: authentik/providers/proxy/models.py
 msgid "HTTP-Basic Password Key"
 msgstr "HTTP-Basis Wachtwoordsleutel"
 
 #: authentik/providers/proxy/models.py
-msgid ""
-"User/Group Attribute used for the password part of the HTTP-Basic Header."
-msgstr ""
-"Gebruikers-/Groepseigenschap gebruikt voor het wachtwoordgedeelte van de "
-"HTTP-Basisheader."
+msgid "User/Group Attribute used for the password part of the HTTP-Basic Header."
+msgstr "Gebruikers-/Groepseigenschap gebruikt voor het wachtwoordgedeelte van de HTTP-Basisheader."
 
 #: authentik/providers/proxy/models.py
 msgid "Proxy Provider"
@@ -2226,12 +2146,11 @@ msgstr ""
 
 #: authentik/providers/rac/models.py authentik/stages/user_login/models.py
 msgid ""
-"Determines how long a session lasts. Default of 0 means that the sessions "
-"lasts until the browser is closed. (Format: hours=-1;minutes=-2;seconds=-3)"
+"Determines how long a session lasts. Default of 0 means that the sessions lasts until the browser "
+"is closed. (Format: hours=-1;minutes=-2;seconds=-3)"
 msgstr ""
-"Bepaalt hoe lang een sessie duurt. Standaardwaarde van 0 betekent dat de "
-"sessies duren tot de browser wordt gesloten. (Indeling: "
-"uren=-1;minuten=-2;seconden=-3)"
+"Bepaalt hoe lang een sessie duurt. Standaardwaarde van 0 betekent dat de sessies duren tot de "
+"browser wordt gesloten. (Indeling: uren=-1;minuten=-2;seconden=-3)"
 
 #: authentik/providers/rac/models.py
 msgid "When set to true, connection tokens will be deleted upon disconnect."
@@ -2283,13 +2202,12 @@ msgstr "Gedeeld geheim tussen clients en server om pakketten te hashen."
 
 #: authentik/providers/radius/models.py
 msgid ""
-"List of CIDRs (comma-separated) that clients can connect from. A more "
-"specific CIDR will match before a looser one. Clients connecting from a non-"
-"specified CIDR will be dropped."
+"List of CIDRs (comma-separated) that clients can connect from. A more specific CIDR will match "
+"before a looser one. Clients connecting from a non-specified CIDR will be dropped."
 msgstr ""
-"Lijst met CIDR's (door komma's gescheiden) waarvan clients kunnen verbinden."
-" Een specifiekere CIDR zal eerder overeenkomen dan een lossere. Clients die "
-"verbinden vanaf een niet-gespecificeerde CIDR zullen worden verworpen."
+"Lijst met CIDR's (door komma's gescheiden) waarvan clients kunnen verbinden. Een specifiekere "
+"CIDR zal eerder overeenkomen dan een lossere. Clients die verbinden vanaf een niet-"
+"gespecificeerde CIDR zullen worden verworpen."
 
 #: authentik/providers/radius/models.py
 msgid "Radius Provider"
@@ -2309,8 +2227,8 @@ msgstr ""
 
 #: authentik/providers/saml/api/providers.py
 msgid ""
-"With a signing keypair selected, at least one of 'Sign assertion' and 'Sign "
-"Response' must be selected."
+"With a signing keypair selected, at least one of 'Sign assertion' and 'Sign Response' must be "
+"selected."
 msgstr ""
 
 #: authentik/providers/saml/api/providers.py
@@ -2331,19 +2249,16 @@ msgid "Service Provider Binding"
 msgstr "Serviceproviderbinding"
 
 #: authentik/providers/saml/models.py
-msgid ""
-"This determines how authentik sends the response back to the Service "
-"Provider."
-msgstr ""
-"Dit bepaalt hoe authentik de reactie terugstuurt naar de serviceprovider."
+msgid "This determines how authentik sends the response back to the Service Provider."
+msgstr "Dit bepaalt hoe authentik de reactie terugstuurt naar de serviceprovider."
 
 #: authentik/providers/saml/models.py
 msgid ""
-"Value of the audience restriction field of the assertion. When left empty, "
-"no audience restriction will be added."
+"Value of the audience restriction field of the assertion. When left empty, no audience "
+"restriction will be added."
 msgstr ""
-"Waarde van het veld voor publieksbeperking van de bewering. Als het leeg "
-"wordt gelaten, wordt er geen publieksbeperking toegevoegd."
+"Waarde van het veld voor publieksbeperking van de bewering. Als het leeg wordt gelaten, wordt er "
+"geen publieksbeperking toegevoegd."
 
 #: authentik/providers/saml/models.py
 msgid "Also known as EntityID"
@@ -2362,17 +2277,14 @@ msgid "SLS Binding"
 msgstr ""
 
 #: authentik/providers/saml/models.py
-msgid ""
-"This determines how authentik sends the logout response back to the Service "
-"Provider."
+msgid "This determines how authentik sends the logout response back to the Service Provider."
 msgstr ""
 
 #: authentik/providers/saml/models.py
 msgid ""
-"Method to use for logout. Front-channel iframe loads all logout URLs "
-"simultaneously in hidden iframes. Front-channel native uses your active "
-"browser tab to send post requests and redirect to providers. Back-channel "
-"sends logout requests directly from the server without user interaction "
+"Method to use for logout. Front-channel iframe loads all logout URLs simultaneously in hidden "
+"iframes. Front-channel native uses your active browser tab to send post requests and redirect to "
+"providers. Back-channel sends logout requests directly from the server without user interaction "
 "(requires POST SLS binding)."
 msgstr ""
 
@@ -2382,11 +2294,11 @@ msgstr "Naam-ID-eigenschapsafbeelding"
 
 #: authentik/providers/saml/models.py
 msgid ""
-"Configure how the NameID value will be created. When left empty, the "
-"NameIDPolicy of the incoming request will be considered"
+"Configure how the NameID value will be created. When left empty, the NameIDPolicy of the incoming "
+"request will be considered"
 msgstr ""
-"Configureer hoe de waarde van de Naam-ID zal worden gemaakt. Als het leeg "
-"wordt gelaten, wordt de Naam-ID-policy van het inkomende verzoek overwogen."
+"Configureer hoe de waarde van de Naam-ID zal worden gemaakt. Als het leeg wordt gelaten, wordt de "
+"Naam-ID-policy van het inkomende verzoek overwogen."
 
 #: authentik/providers/saml/models.py
 msgid "AuthnContextClassRef Property Mapping"
@@ -2394,34 +2306,28 @@ msgstr ""
 
 #: authentik/providers/saml/models.py
 msgid ""
-"Configure how the AuthnContextClassRef value will be created. When left "
-"empty, the AuthnContextClassRef will be set based on which authentication "
-"methods the user used to authenticate."
+"Configure how the AuthnContextClassRef value will be created. When left empty, the "
+"AuthnContextClassRef will be set based on which authentication methods the user used to "
+"authenticate."
 msgstr ""
 
 #: authentik/providers/saml/models.py
 msgid ""
-"Assertion valid not before current time + this value (Format: "
-"hours=-1;minutes=-2;seconds=-3)."
+"Assertion valid not before current time + this value (Format: hours=-1;minutes=-2;seconds=-3)."
 msgstr ""
-"Bewering geldig niet voor huidige tijd + deze waarde (Indeling: "
-"uren=-1;minuten=-2;seconden=-3)."
+"Bewering geldig niet voor huidige tijd + deze waarde (Indeling: uren=-1;minuten=-2;seconden=-3)."
 
 #: authentik/providers/saml/models.py
 msgid ""
-"Assertion not valid on or after current time + this value (Format: "
-"hours=1;minutes=2;seconds=3)."
+"Assertion not valid on or after current time + this value (Format: hours=1;minutes=2;seconds=3)."
 msgstr ""
-"Bewering niet geldig op of na huidige tijd + deze waarde (Indeling: "
-"uren=1;minuten=2;seconden=3)."
+"Bewering niet geldig op of na huidige tijd + deze waarde (Indeling: uren=1;minuten=2;seconden=3)."
 
 #: authentik/providers/saml/models.py
 msgid ""
-"Session not valid on or after current time + this value (Format: "
-"hours=1;minutes=2;seconds=3)."
+"Session not valid on or after current time + this value (Format: hours=1;minutes=2;seconds=3)."
 msgstr ""
-"Sessie niet geldig op of na huidige tijd + deze waarde (Indeling: "
-"uren=1;minuten=2;seconden=3)."
+"Sessie niet geldig op of na huidige tijd + deze waarde (Indeling: uren=1;minuten=2;seconden=3)."
 
 #: authentik/providers/saml/models.py authentik/sources/saml/models.py
 msgid "SHA1"
@@ -2477,12 +2383,11 @@ msgstr "DSA-SHA1"
 
 #: authentik/providers/saml/models.py authentik/sources/saml/models.py
 msgid ""
-"When selected, incoming assertion's Signatures will be validated against "
-"this certificate. To allow unsigned Requests, leave on default."
+"When selected, incoming assertion's Signatures will be validated against this certificate. To "
+"allow unsigned Requests, leave on default."
 msgstr ""
-"Wanneer geselecteerd, worden handtekeningen van inkomende beweringen "
-"gevalideerd tegen dit certificaat. Om niet-ondertekende verzoeken toe te "
-"staan, laat het op de standaardwaarde staan."
+"Wanneer geselecteerd, worden handtekeningen van inkomende beweringen gevalideerd tegen dit "
+"certificaat. Om niet-ondertekende verzoeken toe te staan, laat het op de standaardwaarde staan."
 
 #: authentik/providers/saml/models.py authentik/sources/saml/models.py
 msgid "Verification Certificate"
@@ -2491,8 +2396,8 @@ msgstr "Verificatiecertificaat"
 #: authentik/providers/saml/models.py
 msgid "Keypair used to sign outgoing Responses going to the Service Provider."
 msgstr ""
-"Sleutelpaar dat wordt gebruikt om uitgaande reacties te ondertekenen die "
-"naar de serviceprovider gaan."
+"Sleutelpaar dat wordt gebruikt om uitgaande reacties te ondertekenen die naar de serviceprovider "
+"gaan."
 
 #: authentik/providers/saml/models.py authentik/sources/saml/models.py
 msgid "Signing Keypair"
@@ -2500,9 +2405,8 @@ msgstr "Ondertekeningssleutelpaar"
 
 #: authentik/providers/saml/models.py authentik/sources/saml/models.py
 msgid ""
-"When selected, incoming assertions are encrypted by the IdP using the public"
-" key of the encryption keypair. The assertion is decrypted by the SP using "
-"the the private key."
+"When selected, incoming assertions are encrypted by the IdP using the public key of the "
+"encryption keypair. The assertion is decrypted by the SP using the the private key."
 msgstr ""
 
 #: authentik/providers/saml/models.py authentik/sources/saml/models.py
@@ -2606,6 +2510,10 @@ msgid "Alter authentik behavior for vendor-specific SCIM implementations."
 msgstr ""
 
 #: authentik/providers/scim/models.py
+msgid "Cache duration for ServiceProviderConfig responses. Set minutes=0 to disable."
+msgstr ""
+
+#: authentik/providers/scim/models.py
 msgid "SCIM Provider"
 msgstr "SCIM-provider"
 
@@ -2689,15 +2597,21 @@ msgstr ""
 msgid "Can edit system settings"
 msgstr ""
 
+#: authentik/rbac/models.py
+msgid "Can view media files"
+msgstr ""
+
+#: authentik/rbac/models.py
+msgid "Can manage media files"
+msgstr ""
+
 #: authentik/recovery/management/commands/create_admin_group.py
 msgid "Create admin group if the default group gets deleted."
 msgstr "Maak een beheergroep aan als de standaardgroep wordt verwijderd."
 
 #: authentik/recovery/management/commands/create_recovery_key.py
 msgid "Create a Key which can be used to restore access to authentik."
-msgstr ""
-"Maak een sleutel aan die kan worden gebruikt om toegang tot authentik te "
-"herstellen."
+msgstr "Maak een sleutel aan die kan worden gebruikt om toegang tot authentik te herstellen."
 
 #: authentik/recovery/views.py
 msgid "Used recovery-link to authenticate."
@@ -2733,20 +2647,15 @@ msgstr ""
 
 #: authentik/sources/kerberos/models.py
 msgid ""
-"Keytab to authenticate to kadmin for sync. Must be base64-encoded or in the "
-"form TYPE:residual"
+"Keytab to authenticate to kadmin for sync. Must be base64-encoded or in the form TYPE:residual"
 msgstr ""
 
 #: authentik/sources/kerberos/models.py
-msgid ""
-"Credentials cache to authenticate to kadmin for sync. Must be in the form "
-"TYPE:residual"
+msgid "Credentials cache to authenticate to kadmin for sync. Must be in the form TYPE:residual"
 msgstr ""
 
 #: authentik/sources/kerberos/models.py
-msgid ""
-"Force the use of a specific server name for SPNEGO. Must be in the form "
-"HTTP@hostname"
+msgid "Force the use of a specific server name for SPNEGO. Must be in the form HTTP@hostname"
 msgstr ""
 
 #: authentik/sources/kerberos/models.py
@@ -2759,8 +2668,8 @@ msgstr ""
 
 #: authentik/sources/kerberos/models.py
 msgid ""
-"If enabled, the authentik-stored password will be updated upon login with "
-"the Kerberos password backend"
+"If enabled, the authentik-stored password will be updated upon login with the Kerberos password "
+"backend"
 msgstr ""
 
 #: authentik/sources/kerberos/models.py
@@ -2825,18 +2734,13 @@ msgid "Server URI"
 msgstr "Server-URI"
 
 #: authentik/sources/ldap/models.py
-msgid ""
-"Optionally verify the LDAP Server's Certificate against the CA Chain in this"
-" keypair."
+msgid "Optionally verify the LDAP Server's Certificate against the CA Chain in this keypair."
 msgstr ""
-"Optioneel het certificaat van de LDAP-server verifiëren tegen de CA-keten in"
-" dit sleutelpaar."
+"Optioneel het certificaat van de LDAP-server verifiëren tegen de CA-keten in dit sleutelpaar."
 
 #: authentik/sources/ldap/models.py
-msgid ""
-"Client certificate to authenticate against the LDAP Server's Certificate."
-msgstr ""
-"Clientcertificaat om te verifiëren tegen het certificaat van de LDAP-server."
+msgid "Client certificate to authenticate against the LDAP Server's Certificate."
+msgstr "Clientcertificaat om te verifiëren tegen het certificaat van de LDAP-server."
 
 #: authentik/sources/ldap/models.py
 msgid "Bind CN"
@@ -2896,23 +2800,26 @@ msgstr ""
 
 #: authentik/sources/ldap/models.py
 msgid ""
-"When a user changes their password, sync it back to LDAP. This can only be "
-"enabled on a single LDAP source."
+"When a user changes their password, sync it back to LDAP. This can only be enabled on a single "
+"LDAP source."
 msgstr ""
-"Wanneer een gebruiker zijn wachtwoord wijzigt, synchroniseer het dan terug "
-"naar LDAP. Dit kan alleen worden ingeschakeld voor een enkele LDAP-bron."
+"Wanneer een gebruiker zijn wachtwoord wijzigt, synchroniseer het dan terug naar LDAP. Dit kan "
+"alleen worden ingeschakeld voor een enkele LDAP-bron."
 
 #: authentik/sources/ldap/models.py
 msgid ""
-"Lookup group membership based on a user attribute instead of a group "
-"attribute. This allows nested group resolution on systems like FreeIPA and "
-"Active Directory"
+"Lookup group membership based on a user attribute instead of a group attribute. This allows "
+"nested group resolution on systems like FreeIPA and Active Directory"
 msgstr ""
 
 #: authentik/sources/ldap/models.py
 msgid ""
-"Delete authentik users and groups which were previously supplied by this "
-"source, but are now missing from it."
+"Delete authentik users and groups which were previously supplied by this source, but are now "
+"missing from it."
+msgstr ""
+
+#: authentik/sources/ldap/models.py
+msgid "N/A"
 msgstr ""
 
 #: authentik/sources/ldap/models.py
@@ -2932,8 +2839,7 @@ msgid "LDAP Source Property Mappings"
 msgstr ""
 
 #: authentik/sources/ldap/models.py
-msgid ""
-"Unique ID used while checking if this object still exists in the directory."
+msgid "Unique ID used while checking if this object still exists in the directory."
 msgstr ""
 
 #: authentik/sources/ldap/models.py
@@ -2954,8 +2860,7 @@ msgstr ""
 
 #: authentik/sources/ldap/signals.py
 msgid "Password does not match Active Directory Complexity."
-msgstr ""
-"Wachtwoord voldoet niet aan de complexiteitseisen van Active Directory."
+msgstr "Wachtwoord voldoet niet aan de complexiteitseisen van Active Directory."
 
 #: authentik/sources/ldap/tasks.py
 msgid "Check connectivity for LDAP source."
@@ -2998,12 +2903,10 @@ msgid "Request Token URL"
 msgstr "URL voor aanvragen van token"
 
 #: authentik/sources/oauth/models.py
-msgid ""
-"URL used to request the initial token. This URL is only required for OAuth "
-"1."
+msgid "URL used to request the initial token. This URL is only required for OAuth 1."
 msgstr ""
-"URL die wordt gebruikt om het initiële token aan te vragen. Deze URL is "
-"alleen vereist voor OAuth 1."
+"URL die wordt gebruikt om het initiële token aan te vragen. Deze URL is alleen vereist voor OAuth "
+"1."
 
 #: authentik/sources/oauth/models.py
 msgid "Authorization URL"
@@ -3027,8 +2930,7 @@ msgstr "Profiel-URL"
 
 #: authentik/sources/oauth/models.py
 msgid "URL used by authentik to get user information."
-msgstr ""
-"URL die door authentik wordt gebruikt om gebruikersinformatie op te halen."
+msgstr "URL die door authentik wordt gebruikt om gebruikersinformatie op te halen."
 
 #: authentik/sources/oauth/models.py
 msgid "Additional Scopes"
@@ -3039,9 +2941,7 @@ msgid "PKCE"
 msgstr ""
 
 #: authentik/sources/oauth/models.py
-msgid ""
-"How to perform authentication during an authorization_code token request "
-"flow"
+msgid "How to perform authentication during an authorization_code token request flow"
 msgstr ""
 
 #: authentik/sources/oauth/models.py
@@ -3107,6 +3007,18 @@ msgstr "Discord OAuth-bron"
 #: authentik/sources/oauth/models.py
 msgid "Discord OAuth Sources"
 msgstr "Discord OAuth-bronnen"
+
+#: authentik/sources/oauth/models.py
+#, fuzzy
+#| msgid "Facebook OAuth Source"
+msgid "Slack OAuth Source"
+msgstr "Facebook OAuth-bron"
+
+#: authentik/sources/oauth/models.py
+#, fuzzy
+#| msgid "Facebook OAuth Sources"
+msgid "Slack OAuth Sources"
+msgstr "Facebook OAuth-bronnen"
 
 #: authentik/sources/oauth/models.py
 msgid "Patreon OAuth Source"
@@ -3197,9 +3109,7 @@ msgid "Group OAuth Source Connections"
 msgstr ""
 
 #: authentik/sources/oauth/tasks.py
-msgid ""
-"Update OAuth sources' config from well_known, and JWKS info from the "
-"configured URL."
+msgid "Update OAuth sources' config from well_known, and JWKS info from the configured URL."
 msgstr ""
 
 #: authentik/sources/oauth/views/callback.py
@@ -3213,11 +3123,10 @@ msgstr "Client-identificatie gebruikt om met Plex te communiceren."
 
 #: authentik/sources/plex/models.py
 msgid ""
-"Which servers a user has to be a member of to be granted access. Empty list "
-"allows every server."
+"Which servers a user has to be a member of to be granted access. Empty list allows every server."
 msgstr ""
-"Aan welke servers een gebruiker lid moet zijn om toegang te krijgen. Een "
-"lege lijst staat alle servers toe."
+"Aan welke servers een gebruiker lid moet zijn om toegang te krijgen. Een lege lijst staat alle "
+"servers toe."
 
 #: authentik/sources/plex/models.py
 msgid "Allow friends to authenticate, even if you don't share a server."
@@ -3265,8 +3174,8 @@ msgstr ""
 
 #: authentik/sources/saml/api/source.py
 msgid ""
-"With a Verification Certificate selected, at least one of 'Verify Assertion "
-"Signature' or 'Verify Response Signature' must be selected."
+"With a Verification Certificate selected, at least one of 'Verify Assertion Signature' or 'Verify "
+"Response Signature' must be selected."
 msgstr ""
 
 #: authentik/sources/saml/models.py
@@ -3311,20 +3220,17 @@ msgstr "Optionele URL als uw IDP Single-Logout ondersteunt."
 
 #: authentik/sources/saml/models.py
 msgid ""
-"Allows authentication flows initiated by the IdP. This can be a security "
-"risk, as no validation of the request ID is done."
+"Allows authentication flows initiated by the IdP. This can be a security risk, as no validation "
+"of the request ID is done."
 msgstr ""
-"Staat authenticatiestromen toe die zijn geïnitieerd door de IdP. Dit kan een"
-" beveiligingsrisico zijn, aangezien er geen validatie van het verzoek-ID "
-"wordt uitgevoerd."
+"Staat authenticatiestromen toe die zijn geïnitieerd door de IdP. Dit kan een beveiligingsrisico "
+"zijn, aangezien er geen validatie van het verzoek-ID wordt uitgevoerd."
 
 #: authentik/sources/saml/models.py
-msgid ""
-"NameID Policy sent to the IdP. Can be unset, in which case no Policy is "
-"sent."
+msgid "NameID Policy sent to the IdP. Can be unset, in which case no Policy is sent."
 msgstr ""
-"NameID-beleid verzonden naar de IdP. Kan niet ingesteld zijn, in welk geval "
-"er geen beleid wordt verzonden."
+"NameID-beleid verzonden naar de IdP. Kan niet ingesteld zijn, in welk geval er geen beleid wordt "
+"verzonden."
 
 #: authentik/sources/saml/models.py
 msgid "Delete temporary users after"
@@ -3332,20 +3238,18 @@ msgstr "Verwijder tijdelijke gebruikers na"
 
 #: authentik/sources/saml/models.py
 msgid ""
-"Time offset when temporary users should be deleted. This only applies if "
-"your IDP uses the NameID Format 'transient', and the user doesn't log out "
-"manually. (Format: hours=1;minutes=2;seconds=3)."
+"Time offset when temporary users should be deleted. This only applies if your IDP uses the NameID "
+"Format 'transient', and the user doesn't log out manually. (Format: hours=1;minutes=2;seconds=3)."
 msgstr ""
-"Tijdverschil wanneer tijdelijke gebruikers moeten worden verwijderd. Dit is "
-"alleen van toepassing als uw IDP de NameID-indeling 'tijdelijk' gebruikt en "
-"de gebruiker niet handmatig uitlogt. (Formaat: uren=1;minuten=2;seconden=3)."
+"Tijdverschil wanneer tijdelijke gebruikers moeten worden verwijderd. Dit is alleen van toepassing "
+"als uw IDP de NameID-indeling 'tijdelijk' gebruikt en de gebruiker niet handmatig uitlogt. "
+"(Formaat: uren=1;minuten=2;seconden=3)."
 
 #: authentik/sources/saml/models.py
-msgid ""
-"Keypair used to sign outgoing Responses going to the Identity Provider."
+msgid "Keypair used to sign outgoing Responses going to the Identity Provider."
 msgstr ""
-"Sleutelpaar dat wordt gebruikt om uitgaande antwoorden te ondertekenen die "
-"naar de Identity Provider gaan."
+"Sleutelpaar dat wordt gebruikt om uitgaande antwoorden te ondertekenen die naar de Identity "
+"Provider gaan."
 
 #: authentik/sources/saml/models.py
 msgid "SAML Source"
@@ -3468,17 +3372,15 @@ msgstr "Duo-apparaat"
 msgid "Duo Devices"
 msgstr "Duo-apparaten"
 
-#: authentik/stages/authenticator_email/models.py
-#: authentik/stages/email/models.py
+#: authentik/stages/authenticator_email/models.py authentik/stages/email/models.py
 msgid ""
-"When enabled, global Email connection settings will be used and connection "
-"settings below will be ignored."
+"When enabled, global Email connection settings will be used and connection settings below will be "
+"ignored."
 msgstr ""
-"Wanneer ingeschakeld, worden de wereldwijde e-mailverbindinginstellingen "
-"gebruikt en worden de onderstaande verbindingsinstellingen genegeerd."
+"Wanneer ingeschakeld, worden de wereldwijde e-mailverbindinginstellingen gebruikt en worden de "
+"onderstaande verbindingsinstellingen genegeerd."
 
-#: authentik/stages/authenticator_email/models.py
-#: authentik/stages/email/models.py
+#: authentik/stages/authenticator_email/models.py authentik/stages/email/models.py
 msgid "Time the token sent is valid (Format: hours=3,minutes=17,seconds=300)."
 msgstr ""
 
@@ -3490,8 +3392,7 @@ msgstr ""
 msgid "Email Authenticator Setup Stages"
 msgstr ""
 
-#: authentik/stages/authenticator_email/models.py
-#: authentik/stages/authenticator_email/stage.py
+#: authentik/stages/authenticator_email/models.py authentik/stages/authenticator_email/stage.py
 #: authentik/stages/email/stage.py
 msgid "Exception occurred while rendering E-mail template"
 msgstr ""
@@ -3504,8 +3405,7 @@ msgstr ""
 msgid "Email Devices"
 msgstr ""
 
-#: authentik/stages/authenticator_email/stage.py
-#: authentik/stages/authenticator_sms/stage.py
+#: authentik/stages/authenticator_email/stage.py authentik/stages/authenticator_sms/stage.py
 #: authentik/stages/authenticator_totp/stage.py
 msgid "Code does not match"
 msgstr "Code komt niet overeen"
@@ -3542,11 +3442,13 @@ msgstr ""
 #, python-format
 msgid ""
 "\n"
-"    If you did not request this code, please ignore this email. The code above is valid for %(expires)s.\n"
+"    If you did not request this code, please ignore this email. The code above is valid for "
+"%(expires)s.\n"
 "    "
 msgstr ""
 "\n"
-" Als je deze code niet hebt aangevraagd, negeer dan deze e-mail. De bovenstaande code is %(expires)s geldig."
+" Als je deze code niet hebt aangevraagd, negeer dan deze e-mail. De bovenstaande code is "
+"%(expires)s geldig."
 
 #: authentik/stages/authenticator_email/templates/email/email_otp.txt
 #: authentik/stages/email/templates/email/password_reset.txt
@@ -3566,23 +3468,22 @@ msgstr ""
 #, python-format
 msgid ""
 "\n"
-"If you did not request this code, please ignore this email. The code above is valid for %(expires)s.\n"
+"If you did not request this code, please ignore this email. The code above is valid for "
+"%(expires)s.\n"
 msgstr ""
 "\n"
-"Als je deze code niet hebt aangevraagd, negeer dan deze e-mail. De bovenstaande code is %(expires)s geldig.\n"
+"Als je deze code niet hebt aangevraagd, negeer dan deze e-mail. De bovenstaande code is "
+"%(expires)s geldig.\n"
 
 #: authentik/stages/authenticator_sms/models.py
 msgid ""
-"When enabled, the Phone number is only used during enrollment to verify the "
-"users authenticity. Only a hash of the phone number is saved to ensure it is"
-" not reused in the future."
+"When enabled, the Phone number is only used during enrollment to verify the users authenticity. "
+"Only a hash of the phone number is saved to ensure it is not reused in the future."
 msgstr ""
 
 #: authentik/stages/authenticator_sms/models.py
 msgid "Optionally modify the payload being sent to custom providers."
-msgstr ""
-"Optioneel de payload aanpassen die naar aangepaste providers wordt "
-"verzonden."
+msgstr "Optioneel de payload aanpassen die naar aangepaste providers wordt verzonden."
 
 #: authentik/stages/authenticator_sms/models.py
 #, python-brace-format
@@ -3658,9 +3559,7 @@ msgid "TOTP Devices"
 msgstr ""
 
 #: authentik/stages/authenticator_validate/challenge.py
-msgid ""
-"Invalid Token. Please ensure the time on your device is accurate and try "
-"again."
+msgid "Invalid Token. Please ensure the time on your device is accurate and try again."
 msgstr ""
 
 #: authentik/stages/authenticator_validate/challenge.py
@@ -3691,25 +3590,22 @@ msgstr "SMS"
 
 #: authentik/stages/authenticator_validate/models.py
 msgid ""
-"Stages used to configure Authenticator when user doesn't have any compatible"
-" devices. After this configuration Stage passes, the user is not prompted "
-"again."
+"Stages used to configure Authenticator when user doesn't have any compatible devices. After this "
+"configuration Stage passes, the user is not prompted again."
 msgstr ""
-"Fasen die worden gebruikt om Authenticator te configureren wanneer de "
-"gebruiker geen compatibele apparaten heeft. Nadat deze configuratiefase is "
-"doorlopen, wordt de gebruiker niet opnieuw gevraagd."
+"Fasen die worden gebruikt om Authenticator te configureren wanneer de gebruiker geen compatibele "
+"apparaten heeft. Nadat deze configuratiefase is doorlopen, wordt de gebruiker niet opnieuw "
+"gevraagd."
 
 #: authentik/stages/authenticator_validate/models.py
 msgid "Device classes which can be used to authenticate"
 msgstr "Apparaatklassen die kunnen worden gebruikt om te authenticeren"
 
 #: authentik/stages/authenticator_validate/models.py
-msgid ""
-"If any of the user's device has been used within this threshold, this stage "
-"will be skipped"
+msgid "If any of the user's device has been used within this threshold, this stage will be skipped"
 msgstr ""
-"Als een van de apparaten van de gebruiker binnen deze drempel is gebruikt, "
-"wordt deze fase overgeslagen."
+"Als een van de apparaten van de gebruiker binnen deze drempel is gebruikt, wordt deze fase "
+"overgeslagen."
 
 #: authentik/stages/authenticator_validate/models.py
 msgid "Enforce user verification for WebAuthn devices."
@@ -3752,8 +3648,7 @@ msgid "WebAuthn Device types"
 msgstr ""
 
 #: authentik/stages/authenticator_webauthn/tasks.py
-msgid ""
-"Background task to import FIDO Alliance MDS blob and AAGUIDs into database."
+msgid "Background task to import FIDO Alliance MDS blob and AAGUIDs into database."
 msgstr ""
 
 #: authentik/stages/captcha/models.py
@@ -3766,10 +3661,9 @@ msgstr "Privésleutel, verworven door uw captcha-provider."
 
 #: authentik/stages/captcha/models.py
 msgid ""
-"When enabled and the received captcha score is outside of the given "
-"threshold, the stage will show an error message. When not enabled, the flow "
-"will continue, but the data from the captcha will be available in the "
-"context for policy decisions"
+"When enabled and the received captcha score is outside of the given threshold, the stage will "
+"show an error message. When not enabled, the flow will continue, but the data from the captcha "
+"will be available in the context for policy decisions"
 msgstr ""
 
 #: authentik/stages/captcha/models.py
@@ -3793,10 +3687,8 @@ msgid "Failed to validate token"
 msgstr ""
 
 #: authentik/stages/consent/models.py
-msgid ""
-"Offset after which consent expires. (Format: hours=1;minutes=2;seconds=3)."
-msgstr ""
-"Offset waarna toestemming vervalt. (Formaat: uren=1;minuten=2;seconden=3)."
+msgid "Offset after which consent expires. (Format: hours=1;minutes=2;seconds=3)."
+msgstr "Offset waarna toestemming vervalt. (Formaat: uren=1;minuten=2;seconden=3)."
 
 #: authentik/stages/consent/models.py
 msgid "Consent Stage"
@@ -3860,9 +3752,9 @@ msgstr ""
 
 #: authentik/stages/email/models.py
 msgid ""
-"The time window used to count recent account recovery attempts. If the "
-"number of attempts exceed recovery_max_attempts within this period, further "
-"attempts will be rate-limited. (Format: hours=1;minutes=2;seconds=3)."
+"The time window used to count recent account recovery attempts. If the number of attempts exceed "
+"recovery_max_attempts within this period, further attempts will be rate-limited. (Format: "
+"hours=1;minutes=2;seconds=3)."
 msgstr ""
 
 #: authentik/stages/email/models.py
@@ -3891,9 +3783,7 @@ msgstr "E-mail verzonden."
 
 #: authentik/stages/email/stage.py
 #, python-brace-format
-msgid ""
-"Too many account verification attempts. Please try again after {minutes} "
-"minutes."
+msgid "Too many account verification attempts. Please try again after {minutes} minutes."
 msgstr ""
 
 #: authentik/stages/email/stage.py
@@ -3911,11 +3801,11 @@ msgstr "Welkom!"
 
 #: authentik/stages/email/templates/email/account_confirmation.html
 msgid ""
-"We're excited to have you get started. First, you need to confirm your "
-"account. Just press the button below."
+"We're excited to have you get started. First, you need to confirm your account. Just press the "
+"button below."
 msgstr ""
-"We zijn verheugd dat je aan de slag gaat. Allereerst moet je je account "
-"bevestigen. Druk gewoon op de knop hieronder."
+"We zijn verheugd dat je aan de slag gaat. Allereerst moet je je account bevestigen. Druk gewoon "
+"op de knop hieronder."
 
 #: authentik/stages/email/templates/email/account_confirmation.html
 msgid "Confirm Account"
@@ -3934,11 +3824,11 @@ msgstr ""
 
 #: authentik/stages/email/templates/email/account_confirmation.txt
 msgid ""
-"We're excited to have you get started. First, you need to confirm your "
-"account. Just open the link below."
+"We're excited to have you get started. First, you need to confirm your account. Just open the "
+"link below."
 msgstr ""
-"We zijn verheugd dat je aan de slag gaat. Allereerst moet je je account "
-"bevestigen. Klik gewoon op de link hieronder."
+"We zijn verheugd dat je aan de slag gaat. Allereerst moet je je account bevestigen. Klik gewoon "
+"op de link hieronder."
 
 #: authentik/stages/email/templates/email/event_notification.html
 #, python-format
@@ -3974,38 +3864,46 @@ msgstr ""
 #: authentik/stages/email/templates/email/password_reset.html
 msgid ""
 "\n"
-"          You recently requested to change your password for your authentik account. Use the button below to set a new password.\n"
+"          You recently requested to change your password for your authentik account. Use the "
+"button below to set a new password.\n"
 "          "
 msgstr ""
 "\n"
-" Je hebt onlangs gevraagd om het wachtwoord voor je authentik-account te wijzigen. Gebruik de link hieronder om een nieuw wachtwoord in te stellen."
+" Je hebt onlangs gevraagd om het wachtwoord voor je authentik-account te wijzigen. Gebruik de "
+"link hieronder om een nieuw wachtwoord in te stellen."
 
 #: authentik/stages/email/templates/email/password_reset.html
 #, python-format
 msgid ""
 "\n"
-"    If you did not request a password change, please ignore this email. The link above is valid for %(expires)s.\n"
+"    If you did not request a password change, please ignore this email. The link above is valid "
+"for %(expires)s.\n"
 "    "
 msgstr ""
 "\n"
-" Als je geen verzoek hebt ingediend om je wachtwoord te wijzigen, negeer dan deze e-mail. De bovenstaande link is geldig tot %(expires)s."
+" Als je geen verzoek hebt ingediend om je wachtwoord te wijzigen, negeer dan deze e-mail. De "
+"bovenstaande link is geldig tot %(expires)s."
 
 #: authentik/stages/email/templates/email/password_reset.txt
 msgid ""
 "\n"
-"You recently requested to change your password for your authentik account. Use the link below to set a new password.\n"
+"You recently requested to change your password for your authentik account. Use the link below to "
+"set a new password.\n"
 msgstr ""
 "\n"
-"Je hebt onlangs gevraagd om het wachtwoord voor je authentik-account te wijzigen. Gebruik de link hieronder om een nieuw wachtwoord in te stellen.\n"
+"Je hebt onlangs gevraagd om het wachtwoord voor je authentik-account te wijzigen. Gebruik de link "
+"hieronder om een nieuw wachtwoord in te stellen.\n"
 
 #: authentik/stages/email/templates/email/password_reset.txt
 #, python-format
 msgid ""
 "\n"
-"If you did not request a password change, please ignore this email. The link above is valid for %(expires)s.\n"
+"If you did not request a password change, please ignore this email. The link above is valid for "
+"%(expires)s.\n"
 msgstr ""
 "\n"
-"Als je geen verzoek hebt ingediend om je wachtwoord te wijzigen, negeer dan deze e-mail. De bovenstaande link is geldig tot %(expires)s.\n"
+"Als je geen verzoek hebt ingediend om je wachtwoord te wijzigen, negeer dan deze e-mail. De "
+"bovenstaande link is geldig tot %(expires)s.\n"
 
 #: authentik/stages/email/templates/email/setup.html
 msgid "authentik Test-Email"
@@ -4014,11 +3912,13 @@ msgstr "authentik Test-E-mail"
 #: authentik/stages/email/templates/email/setup.html
 msgid ""
 "\n"
-"                    This is a test email to inform you, that you've successfully configured authentik emails.\n"
+"                    This is a test email to inform you, that you've successfully configured "
+"authentik emails.\n"
 "                    "
 msgstr ""
 "\n"
-"                    Dit is een test-e-mail om je te informeren dat je authentik-e-mails succesvol ingesteld hebt.\n"
+"                    Dit is een test-e-mail om je te informeren dat je authentik-e-mails succesvol "
+"ingesteld hebt.\n"
 "                    "
 
 #: authentik/stages/email/templates/email/setup.txt
@@ -4032,45 +3932,37 @@ msgstr ""
 #: authentik/stages/identification/api.py
 msgid "When no user fields are selected, at least one source must be selected"
 msgstr ""
-"Wanneer er geen gebruikersvelden zijn geselecteerd, moet ten minste één bron"
-" worden geselecteerd"
+"Wanneer er geen gebruikersvelden zijn geselecteerd, moet ten minste één bron worden geselecteerd"
 
 #: authentik/stages/identification/models.py
-msgid ""
-"Fields of the user object to match against. (Hold shift to select multiple "
-"options)"
+msgid "Fields of the user object to match against. (Hold shift to select multiple options)"
 msgstr ""
-"Velden van het gebruikersobject om tegen te matchen. (Houd Shift ingedrukt "
-"om meerdere opties te selecteren)"
+"Velden van het gebruikersobject om tegen te matchen. (Houd Shift ingedrukt om meerdere opties te "
+"selecteren)"
 
 #: authentik/stages/identification/models.py
 msgid "When enabled, user fields are matched regardless of their casing."
-msgstr ""
-"Indien ingeschakeld, worden gebruikersvelden gematcht ongeacht hun "
-"hoofdlettergebruik."
+msgstr "Indien ingeschakeld, worden gebruikersvelden gematcht ongeacht hun hoofdlettergebruik."
 
 #: authentik/stages/identification/models.py
 msgid ""
-"When a valid username/email has been entered, and this option is enabled, "
-"the user's username and avatar will be shown. Otherwise, the text that the "
-"user entered will be shown"
+"When a valid username/email has been entered, and this option is enabled, the user's username and "
+"avatar will be shown. Otherwise, the text that the user entered will be shown"
 msgstr ""
-"Als een geldige gebruikersnaam/e-mail is ingevoerd en deze optie is "
-"ingeschakeld, worden de gebruikersnaam en avatar van de gebruiker "
-"weergegeven. Anders wordt de tekst die de gebruiker heeft ingevoerd getoond."
+"Als een geldige gebruikersnaam/e-mail is ingevoerd en deze optie is ingeschakeld, worden de "
+"gebruikersnaam en avatar van de gebruiker weergegeven. Anders wordt de tekst die de gebruiker "
+"heeft ingevoerd getoond."
+
+#: authentik/stages/identification/models.py
+msgid "When enabled, the stage will succeed and continue even when incorrect user info is entered."
+msgstr ""
+"Wanneer ingeschakeld, slaagt de stap en gaat verder wanneer ongeldige gebruikersgegevens zijn "
+"ingevoerd."
 
 #: authentik/stages/identification/models.py
 msgid ""
-"When enabled, the stage will succeed and continue even when incorrect user "
-"info is entered."
-msgstr ""
-"Wanneer ingeschakeld, slaagt de stap en gaat verder wanneer ongeldige "
-"gebruikersgegevens zijn ingevoerd."
-
-#: authentik/stages/identification/models.py
-msgid ""
-"Show the user the 'Remember me on this device' toggle, allowing repeat users"
-" to skip straight to entering their password."
+"Show the user the 'Remember me on this device' toggle, allowing repeat users to skip straight to "
+"entering their password."
 msgstr ""
 
 #: authentik/stages/identification/models.py
@@ -4111,13 +4003,12 @@ msgstr "Doorgaan"
 
 #: authentik/stages/invitation/models.py
 msgid ""
-"If this flag is set, this Stage will jump to the next Stage when no "
-"Invitation is given. By default this Stage will cancel the Flow when no "
-"invitation is given."
+"If this flag is set, this Stage will jump to the next Stage when no Invitation is given. By "
+"default this Stage will cancel the Flow when no invitation is given."
 msgstr ""
-"Als deze vlag is ingesteld, zal dit stadium naar het volgende stadium "
-"springen wanneer er geen uitnodiging wordt gegeven. Standaard zal dit "
-"stadium de flow annuleren als er geen uitnodiging wordt gegeven."
+"Als deze vlag is ingesteld, zal dit stadium naar het volgende stadium springen wanneer er geen "
+"uitnodiging wordt gegeven. Standaard zal dit stadium de flow annuleren als er geen uitnodiging "
+"wordt gegeven."
 
 #: authentik/stages/invitation/models.py
 msgid "Invitation Stage"
@@ -4129,9 +4020,7 @@ msgstr "Uitnodigingsstadia"
 
 #: authentik/stages/invitation/models.py
 msgid "When set, only the configured flow can use this invitation."
-msgstr ""
-"Wanneer ingesteld, kan alleen de geconfigureerde flow deze uitnodiging "
-"gebruiken."
+msgstr "Wanneer ingesteld, kan alleen de geconfigureerde flow deze uitnodiging gebruiken."
 
 #: authentik/stages/invitation/models.py
 msgid "When enabled, the invitation will be deleted after usage."
@@ -4175,20 +4064,16 @@ msgstr "Selectie van back-ends om het wachtwoord tegen te testen."
 
 #: authentik/stages/password/models.py
 msgid ""
-"How many attempts a user has before the flow is canceled. To lock the user "
-"out, use a reputation policy and a user_write stage."
+"How many attempts a user has before the flow is canceled. To lock the user out, use a reputation "
+"policy and a user_write stage."
 msgstr ""
-"Hoeveel pogingen een gebruiker heeft voordat de flow wordt geannuleerd. Om "
-"de gebruiker buiten te sluiten, gebruik een reputatiebeleid en een "
-"gebruikersschrijffase."
+"Hoeveel pogingen een gebruiker heeft voordat de flow wordt geannuleerd. Om de gebruiker buiten te "
+"sluiten, gebruik een reputatiebeleid en een gebruikersschrijffase."
 
 #: authentik/stages/password/models.py
-msgid ""
-"When enabled, provides a 'show password' button with the password input "
-"field."
+msgid "When enabled, provides a 'show password' button with the password input field."
 msgstr ""
-"Wanneer ingeschakeld, wordt een 'toon wachtwoord'-knop getoond bij het "
-"wachtwoord invulveld."
+"Wanneer ingeschakeld, wordt een 'toon wachtwoord'-knop getoond bij het wachtwoord invulveld."
 
 #: authentik/stages/password/models.py
 msgid "Password Stage"
@@ -4212,22 +4097,17 @@ msgstr "Tekstgebied: Meerregelige tekstinvoer."
 
 #: authentik/stages/prompt/models.py
 msgid "Text (read-only): Simple Text input, but cannot be edited."
-msgstr ""
-"Tekst (alleen-lezen): Eenvoudige tekstinvoer, maar kan niet worden bewerkt."
+msgstr "Tekst (alleen-lezen): Eenvoudige tekstinvoer, maar kan niet worden bewerkt."
 
 #: authentik/stages/prompt/models.py
 msgid "Text area (read-only): Multiline Text input, but cannot be edited."
-msgstr ""
-"Tekstgebied (alleen-lezen): Meerregelige tekstinvoer, maar kan niet worden "
-"bewerkt."
+msgstr "Tekstgebied (alleen-lezen): Meerregelige tekstinvoer, maar kan niet worden bewerkt."
 
 #: authentik/stages/prompt/models.py
-msgid ""
-"Username: Same as Text input, but checks for and prevents duplicate "
-"usernames."
+msgid "Username: Same as Text input, but checks for and prevents duplicate usernames."
 msgstr ""
-"Gebruikersnaam: Hetzelfde als Tekstinvoer, maar controleert op en voorkomt "
-"dubbele gebruikersnamen."
+"Gebruikersnaam: Hetzelfde als Tekstinvoer, maar controleert op en voorkomt dubbele "
+"gebruikersnamen."
 
 #: authentik/stages/prompt/models.py
 msgid "Email: Text field with Email type."
@@ -4235,11 +4115,10 @@ msgstr "E-mail: Tekstveld met e-mailtype."
 
 #: authentik/stages/prompt/models.py
 msgid ""
-"Password: Masked input, multiple inputs of this type on the same prompt need"
-" to be identical."
+"Password: Masked input, multiple inputs of this type on the same prompt need to be identical."
 msgstr ""
-"Wachtwoord: Gemaskeerde invoer, meerdere invoer van dit type op dezelfde "
-"prompt moeten identiek zijn."
+"Wachtwoord: Gemaskeerde invoer, meerdere invoer van dit type op dezelfde prompt moeten identiek "
+"zijn."
 
 #: authentik/stages/prompt/models.py
 msgid "Fixed choice field rendered as a group of radio buttons."
@@ -4251,11 +4130,10 @@ msgstr "Vast keuzeveld weergegeven als een vervolgkeuzemenu."
 
 #: authentik/stages/prompt/models.py
 msgid ""
-"File: File upload for arbitrary files. File content will be available in "
-"flow context as data-URI"
+"File: File upload for arbitrary files. File content will be available in flow context as data-URI"
 msgstr ""
-"Bestand: Bestandsupload voor willekeurige bestanden. Bestandsinhoud is "
-"beschikbaar in de flowcontext als gegevens-URI."
+"Bestand: Bestandsupload voor willekeurige bestanden. Bestandsinhoud is beschikbaar in de "
+"flowcontext als gegevens-URI."
 
 #: authentik/stages/prompt/models.py
 msgid "Separator: Static Separator Line"
@@ -4263,9 +4141,7 @@ msgstr "Scheidingsteken: Statische scheiderlijn"
 
 #: authentik/stages/prompt/models.py
 msgid "Hidden: Hidden field, can be used to insert data into form."
-msgstr ""
-"Verborgen: Verborgen veld, kan worden gebruikt om gegevens in het formulier "
-"in te voegen."
+msgstr "Verborgen: Verborgen veld, kan worden gebruikt om gegevens in het formulier in te voegen."
 
 #: authentik/stages/prompt/models.py
 msgid "Static: Static value, displayed as-is."
@@ -4273,33 +4149,29 @@ msgstr "Statisch: Statische waarde, weergegeven zoals deze is."
 
 #: authentik/stages/prompt/models.py
 msgid "authentik: Selection of locales authentik supports"
-msgstr ""
-"authentik: Selectie van de door authentik ondersteunde taalinstellingen"
+msgstr "authentik: Selectie van de door authentik ondersteunde taalinstellingen"
 
 #: authentik/stages/prompt/models.py
 msgid "Name of the form field, also used to store the value"
-msgstr ""
-"Naam van het formulierenveld, wordt ook gebruikt om de waarde op te slaan"
+msgstr "Naam van het formulierenveld, wordt ook gebruikt om de waarde op te slaan"
 
 #: authentik/stages/prompt/models.py
 msgid ""
-"Optionally provide a short hint that describes the expected input value. "
-"When creating a fixed choice field, enable interpreting as expression and "
-"return a list to return multiple choices."
+"Optionally provide a short hint that describes the expected input value. When creating a fixed "
+"choice field, enable interpreting as expression and return a list to return multiple choices."
 msgstr ""
-"Optioneel een korte hint geven die de verwachte invoerwaarde beschrijft. Bij"
-" het maken van een vast keuzeveld, interpreteren als expressie inschakelen "
-"en een lijst retourneren om meerdere keuzes terug te geven."
+"Optioneel een korte hint geven die de verwachte invoerwaarde beschrijft. Bij het maken van een "
+"vast keuzeveld, interpreteren als expressie inschakelen en een lijst retourneren om meerdere "
+"keuzes terug te geven."
 
 #: authentik/stages/prompt/models.py
 msgid ""
-"Optionally pre-fill the input with an initial value. When creating a fixed "
-"choice field, enable interpreting as expression and return a list to return "
-"multiple default choices."
+"Optionally pre-fill the input with an initial value. When creating a fixed choice field, enable "
+"interpreting as expression and return a list to return multiple default choices."
 msgstr ""
-"Optioneel de invoer vooraf invullen met een initiële waarde. Bij het maken "
-"van een vast keuzeveld, interpreteren als expressie inschakelen en een lijst"
-" retourneren om meerdere standaardkeuzes terug te geven."
+"Optioneel de invoer vooraf invullen met een initiële waarde. Bij het maken van een vast "
+"keuzeveld, interpreteren als expressie inschakelen en een lijst retourneren om meerdere "
+"standaardkeuzes terug te geven."
 
 #: authentik/stages/prompt/models.py
 msgid "Prompt"
@@ -4355,8 +4227,7 @@ msgstr "Koppel door deze stap gemaakte sessies aan het ingestelde netwerk"
 
 #: authentik/stages/user_login/models.py
 msgid "Bind sessions created by this stage to the configured GeoIP location"
-msgstr ""
-"Koppel door deze stap gemaakte sessies aan de ingestelde GeoIP lokatie"
+msgstr "Koppel door deze stap gemaakte sessies aan de ingestelde GeoIP lokatie"
 
 #: authentik/stages/user_login/models.py
 msgid "Terminate all other sessions of the user logging in."
@@ -4364,20 +4235,17 @@ msgstr "Beëindig alle andere sessies van de gebruiker die inlogt."
 
 #: authentik/stages/user_login/models.py
 msgid ""
-"Offset the session will be extended by when the user picks the remember me "
-"option. Default of 0 means that the remember me option will not be shown. "
-"(Format: hours=-1;minutes=-2;seconds=-3)"
+"Offset the session will be extended by when the user picks the remember me option. Default of 0 "
+"means that the remember me option will not be shown. (Format: hours=-1;minutes=-2;seconds=-3)"
 msgstr ""
-"De sessie zal worden verlengd met het opgegeven aantal uren, minuten en "
-"seconden wanneer de gebruiker de optie 'Onthoud mij' kiest. De "
-"standaardwaarde van 0 betekent dat de optie 'Onthoud mij' niet wordt "
-"getoond. (Indeling: uren=-1;minuten=-2;seconden=-3)"
+"De sessie zal worden verlengd met het opgegeven aantal uren, minuten en seconden wanneer de "
+"gebruiker de optie 'Onthoud mij' kiest. De standaardwaarde van 0 betekent dat de optie 'Onthoud "
+"mij' niet wordt getoond. (Indeling: uren=-1;minuten=-2;seconden=-3)"
 
 #: authentik/stages/user_login/models.py
 msgid ""
-"When set to a non-zero value, authentik will save a cookie with a longer "
-"expiry,to remember the device the user is logging in from. (Format: "
-"hours=-1;minutes=-2;seconds=-3)"
+"When set to a non-zero value, authentik will save a cookie with a longer expiry,to remember the "
+"device the user is logging in from. (Format: hours=-1;minutes=-2;seconds=-3)"
 msgstr ""
 
 #: authentik/stages/user_login/models.py
@@ -4402,9 +4270,7 @@ msgstr "Gebruikersafmeldingsfasen"
 
 #: authentik/stages/user_write/models.py
 msgid "When set, newly created users are inactive and cannot login."
-msgstr ""
-"Wanneer ingesteld, zijn nieuw aangemaakte gebruikers inactief en kunnen ze "
-"niet inloggen."
+msgstr "Wanneer ingesteld, zijn nieuw aangemaakte gebruikers inactief en kunnen ze niet inloggen."
 
 #: authentik/stages/user_write/models.py
 msgid "Optionally add newly created users to this group."
@@ -4477,11 +4343,11 @@ msgstr ""
 
 #: authentik/tenants/models.py
 msgid ""
-"Schema name must start with t_, only contain lowercase letters and numbers "
-"and be less than 63 characters."
+"Schema name must start with t_, only contain lowercase letters and numbers and be less than 63 "
+"characters."
 msgstr ""
-"Schemanaam moet starten met t_, mag alleen kleine letters en nummers "
-"bevatten en moet korter dan 63 karakters zijn."
+"Schemanaam moet starten met t_, mag alleen kleine letters en nummers bevatten en moet korter dan "
+"63 karakters zijn."
 
 #: authentik/tenants/models.py
 msgid "Configure how authentik should show avatars for users."
@@ -4493,22 +4359,16 @@ msgstr "Schakel de mogelijkheid in om gebruikers hun naam te laten wijzigen."
 
 #: authentik/tenants/models.py
 msgid "Enable the ability for users to change their email address."
-msgstr ""
-"Schakel de mogelijkheid in om gebruikers hun e-mailadres te laten wijzigen."
+msgstr "Schakel de mogelijkheid in om gebruikers hun e-mailadres te laten wijzigen."
 
 #: authentik/tenants/models.py
 msgid "Enable the ability for users to change their username."
-msgstr ""
-"Schakel de mogelijkheid in om gebruikers hun gebruikersnaam te laten "
-"wijzigen."
+msgstr "Schakel de mogelijkheid in om gebruikers hun gebruikersnaam te laten wijzigen."
 
 #: authentik/tenants/models.py
-msgid ""
-"Events will be deleted after this duration.(Format: "
-"weeks=3;days=2;hours=3,seconds=2)."
+msgid "Events will be deleted after this duration.(Format: weeks=3;days=2;hours=3,seconds=2)."
 msgstr ""
-"Gebeurtenissen worden verwijderd na deze duur. (Indeling: "
-"weken=3;dagen=2;uren=3;seconden=2)."
+"Gebeurtenissen worden verwijderd na deze duur. (Indeling: weken=3;dagen=2;uren=3;seconden=2)."
 
 #: authentik/tenants/models.py
 msgid "Reputation cannot decrease lower than this value. Zero or negative."
@@ -4523,12 +4383,10 @@ msgid "The option configures the footer links on the flow executor pages."
 msgstr "De optie stelt de voettekst links in op de flow uitvoer pagina's."
 
 #: authentik/tenants/models.py
-msgid ""
-"When enabled, all the events caused by a user will be deleted upon the "
-"user's deletion."
+msgid "When enabled, all the events caused by a user will be deleted upon the user's deletion."
 msgstr ""
-"Wanneer ingeschakeld zullen alle door een gebruiker veroorzaakte "
-"gebeurtenissen worden verwijderd wanneer de gebruiker wordt verwijderd."
+"Wanneer ingeschakeld zullen alle door een gebruiker veroorzaakte gebeurtenissen worden verwijderd "
+"wanneer de gebruiker wordt verwijderd."
 
 #: authentik/tenants/models.py
 msgid "Globally enable/disable impersonation."
@@ -4536,9 +4394,7 @@ msgstr "Impersonatie globaal inschakelen"
 
 #: authentik/tenants/models.py
 msgid "Require administrators to provide a reason for impersonating a user."
-msgstr ""
-"Verplicht beheerders een reden op te geven om een gebruiker te "
-"impersonaliseren"
+msgstr "Verplicht beheerders een reden op te geven om een gebruiker te impersonaliseren"
 
 #: authentik/tenants/models.py
 msgid "Default token duration"

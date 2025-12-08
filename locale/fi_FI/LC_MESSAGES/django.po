@@ -2,28 +2,54 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # Marc Schmitt, 2025
 # Ville Ranki, 2025
 # Jani Hast, 2025
 # MarkoTukiainen, 2025
 # Skyler Mäntysaari, 2025
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-01 15:07+0000\n"
+"Report-Msgid-Bugs-To: https://github.com/goauthentik/authentik/issues\n"
+"POT-Creation-Date: 2025-12-07 23:33+0000\n"
 "PO-Revision-Date: 2022-09-26 16:47+0000\n"
 "Last-Translator: Skyler Mäntysaari, 2025\n"
 "Language-Team: Finnish (https://app.transifex.com/authentik/teams/119923/fi/)\n"
+"Language: fi_FI\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fi_FI\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: authentik/admin/files/validation.py
+msgid "File name cannot be empty"
+msgstr ""
+
+#: authentik/admin/files/validation.py
+msgid ""
+"File name can only contain letters (a-z, A-Z), numbers (0-9), dots (.), hyphens (-), underscores "
+"(_), and forward slashes (/)"
+msgstr ""
+
+#: authentik/admin/files/validation.py
+msgid "File name cannot contain duplicate /"
+msgstr ""
+
+#: authentik/admin/files/validation.py
+msgid "Absolute paths are not allowed"
+msgstr ""
+
+#: authentik/admin/files/validation.py
+msgid "Parent directory references ('..') are not allowed"
+msgstr ""
+
+#: authentik/admin/files/validation.py
+msgid "Paths cannot start with '.'"
+msgstr ""
 
 #: authentik/admin/models.py
 msgid "Version history"
@@ -80,12 +106,13 @@ msgstr "Authentikin hallinnoima"
 
 #: authentik/blueprints/models.py
 msgid ""
-"Objects that are managed by authentik. These objects are created and updated"
-" automatically. This flag only indicates that an object can be overwritten "
-"by migrations. You can still modify the objects via the API, but expect "
-"changes to be overwritten in a later update."
+"Objects that are managed by authentik. These objects are created and updated automatically. This "
+"flag only indicates that an object can be overwritten by migrations. You can still modify the "
+"objects via the API, but expect changes to be overwritten in a later update."
 msgstr ""
-"Objektit, joita hallinnoi authentik. Nämä objektit luodaan ja päivitetään automaattisesti. Tämä lippu osoittaa vain, että objektin voi korvata migraatioiden yhteydessä. Voit silti muokata objekteja API\n"
+"Objektit, joita hallinnoi authentik. Nämä objektit luodaan ja päivitetään automaattisesti. Tämä "
+"lippu osoittaa vain, että objektin voi korvata migraatioiden yhteydessä. Voit silti muokata "
+"objekteja API\n"
 "kautta, mutta odota muutosten korvautuvan myöhemmässä päivityksessä."
 
 #: authentik/blueprints/models.py
@@ -103,8 +130,7 @@ msgstr "authentik Vienti - {date}"
 
 #: authentik/blueprints/v1/tasks.py
 msgid "Find blueprints as `blueprints_find` does, but return a safe dict."
-msgstr ""
-"Hae suunnitelmia kuten `blueprints_find` hakee, mutta palauta safe dict."
+msgstr "Hae suunnitelmia kuten `blueprints_find` hakee, mutta palauta safe dict."
 
 #: authentik/blueprints/v1/tasks.py
 msgid "Find blueprints and check if they need to be created in the database."
@@ -119,20 +145,14 @@ msgid "Remove blueprints which couldn't be fetched."
 msgstr "Poista suunnitelmat, joita ei saatu haettua."
 
 #: authentik/brands/models.py
-msgid ""
-"Domain that activates this brand. Can be a superset, i.e. `a.b` for `aa.b` "
-"and `ba.b`"
+msgid "Domain that activates this brand. Can be a superset, i.e. `a.b` for `aa.b` and `ba.b`"
 msgstr ""
-"Toimialue, joka aktivoi tämän brändin. Voi olla ylijoukko, eli a.b "
-"toimialueille aa.b ja ba.b."
+"Toimialue, joka aktivoi tämän brändin. Voi olla ylijoukko, eli a.b toimialueille aa.b ja ba.b."
 
 #: authentik/brands/models.py
-msgid ""
-"When set, external users will be redirected to this application after "
-"authenticating."
+msgid "When set, external users will be redirected to this application after authenticating."
 msgstr ""
-"Kun tämä asetus on käytössä, ulkoiset käyttäjät ohjataan tähän sovellukseen "
-"todentamisen jälkeen."
+"Kun tämä asetus on käytössä, ulkoiset käyttäjät ohjataan tähän sovellukseen todentamisen jälkeen."
 
 #: authentik/brands/models.py
 msgid "Web Certificate used by the authentik Core webserver."
@@ -157,8 +177,7 @@ msgstr "Käyttäjällä ei ole pääsyä sovellukseen."
 #: authentik/core/api/applications.py
 #, python-brace-format
 msgid "The slug '{slug}' is reserved and cannot be used for applications."
-msgstr ""
-"Polkutunniste '{slug}' on varattu, eikä sitä voi käyttää sovelluksissa."
+msgstr "Polkutunniste '{slug}' on varattu, eikä sitä voi käyttää sovelluksissa."
 
 #: authentik/core/api/groups.py
 msgid "Cannot set group as parent of itself."
@@ -166,13 +185,11 @@ msgstr "Ryhmää ei voi asettaa itsensä ylätasoksi."
 
 #: authentik/core/api/providers.py
 msgid ""
-"When not set all providers are returned. When set to true, only backchannel "
-"providers are returned. When set to false, backchannel providers are "
-"excluded"
+"When not set all providers are returned. When set to true, only backchannel providers are "
+"returned. When set to false, backchannel providers are excluded"
 msgstr ""
-"Kun asetusta ei ole määritetty, kaikki tarjoajat palautetaan. Kun asetus on "
-"true, vain taustakanava-tarjoajat palautetaan. Kun asetus on false, "
-"takakanava-tarjoajat suljetaan pois."
+"Kun asetusta ei ole määritetty, kaikki tarjoajat palautetaan. Kun asetus on true, vain "
+"taustakanava-tarjoajat palautetaan. Kun asetus on false, takakanava-tarjoajat suljetaan pois."
 
 #: authentik/core/api/transactional_applications.py
 #, python-brace-format
@@ -239,8 +256,8 @@ msgstr "Ota pääkäyttäjä-tila pois käytöstä"
 msgid "User's display name."
 msgstr "Käyttäjän näytettävä nimi"
 
-#: authentik/core/models.py authentik/providers/oauth2/models.py
-#: authentik/providers/saml/models.py authentik/rbac/models.py
+#: authentik/core/models.py authentik/providers/oauth2/models.py authentik/providers/saml/models.py
+#: authentik/rbac/models.py
 msgid "User"
 msgstr "Käyttäjä"
 
@@ -248,8 +265,7 @@ msgstr "Käyttäjä"
 msgid "Users"
 msgstr "Käyttäjät"
 
-#: authentik/core/models.py
-#: authentik/stages/email/templates/email/password_reset.html
+#: authentik/core/models.py authentik/stages/email/templates/email/password_reset.html
 msgid "Reset Password"
 msgstr "Nollaa salasana"
 
@@ -275,11 +291,11 @@ msgstr "Voi katsoa sovelluksia, joihin käyttäjällä on pääsy"
 
 #: authentik/core/models.py
 msgid ""
-"Flow used for authentication when the associated application is accessed by "
-"an un-authenticated user."
+"Flow used for authentication when the associated application is accessed by an un-authenticated "
+"user."
 msgstr ""
-"Prosessi, jota käytetään todentamiseen, kun todentamaton käyttäjä yrittää "
-"käyttää siihen kytkettyä sovellusta."
+"Prosessi, jota käytetään todentamiseen, kun todentamaton käyttäjä yrittää käyttää siihen "
+"kytkettyä sovellusta."
 
 #: authentik/core/models.py
 msgid "Flow used when authorizing this provider."
@@ -290,12 +306,10 @@ msgid "Flow used ending the session from a provider."
 msgstr "Palveluntarjoajan istunnon lopettamiseen käytettävä prosessi."
 
 #: authentik/core/models.py
-msgid ""
-"Accessed from applications; optional backchannel providers for protocols "
-"like LDAP and SCIM."
+msgid "Accessed from applications; optional backchannel providers for protocols like LDAP and SCIM."
 msgstr ""
-"Käytetään sovelluksista; valinnaisia taustakanavapalveluntarjoajia "
-"protokollille kuten LDAP ja SCIM."
+"Käytetään sovelluksista; valinnaisia taustakanavapalveluntarjoajia protokollille kuten LDAP ja "
+"SCIM."
 
 #: authentik/core/models.py
 msgid "Application's display Name."
@@ -331,48 +345,42 @@ msgstr "Käytä lähdekohtaista tunnistetta"
 
 #: authentik/core/models.py
 msgid ""
-"Link to a user with identical email address. Can have security implications "
-"when a source doesn't validate email addresses."
+"Link to a user with identical email address. Can have security implications when a source doesn't "
+"validate email addresses."
 msgstr ""
-"Yhdistä käyttäjään identtisen sähköpostiosoitteen perusteella. Tällä voi "
-"olla tietoturvavaikutuksia, mikäli lähde ei varmenna sähköpostiosoitteita."
+"Yhdistä käyttäjään identtisen sähköpostiosoitteen perusteella. Tällä voi olla "
+"tietoturvavaikutuksia, mikäli lähde ei varmenna sähköpostiosoitteita."
+
+#: authentik/core/models.py
+msgid "Use the user's email address, but deny enrollment when the email address already exists."
+msgstr ""
+"Käytä käyttäjän sähköpostiosoitetta, mutta estä rekisteröityminen, jos sähköpostiosoite on jo "
+"olemassa."
 
 #: authentik/core/models.py
 msgid ""
-"Use the user's email address, but deny enrollment when the email address "
-"already exists."
-msgstr ""
-"Käytä käyttäjän sähköpostiosoitetta, mutta estä rekisteröityminen, jos "
-"sähköpostiosoite on jo olemassa."
-
-#: authentik/core/models.py
-msgid ""
-"Link to a user with identical username. Can have security implications when "
-"a username is used with another source."
+"Link to a user with identical username. Can have security implications when a username is used "
+"with another source."
 msgstr ""
 "Yhdistä käyttäjään identtisen käyttäjätunnuksen perusteella. Tällä voi olla "
 "tietoturvavaikutuksia, jos käyttäjänimeä käytetään toisen lähteen kanssa."
 
 #: authentik/core/models.py
-msgid ""
-"Use the user's username, but deny enrollment when the username already "
-"exists."
+msgid "Use the user's username, but deny enrollment when the username already exists."
 msgstr ""
-"Käytä käyttäjän käyttäjänimeä, mutta estä rekisteröityminen, jos "
-"käyttäjänimi on jo olemassa."
+"Käytä käyttäjän käyttäjänimeä, mutta estä rekisteröityminen, jos käyttäjänimi on jo olemassa."
 
 #: authentik/core/models.py
 msgid ""
-"Link to a group with identical name. Can have security implications when a "
-"group name is used with another source."
+"Link to a group with identical name. Can have security implications when a group name is used "
+"with another source."
 msgstr ""
-"Yhdistä ryhmään identtisen nimen perusteella. Tällä voi olla "
-"tietoturvavaikutuksia, jos ryhmän nimeä käytetään toisen lähteen kanssa."
+"Yhdistä ryhmään identtisen nimen perusteella. Tällä voi olla tietoturvavaikutuksia, jos ryhmän "
+"nimeä käytetään toisen lähteen kanssa."
 
 #: authentik/core/models.py
 msgid "Use the group name, but deny enrollment when the name already exists."
-msgstr ""
-"Käytä ryhmän nimeä, mutta estä rekisteröityminen jos nimi on jo olemassa."
+msgstr "Käytä ryhmän nimeä, mutta estä rekisteröityminen jos nimi on jo olemassa."
 
 #: authentik/core/models.py
 msgid "Source's display Name."
@@ -384,8 +392,8 @@ msgstr "Lähteen sisäinen nimi, käytetään URLeissa."
 
 #: authentik/core/models.py
 msgid ""
-"When enabled, this source will be displayed as a prominent button on the "
-"login page, instead of a small icon."
+"When enabled, this source will be displayed as a prominent button on the login page, instead of a "
+"small icon."
 msgstr ""
 
 #: authentik/core/models.py
@@ -398,19 +406,12 @@ msgstr "Prosessi, jota käytetään uusien käyttäjien rekisteröitymisessä."
 
 #: authentik/core/models.py
 msgid ""
-"How the source determines if an existing user should be authenticated or a "
-"new user enrolled."
-msgstr ""
-"Kuinka lähde määrittää, todennetaanko olemassa oleva käyttäjä vai "
-"rekisteröidäänkö uusi."
+"How the source determines if an existing user should be authenticated or a new user enrolled."
+msgstr "Kuinka lähde määrittää, todennetaanko olemassa oleva käyttäjä vai rekisteröidäänkö uusi."
 
 #: authentik/core/models.py
-msgid ""
-"How the source determines if an existing group should be used or a new group"
-" created."
-msgstr ""
-"Kuinka lähde määrittää, käytetäänkö olemassa olevaa ryhmää vai luodaanko "
-"uusi."
+msgid "How the source determines if an existing group should be used or a new group created."
+msgstr "Kuinka lähde määrittää, käytetäänkö olemassa olevaa ryhmää vai luodaanko uusi."
 
 #: authentik/core/models.py authentik/providers/scim/models.py
 msgid "Token"
@@ -459,11 +460,11 @@ msgstr "Todennetut istunnot"
 #: authentik/core/sources/flow_manager.py
 #, python-brace-format
 msgid ""
-"Request to authenticate with {source} has been denied. Please authenticate "
-"with the source you've previously signed up with."
+"Request to authenticate with {source} has been denied. Please authenticate with the source you've "
+"previously signed up with."
 msgstr ""
-"Todentamispyyntö lähteen {source} kautta on estetty. Tee todennus "
-"käyttämällä lähdettä, jota olet käyttänyt rekisteröityessäsi."
+"Todentamispyyntö lähteen {source} kautta on estetty. Tee todennus käyttämällä lähdettä, jota olet "
+"käyttänyt rekisteröityessäsi."
 
 #: authentik/core/sources/flow_manager.py
 msgid "Configured flow does not exist."
@@ -491,19 +492,16 @@ msgstr "Poista vanhentuneet objektit."
 msgid "Remove temporary users created by SAML Sources."
 msgstr "Poista SAML-lähteiden luomat tilapäiset käyttäjät."
 
-#: authentik/core/templates/if/error.html
-#: authentik/policies/templates/policies/denied.html
+#: authentik/core/templates/if/error.html authentik/policies/templates/policies/denied.html
 msgid "Go home"
 msgstr "Siirry etusivulle"
 
-#: authentik/core/templates/login/base_full.html
-#: authentik/flows/templates/if/flow-sfe.html
+#: authentik/core/templates/login/base_full.html authentik/flows/templates/if/flow-sfe.html
 msgid "Powered by authentik"
 msgstr "Käyttää authtentikiä"
 
 #: authentik/core/views/apps.py authentik/providers/oauth2/views/authorize.py
-#: authentik/providers/oauth2/views/device_init.py
-#: authentik/providers/saml/views/sso.py
+#: authentik/providers/oauth2/views/device_init.py authentik/providers/saml/views/sso.py
 #, python-format
 msgid "You're about to sign into %(application)s."
 msgstr "Olet kirjautumassa sovellukseen %(application)s."
@@ -549,12 +547,8 @@ msgid "PEM-encoded Certificate data"
 msgstr "PEM-koodattu sertifikaattidata"
 
 #: authentik/crypto/models.py
-msgid ""
-"Optional Private Key. If this is set, you can use this keypair for "
-"encryption."
-msgstr ""
-"Vapaaehtoinen yksityinen avain. Jos tämä on asetettu, voit käyttää "
-"avainparia salaukseen."
+msgid "Optional Private Key. If this is set, you can use this keypair for encryption."
+msgstr "Vapaaehtoinen yksityinen avain. Jos tämä on asetettu, voit käyttää avainparia salaukseen."
 
 #: authentik/crypto/models.py
 msgid "Certificate-Key Pair"
@@ -562,6 +556,18 @@ msgstr "Sertifikaatti-avainpari"
 
 #: authentik/crypto/models.py
 msgid "Certificate-Key Pairs"
+msgstr "Sertifikaatti-avainparit"
+
+#: authentik/crypto/models.py
+#, fuzzy
+#| msgid "Certificate-Key Pairs"
+msgid "View Certificate-Key pair's certificate"
+msgstr "Sertifikaatti-avainparit"
+
+#: authentik/crypto/models.py
+#, fuzzy
+#| msgid "Certificate-Key Pairs"
+msgid "View Certificate-Key pair's private key"
 msgstr "Sertifikaatti-avainparit"
 
 #: authentik/crypto/tasks.py
@@ -588,13 +594,11 @@ msgstr ""
 msgid "Agent Connectors"
 msgstr ""
 
-#: authentik/endpoints/connectors/agent/models.py
-#: authentik/providers/oauth2/models.py
+#: authentik/endpoints/connectors/agent/models.py authentik/providers/oauth2/models.py
 msgid "Device Token"
 msgstr "Laitetunniste"
 
-#: authentik/endpoints/connectors/agent/models.py
-#: authentik/providers/oauth2/models.py
+#: authentik/endpoints/connectors/agent/models.py authentik/providers/oauth2/models.py
 msgid "Device Tokens"
 msgstr "Laitetunnisteet"
 
@@ -662,6 +666,18 @@ msgstr ""
 msgid "Device access groups"
 msgstr ""
 
+#: authentik/endpoints/models.py
+#, fuzzy
+#| msgid "Endpoint Device"
+msgid "Endpoint Stage"
+msgstr "Päätelaite"
+
+#: authentik/endpoints/models.py
+#, fuzzy
+#| msgid "Endpoint Devices"
+msgid "Endpoint Stages"
+msgstr "Päätelaitteet"
+
 #: authentik/endpoints/tasks.py
 msgid "Sync endpoints."
 msgstr ""
@@ -686,19 +702,16 @@ msgstr "Lisenssin käyttö"
 msgid "License Usage Records"
 msgstr "Lisenssin käyttötiedot"
 
-#: authentik/enterprise/policies/unique_password/models.py
-#: authentik/policies/password/models.py
+#: authentik/enterprise/policies/unique_password/models.py authentik/policies/password/models.py
 msgid "Field key to check, field keys defined in Prompt stages are available."
 msgstr ""
-"Kentän avain, joka tarkistetaan. Kysymysvaiheissa määritellyt kenttien "
-"avaimet ovat käytettävissä."
+"Kentän avain, joka tarkistetaan. Kysymysvaiheissa määritellyt kenttien avaimet ovat käytettävissä."
 
 #: authentik/enterprise/policies/unique_password/models.py
 msgid "Number of passwords to check against."
 msgstr "Tarkistettavien salasanojen määrä."
 
-#: authentik/enterprise/policies/unique_password/models.py
-#: authentik/policies/password/models.py
+#: authentik/enterprise/policies/unique_password/models.py authentik/policies/password/models.py
 msgid "Password not set in context"
 msgstr "Salasanaa ei ole asetettu kontekstissa"
 
@@ -719,12 +732,9 @@ msgid "User Password History"
 msgstr "Käyttäjän salasanahistoria"
 
 #: authentik/enterprise/policies/unique_password/tasks.py
-msgid ""
-"Check if any UniquePasswordPolicy exists, and if not, purge the password "
-"history table."
+msgid "Check if any UniquePasswordPolicy exists, and if not, purge the password history table."
 msgstr ""
-"Tarkista, löytyykö yhtään UniquePasswordPolicyä, ja jos ei löydy, tyhjennä "
-"salasanahistoriataulu."
+"Tarkista, löytyykö yhtään UniquePasswordPolicyä, ja jos ei löydy, tyhjennä salasanahistoriataulu."
 
 #: authentik/enterprise/policies/unique_password/tasks.py
 msgid "Remove user password history that are too old."
@@ -755,8 +765,7 @@ msgid "Google Workspace Provider Groups"
 msgstr "Google Workspace -palveluntarjoajan ryhmät"
 
 #: authentik/enterprise/providers/google_workspace/models.py
-#: authentik/enterprise/providers/microsoft_entra/models.py
-#: authentik/providers/scim/models.py
+#: authentik/enterprise/providers/microsoft_entra/models.py authentik/providers/scim/models.py
 msgid "Property mappings used for group creation/updating."
 msgstr "Ominaisuuskytkennät, joita käytetään ryhmien luontiin/päivittämiseen."
 
@@ -786,31 +795,22 @@ msgstr "Google Workspace -palveluntarjoajan täysi synkronointi."
 
 #: authentik/enterprise/providers/google_workspace/tasks.py
 msgid "Sync a direct object (user, group) for Google Workspace provider."
-msgstr ""
-"Synkronoi suoraan kytketty objekti (käyttäjä, ryhmä) Google Workspace "
-"-palveluntarjoajalla."
+msgstr "Synkronoi suoraan kytketty objekti (käyttäjä, ryhmä) Google Workspace -palveluntarjoajalla."
 
 #: authentik/enterprise/providers/google_workspace/tasks.py
-msgid ""
-"Dispatch syncs for a direct object (user, group) for Google Workspace "
-"providers."
+msgid "Dispatch syncs for a direct object (user, group) for Google Workspace providers."
 msgstr ""
-"Käynnistä suoraan kytketyn objektin (käyttäjä, ryhmä) synkronoinnit Google "
-"Workspace -palveluntarjoajille."
+"Käynnistä suoraan kytketyn objektin (käyttäjä, ryhmä) synkronoinnit Google Workspace "
+"-palveluntarjoajille."
 
 #: authentik/enterprise/providers/google_workspace/tasks.py
 msgid "Sync a related object (memberships) for Google Workspace provider."
-msgstr ""
-"Sykronoi liittyvä objekti (jäsenyydet) Google Workspace "
-"-palveluntarjoajalla."
+msgstr "Sykronoi liittyvä objekti (jäsenyydet) Google Workspace -palveluntarjoajalla."
 
 #: authentik/enterprise/providers/google_workspace/tasks.py
-msgid ""
-"Dispatch syncs for a related object (memberships) for Google Workspace "
-"providers."
+msgid "Dispatch syncs for a related object (memberships) for Google Workspace providers."
 msgstr ""
-"Käynnistä liittyvän objektin (jäsenyydet) synkronoinnit Google Workspace "
-"-palveluntarjoajille."
+"Käynnistä liittyvän objektin (jäsenyydet) synkronoinnit Google Workspace -palveluntarjoajille."
 
 #: authentik/enterprise/providers/microsoft_entra/models.py
 msgid "Microsoft Entra Provider User"
@@ -850,30 +850,22 @@ msgstr "Microsoft Entra -palveluntarjoajan täysi synkronointi."
 
 #: authentik/enterprise/providers/microsoft_entra/tasks.py
 msgid "Sync a direct object (user, group) for Microsoft Entra provider."
-msgstr ""
-"Synkronoi suoraan kytketty objekti (käyttäjä, ryhmä) Microsoft Entra "
-"-palveluntarjoajalla."
+msgstr "Synkronoi suoraan kytketty objekti (käyttäjä, ryhmä) Microsoft Entra -palveluntarjoajalla."
 
 #: authentik/enterprise/providers/microsoft_entra/tasks.py
-msgid ""
-"Dispatch syncs for a direct object (user, group) for Microsoft Entra "
-"providers."
+msgid "Dispatch syncs for a direct object (user, group) for Microsoft Entra providers."
 msgstr ""
-"Käynnistä suoraan kytketyn objektin (käyttäjä, ryhmä) synkronoinnit "
-"Microsoft Entra -palveluntarjoajille."
+"Käynnistä suoraan kytketyn objektin (käyttäjä, ryhmä) synkronoinnit Microsoft Entra "
+"-palveluntarjoajille."
 
 #: authentik/enterprise/providers/microsoft_entra/tasks.py
 msgid "Sync a related object (memberships) for Microsoft Entra provider."
-msgstr ""
-"Sykronoi liittyvä objekti (jäsenyydet) Microsoft Entra -palveluntarjoajalla."
+msgstr "Sykronoi liittyvä objekti (jäsenyydet) Microsoft Entra -palveluntarjoajalla."
 
 #: authentik/enterprise/providers/microsoft_entra/tasks.py
-msgid ""
-"Dispatch syncs for a related object (memberships) for Microsoft Entra "
-"providers."
+msgid "Dispatch syncs for a related object (memberships) for Microsoft Entra providers."
 msgstr ""
-"Käynnistä liittyvän objektin (jäsenyydet) synkronoinnit Microsoft Entra "
-"-palveluntarjoajille."
+"Käynnistä liittyvän objektin (jäsenyydet) synkronoinnit Microsoft Entra -palveluntarjoajille."
 
 #: authentik/enterprise/providers/radius/api.py
 msgid "Enterprise is required to use EAP-TLS."
@@ -883,8 +875,7 @@ msgstr "EAP-TLS:n käyttöön tarvitaan Enterprise-versiota."
 msgid "Enterprise is required to use the OAuth mode."
 msgstr "OAuth-tilan käyttöön tarvitaan Enterprise-versiota."
 
-#: authentik/enterprise/providers/ssf/models.py
-#: authentik/providers/oauth2/models.py
+#: authentik/enterprise/providers/ssf/models.py authentik/providers/oauth2/models.py
 msgid "Signing Key"
 msgstr "Allekirjoitusavain"
 
@@ -950,13 +941,11 @@ msgstr "Selaintasi varmennetaan..."
 
 #: authentik/enterprise/stages/mtls/models.py
 msgid ""
-"Configure certificate authorities to validate the certificate against. This "
-"option has a higher priority than the `client_certificate` option on "
-"`Brand`."
+"Configure certificate authorities to validate the certificate against. This option has a higher "
+"priority than the `client_certificate` option on `Brand`."
 msgstr ""
-"Määritä sertifikaattien varmentajat, joita käytetään sertifikaattiin. Tällä "
-"valinnalla on korkeampi prioriteetti kuin `client_certificate` -valinnalla "
-"`Brändi`-osiossa."
+"Määritä sertifikaattien varmentajat, joita käytetään sertifikaattiin. Tällä valinnalla on "
+"korkeampi prioriteetti kuin `client_certificate` -valinnalla `Brändi`-osiossa."
 
 #: authentik/enterprise/stages/mtls/models.py
 msgid "Mutual TLS Stage"
@@ -980,11 +969,11 @@ msgstr "Sertifikaattia vastaavaa käyttäjää ei löytynyt."
 
 #: authentik/enterprise/stages/source/models.py
 msgid ""
-"Amount of time a user can take to return from the source to continue the "
-"flow (Format: hours=-1;minutes=-2;seconds=-3)"
+"Amount of time a user can take to return from the source to continue the flow (Format: "
+"hours=-1;minutes=-2;seconds=-3)"
 msgstr ""
-"Kuinka kauan käyttäjä voi käyttää palatessaan lähteestä jatkamaan prosessia "
-"(Muoto: hours=-1;minutes=-2;seconds=-3)"
+"Kuinka kauan käyttäjä voi käyttää palatessaan lähteestä jatkamaan prosessia (Muoto: "
+"hours=-1;minutes=-2;seconds=-3)"
 
 #: authentik/enterprise/stages/source/models.py
 msgid "Source Stage"
@@ -1018,34 +1007,24 @@ msgstr "Yleinen webhook"
 msgid "Slack Webhook (Slack/Discord)"
 msgstr "Slack-webhook (Slack/Discord)"
 
-#: authentik/events/models.py
-#: authentik/stages/authenticator_validate/models.py
+#: authentik/events/models.py authentik/stages/authenticator_validate/models.py
 msgid "Email"
 msgstr "Sähköposti"
 
 #: authentik/events/models.py
-msgid ""
-"Only send notification once, for example when sending a webhook into a chat "
-"channel."
+msgid "Only send notification once, for example when sending a webhook into a chat channel."
 msgstr ""
-"Lähetä notifikaatio vain kerran, esimerkiksi kun lähetetään webhook-"
-"tapahtuma pikaviestinkanavalle."
+"Lähetä notifikaatio vain kerran, esimerkiksi kun lähetetään webhook-tapahtuma "
+"pikaviestinkanavalle."
+
+#: authentik/events/models.py
+msgid "Customize the body of the request. Mapping should return data that is JSON-serializable."
+msgstr "Mukauta pyynnön sisältöä. Kytkennän tulisi palauttaa JSON-serialisoitavaa dataa."
 
 #: authentik/events/models.py
 msgid ""
-"Customize the body of the request. Mapping should return data that is JSON-"
-"serializable."
-msgstr ""
-"Mukauta pyynnön sisältöä. Kytkennän tulisi palauttaa JSON-serialisoitavaa "
-"dataa."
-
-#: authentik/events/models.py
-msgid ""
-"Configure additional headers to be sent. Mapping should return a dictionary "
-"of key-value pairs"
-msgstr ""
-"Määritä lähetettäviä lisäotsikkotietoja. Kytkennän tulisi palauttaa avain-"
-"arvopareja."
+"Configure additional headers to be sent. Mapping should return a dictionary of key-value pairs"
+msgstr "Määritä lähetettäviä lisäotsikkotietoja. Kytkennän tulisi palauttaa avain-arvopareja."
 
 #: authentik/events/models.py
 msgid "Severity"
@@ -1089,11 +1068,11 @@ msgstr "Notifikaatiot"
 
 #: authentik/events/models.py
 msgid ""
-"Select which transports should be used to notify the user. If none are "
-"selected, the notification will only be shown in the authentik UI."
+"Select which transports should be used to notify the user. If none are selected, the notification "
+"will only be shown in the authentik UI."
 msgstr ""
-"Valitse, mitä väyliä käytetään käyttäjän notifioimiseen. Jos mitään ei ole "
-"valittu, notifikaatio näytetään vain authentikin käyttöliittymässä."
+"Valitse, mitä väyliä käytetään käyttäjän notifioimiseen. Jos mitään ei ole valittu, notifikaatio "
+"näytetään vain authentikin käyttöliittymässä."
 
 #: authentik/events/models.py
 msgid "Controls which severity level the created notifications will have."
@@ -1101,19 +1080,19 @@ msgstr "Säätää mikä vakavuusaste luoduilla notifikaatioilla tulee olemaan."
 
 #: authentik/events/models.py
 msgid ""
-"Define which group of users this notification should be sent and shown to. "
-"If left empty, Notification won't ben sent."
+"Define which group of users this notification should be sent and shown to. If left empty, "
+"Notification won't ben sent."
 msgstr ""
-"Määritä, mille käyttäjäryhmille tämä notifikaatio lähtetään ja näytetään. "
-"Jos tämä jätetään tyhjäksi, notifikaatiota ei lähetetä."
+"Määritä, mille käyttäjäryhmille tämä notifikaatio lähtetään ja näytetään. Jos tämä jätetään "
+"tyhjäksi, notifikaatiota ei lähetetä."
 
 #: authentik/events/models.py
 msgid ""
-"When enabled, notification will be sent to user the user that triggered the "
-"event.When destination_group is configured, notification is sent to both."
+"When enabled, notification will be sent to user the user that triggered the event.When "
+"destination_group is configured, notification is sent to both."
 msgstr ""
-"Kun käytössä, notifikaatio lähtetään käyttäjälle, joka laukaisi tapahtuman. "
-"Kun destination_group on määritelty, notifikaatio lähetetään molemmille."
+"Kun käytössä, notifikaatio lähtetään käyttäjälle, joka laukaisi tapahtuman. Kun destination_group "
+"on määritelty, notifikaatio lähetetään molemmille."
 
 #: authentik/events/models.py
 msgid "Notification Rule"
@@ -1136,12 +1115,10 @@ msgid "Dispatch new event notifications."
 msgstr "Lähetä uudet tapahtumanotifikaatiot."
 
 #: authentik/events/tasks.py
-msgid ""
-"Check if policies attached to NotificationRule match event and dispatch "
-"notification tasks."
+msgid "Check if policies attached to NotificationRule match event and dispatch notification tasks."
 msgstr ""
-"Tarkista, vastaavatko NotificationRuleen kytketyt käytännöt tapahtumaa ja "
-"käynnistä notifikaatiotehtävät."
+"Tarkista, vastaavatko NotificationRuleen kytketyt käytännöt tapahtumaa ja käynnistä "
+"notifikaatiotehtävät."
 
 #: authentik/events/tasks.py
 msgid "Send notification."
@@ -1153,15 +1130,12 @@ msgstr "Siivoa tapahtumat GDPR-vaatimuksenmukaisuutta varten."
 
 #: authentik/events/tasks.py
 msgid "Cleanup seen notifications and notifications whose event expired."
-msgstr ""
-"Siivoa nähdyt notifikaatiot ja notifikaatiot, joiden tapahtuma on "
-"vanhentunut."
+msgstr "Siivoa nähdyt notifikaatiot ja notifikaatiot, joiden tapahtuma on vanhentunut."
 
 #: authentik/flows/api/flows.py
 #, python-brace-format
 msgid "Flow not applicable to current user/request: {messages}"
-msgstr ""
-"Prosessi ei ole käytettävissä nykyiselle käyttäjälle/pyynnölle: {messages}"
+msgstr "Prosessi ei ole käytettävissä nykyiselle käyttäjälle/pyynnölle: {messages}"
 
 #: authentik/flows/api/flows_diagram.py
 #, python-brace-format
@@ -1229,23 +1203,21 @@ msgstr "Näytetään otsikkona prosessisivuilla."
 
 #: authentik/flows/models.py
 msgid ""
-"Decides what this Flow is used for. For example, the Authentication flow is "
-"redirect to when an un-authenticated user visits authentik."
+"Decides what this Flow is used for. For example, the Authentication flow is redirect to when an "
+"un-authenticated user visits authentik."
 msgstr ""
-"Määrittää, mihin tätä prosessia käytetään. Esimerkiksi todennusprosessi "
-"ohjaa edelleen kun todentamaton käyttäjä avaa authentikin."
+"Määrittää, mihin tätä prosessia käytetään. Esimerkiksi todennusprosessi ohjaa edelleen kun "
+"todentamaton käyttäjä avaa authentikin."
 
 #: authentik/flows/models.py
 msgid "Background shown during execution"
 msgstr "Suorittamisen aikana näytettävä tausta"
 
 #: authentik/flows/models.py
-msgid ""
-"Enable compatibility mode, increases compatibility with password managers on"
-" mobile devices."
+msgid "Enable compatibility mode, increases compatibility with password managers on mobile devices."
 msgstr ""
-"Käytä yhteensopivuusmoodia, joka parantaa yhteensopivuutta mobiililaitteiden"
-" salasanahallintasovelluksissa."
+"Käytä yhteensopivuusmoodia, joka parantaa yhteensopivuutta mobiililaitteiden "
+"salasanahallintasovelluksissa."
 
 #: authentik/flows/models.py
 msgid "Configure what should happen when a flow denies access to a user."
@@ -1285,15 +1257,14 @@ msgstr "Suorita käytännöt kun vaihe näytetään käyttäjälle."
 
 #: authentik/flows/models.py
 msgid ""
-"Configure how the flow executor should handle an invalid response to a "
-"challenge. RETRY returns the error message and a similar challenge to the "
-"executor. RESTART restarts the flow from the beginning, and "
-"RESTART_WITH_CONTEXT restarts the flow while keeping the current context."
+"Configure how the flow executor should handle an invalid response to a challenge. RETRY returns "
+"the error message and a similar challenge to the executor. RESTART restarts the flow from the "
+"beginning, and RESTART_WITH_CONTEXT restarts the flow while keeping the current context."
 msgstr ""
-"Määrittele, kuinka prosessisuorittaja käsittelee virheellisen vastauksen "
-"haasteeseen. RETRY palauttaa virheviestin ja samanlaisen haasteen "
-"suorittajalle. RESTART käynnistää prosessin alusta, ja RESTART_WITH_CONTEXT "
-"käynnistää prosessin uudelleen, mutta säilyttää nykyisen kontekstin."
+"Määrittele, kuinka prosessisuorittaja käsittelee virheellisen vastauksen haasteeseen. RETRY "
+"palauttaa virheviestin ja samanlaisen haasteen suorittajalle. RESTART käynnistää prosessin "
+"alusta, ja RESTART_WITH_CONTEXT käynnistää prosessin uudelleen, mutta säilyttää nykyisen "
+"kontekstin."
 
 #: authentik/flows/models.py
 msgid "Flow Stage Binding"
@@ -1305,11 +1276,11 @@ msgstr "Prosessivaiheliitokset"
 
 #: authentik/flows/models.py
 msgid ""
-"Flow used by an authenticated user to configure this Stage. If empty, user "
-"will not be able to configure this stage."
+"Flow used by an authenticated user to configure this Stage. If empty, user will not be able to "
+"configure this stage."
 msgstr ""
-"Prosessi, jota todennettu käyttäjä käyttää tämän vaiheen määrittämiseksi. "
-"Jos tämä jätetään tyhjäksi, käyttäjä ei pysty määrittämään tätä vaihetta."
+"Prosessi, jota todennettu käyttäjä käyttää tämän vaiheen määrittämiseksi. Jos tämä jätetään "
+"tyhjäksi, käyttäjä ei pysty määrittämään tätä vaihetta."
 
 #: authentik/flows/models.py
 msgid "Flow Token"
@@ -1336,11 +1307,8 @@ msgid "Timeout for synchronization of a single page"
 msgstr "Yhden sivun synkronoinnin aikakatkaisu"
 
 #: authentik/lib/sync/outgoing/models.py
-msgid ""
-"When enabled, provider will not modify or create objects in the remote "
-"system."
-msgstr ""
-"Kun käytössä, palveluntarjoaja ei muokkaa tai luo objekteja etäjärjestelmään"
+msgid "When enabled, provider will not modify or create objects in the remote system."
+msgstr "Kun käytössä, palveluntarjoaja ei muokkaa tai luo objekteja etäjärjestelmään"
 
 #: authentik/lib/utils/time.py
 #, python-format
@@ -1353,22 +1321,16 @@ msgid "The fields {field_names} must be used together."
 msgstr "Kenttiä {field_names} on käytettävä yhdessä."
 
 #: authentik/outposts/api/service_connections.py
-msgid ""
-"You can only use an empty kubeconfig when connecting to a local cluster."
-msgstr ""
-"Voit käyttää vain tyhjää kubeconfigia paikalliseen klusteriin yhdistäessä."
+msgid "You can only use an empty kubeconfig when connecting to a local cluster."
+msgstr "Voit käyttää vain tyhjää kubeconfigia paikalliseen klusteriin yhdistäessä."
 
 #: authentik/outposts/api/service_connections.py
 msgid "Invalid kubeconfig"
 msgstr "Virheellinen kubeconfig"
 
 #: authentik/outposts/models.py
-msgid ""
-"If enabled, use the local connection. Required Docker socket/Kubernetes "
-"Integration"
-msgstr ""
-"Jos käytössä, käytä paikallista yhteyttä. Pakollinen Docker "
-"socket/Kubernetes-integraatio"
+msgid "If enabled, use the local connection. Required Docker socket/Kubernetes Integration"
+msgstr "Jos käytössä, käytä paikallista yhteyttä. Pakollinen Docker socket/Kubernetes-integraatio"
 
 #: authentik/outposts/models.py
 msgid "Outpost Service-Connection"
@@ -1380,28 +1342,24 @@ msgstr "Tukikohta-yhteydet"
 
 #: authentik/outposts/models.py
 msgid ""
-"Can be in the format of 'unix://<path>' when connecting to a local docker "
-"daemon, or 'https://<hostname>:2376' when connecting to a remote system."
+"Can be in the format of 'unix://<path>' when connecting to a local docker daemon, or 'https://"
+"<hostname>:2376' when connecting to a remote system."
 msgstr ""
-"Voidaan käyttää muotoa 'unix://<path>' kun yhdistetään paikalliseen docker-"
-"palveluun, tai 'https://<hostname>:2376' yhdistettäessä ulkoiseen "
-"järjestelmään."
+"Voidaan käyttää muotoa 'unix://<path>' kun yhdistetään paikalliseen docker-palveluun, tai "
+"'https://<hostname>:2376' yhdistettäessä ulkoiseen järjestelmään."
 
 #: authentik/outposts/models.py
 msgid ""
-"CA which the endpoint's Certificate is verified against. Can be left empty "
-"for no validation."
+"CA which the endpoint's Certificate is verified against. Can be left empty for no validation."
 msgstr ""
-"CA, jota käytetään päätepisteen varmenteen vahvistamiseen. Voidaan jättää "
-"tyhjäksi, jolloin vahvistusta ei tehdä."
+"CA, jota käytetään päätepisteen varmenteen vahvistamiseen. Voidaan jättää tyhjäksi, jolloin "
+"vahvistusta ei tehdä."
 
 #: authentik/outposts/models.py
-msgid ""
-"Certificate/Key used for authentication. Can be left empty for no "
-"authentication."
+msgid "Certificate/Key used for authentication. Can be left empty for no authentication."
 msgstr ""
-"Todennuksessa käytettävä Sertifikaatti/Avain. Voidaan jättää tyhjäksi, "
-"jolloin tunnistautumista ei tehdä."
+"Todennuksessa käytettävä Sertifikaatti/Avain. Voidaan jättää tyhjäksi, jolloin tunnistautumista "
+"ei tehdä."
 
 #: authentik/outposts/models.py
 msgid "Docker Service-Connection"
@@ -1412,12 +1370,8 @@ msgid "Docker Service-Connections"
 msgstr "Docker-yhteydet"
 
 #: authentik/outposts/models.py
-msgid ""
-"Paste your kubeconfig here. authentik will automatically use the currently "
-"selected context."
-msgstr ""
-"Liitä käyttämäsi kubeconfig tähän. authentik käyttää valittua kontekstia "
-"automaattisesti."
+msgid "Paste your kubeconfig here. authentik will automatically use the currently selected context."
+msgstr "Liitä käyttämäsi kubeconfig tähän. authentik käyttää valittua kontekstia automaattisesti."
 
 #: authentik/outposts/models.py
 msgid "Verify SSL Certificates of the Kubernetes API endpoint"
@@ -1433,11 +1387,11 @@ msgstr "Kubernetes-yhteydet"
 
 #: authentik/outposts/models.py
 msgid ""
-"Select Service-Connection authentik should use to manage this outpost. Leave"
-" empty if authentik should not handle the deployment."
+"Select Service-Connection authentik should use to manage this outpost. Leave empty if authentik "
+"should not handle the deployment."
 msgstr ""
-"Valitse se palvelu-yhteys jota authentik käyttää tämän tukikohdan "
-"hallintaan. Jätä tyhjäksi, jos authentik ei hallinnoi käyttöympäristöä."
+"Valitse se palvelu-yhteys jota authentik käyttää tämän tukikohdan hallintaan. Jätä tyhjäksi, jos "
+"authentik ei hallinnoi käyttöympäristöä."
 
 #: authentik/outposts/models.py
 msgid "Outpost"
@@ -1457,9 +1411,7 @@ msgstr "Luo/päivitä/tarkkaile/poista tukikohdan perustaminen."
 
 #: authentik/outposts/tasks.py
 msgid "Ensure that all Outposts have valid Service Accounts and Tokens."
-msgstr ""
-"Varmista, että kaikilla tukikohdilla on voimassa olevat palvelutilit ja "
-"tunnisteet."
+msgstr "Varmista, että kaikilla tukikohdilla on voimassa olevat palvelutilit ja tunnisteet."
 
 #: authentik/outposts/tasks.py
 msgid "Send update to outpost"
@@ -1485,24 +1437,19 @@ msgstr "Valekäytäntö"
 msgid "Dummy Policies"
 msgstr "Valekäytännöt"
 
-#: authentik/policies/event_matcher/api.py
-#: authentik/policies/event_matcher/models.py
-msgid ""
-"Match events created by selected application. When left empty, all "
-"applications are matched."
+#: authentik/policies/event_matcher/api.py authentik/policies/event_matcher/models.py
+msgid "Match events created by selected application. When left empty, all applications are matched."
 msgstr ""
-"Valitse valitun sovelluksen luomat tapahtumat. Jos tämä jätetään tyhjäksi, "
-"kaikki tapahtumat valitaan."
+"Valitse valitun sovelluksen luomat tapahtumat. Jos tämä jätetään tyhjäksi, kaikki tapahtumat "
+"valitaan."
 
-#: authentik/policies/event_matcher/api.py
-#: authentik/policies/event_matcher/models.py
+#: authentik/policies/event_matcher/api.py authentik/policies/event_matcher/models.py
 msgid ""
-"Match events created by selected model. When left empty, all models are "
-"matched. When an app is selected, all the application's models are matched."
+"Match events created by selected model. When left empty, all models are matched. When an app is "
+"selected, all the application's models are matched."
 msgstr ""
-"Valitse valitun mallin luomat tapahtumat. Jos tämä jätetään tyhjäksi, "
-"kaikkien mallien tapahtumat valitaan. Kun sovellus on valittu, sovelluksen "
-"kaikkien mallien tapahtumat valitaan."
+"Valitse valitun mallin luomat tapahtumat. Jos tämä jätetään tyhjäksi, kaikkien mallien tapahtumat "
+"valitaan. Kun sovellus on valittu, sovelluksen kaikkien mallien tapahtumat valitaan."
 
 #: authentik/policies/event_matcher/api.py
 msgid "At least one criteria must be set."
@@ -1510,19 +1457,16 @@ msgstr "Ainakin yksi ehto täytyy olla valittuna."
 
 #: authentik/policies/event_matcher/models.py
 msgid ""
-"Match created events with this action type. When left empty, all action "
-"types will be matched."
+"Match created events with this action type. When left empty, all action types will be matched."
 msgstr ""
-"Valitse tapahtumat, jotka on luotu tällä toimintotyypillä. Jos tämä jätetään"
-" tyhjäksi, kaikki toimintotyypit valitaan."
+"Valitse tapahtumat, jotka on luotu tällä toimintotyypillä. Jos tämä jätetään tyhjäksi, kaikki "
+"toimintotyypit valitaan."
 
 #: authentik/policies/event_matcher/models.py
-msgid ""
-"Matches Event's Client IP (strict matching, for network matching use an "
-"Expression Policy)"
+msgid "Matches Event's Client IP (strict matching, for network matching use an Expression Policy)"
 msgstr ""
-"Valitsee tapahtuman asiakkaan IP-osoitteen perusteella (tarkka vastaavuus, "
-"käytä ohjelmallista käytäntöä verkon valintaan)"
+"Valitsee tapahtuman asiakkaan IP-osoitteen perusteella (tarkka vastaavuus, käytä ohjelmallista "
+"käytäntöä verkon valintaan)"
 
 #: authentik/policies/event_matcher/models.py
 msgid "Event Matcher Policy"
@@ -1607,8 +1551,7 @@ msgstr "Käytäntöliitosmallit"
 
 #: authentik/policies/models.py
 msgid "Negates the outcome of the policy. Messages are unaffected."
-msgstr ""
-"Kääntää käytännön lopputuloksen vastakkaiseksi. Ei vaikutusta viesteihin."
+msgstr "Kääntää käytännön lopputuloksen vastakkaiseksi. Ei vaikutusta viesteihin."
 
 #: authentik/policies/models.py
 msgid "Timeout after which Policy execution is terminated."
@@ -1628,11 +1571,11 @@ msgstr "Käytäntöliitokset"
 
 #: authentik/policies/models.py
 msgid ""
-"When this option is enabled, all executions of this policy will be logged. "
-"By default, only execution errors are logged."
+"When this option is enabled, all executions of this policy will be logged. By default, only "
+"execution errors are logged."
 msgstr ""
-"Kun tämä vaihtoehto on valittu, kaikki tämän käytännön suoritukset kirjataan"
-" lokiin. Oletusarvoisesti vain suorituksien virheet kirjataan."
+"Kun tämä vaihtoehto on valittu, kaikki tämän käytännön suoritukset kirjataan lokiin. "
+"Oletusarvoisesti vain suorituksien virheet kirjataan."
 
 #: authentik/policies/models.py
 msgid "Policy"
@@ -1652,15 +1595,11 @@ msgstr "Tyhjennä käytäntövälimuistitilastot"
 
 #: authentik/policies/password/models.py
 msgid "How many times the password hash is allowed to be on haveibeenpwned"
-msgstr ""
-"Kuinka monta kertaa salasanan tiiviste saa olla haveibeenpwned-palvelussa."
+msgstr "Kuinka monta kertaa salasanan tiiviste saa olla haveibeenpwned-palvelussa."
 
 #: authentik/policies/password/models.py
-msgid ""
-"If the zxcvbn score is equal or less than this value, the policy will fail."
-msgstr ""
-"Jos zxcvbn-pistemäärä on tämä arvo tai pienempi, käytännön suorittaminen "
-"epäonnistuu."
+msgid "If the zxcvbn score is equal or less than this value, the policy will fail."
+msgstr "Jos zxcvbn-pistemäärä on tämä arvo tai pienempi, käytännön suorittaminen epäonnistuu."
 
 #: authentik/policies/password/models.py
 msgid "Invalid password."
@@ -1709,11 +1648,9 @@ msgstr "Odotetaan todennusta..."
 
 #: authentik/policies/templates/policies/buffer.html
 msgid ""
-"You're already authenticating in another tab. This page will refresh once "
-"authentication is completed."
-msgstr ""
-"Kirjaudut jo toisella välilehdellä. Tämä sivu päivittyy kun todennus on "
-"valmis."
+"You're already authenticating in another tab. This page will refresh once authentication is "
+"completed."
+msgstr "Kirjaudut jo toisella välilehdellä. Tämä sivu päivittyy kun todennus on valmis."
 
 #: authentik/policies/templates/policies/buffer.html
 msgid "Authenticate in this tab"
@@ -1768,41 +1705,36 @@ msgstr "DN, jonka alla objektit ovat käytettävissä."
 
 #: authentik/providers/ldap/models.py
 msgid ""
-"The start for uidNumbers, this number is added to the user.pk to make sure "
-"that the numbers aren't too low for POSIX users. Default is 2000 to ensure "
-"that we don't collide with local users uidNumber"
+"The start for uidNumbers, this number is added to the user.pk to make sure that the numbers "
+"aren't too low for POSIX users. Default is 2000 to ensure that we don't collide with local users "
+"uidNumber"
 msgstr ""
-"Alkupiste uidNumber-arvoille. Tämä numero lisätään user.pk:hon, jolla "
-"varmistetaan, että numerot eivät ole liian pieniä POSIX-käyttäjille. "
-"Oletusarvo on 2000, niin että paikallisten käyttäjien uidNumber-arvojen "
-"kanssa ei tule yhteentörmäyksiä."
+"Alkupiste uidNumber-arvoille. Tämä numero lisätään user.pk:hon, jolla varmistetaan, että numerot "
+"eivät ole liian pieniä POSIX-käyttäjille. Oletusarvo on 2000, niin että paikallisten käyttäjien "
+"uidNumber-arvojen kanssa ei tule yhteentörmäyksiä."
 
 #: authentik/providers/ldap/models.py
 msgid ""
-"The start for gidNumbers, this number is added to a number generated from "
-"the group.pk to make sure that the numbers aren't too low for POSIX groups. "
-"Default is 4000 to ensure that we don't collide with local groups or users "
-"primary groups gidNumber"
+"The start for gidNumbers, this number is added to a number generated from the group.pk to make "
+"sure that the numbers aren't too low for POSIX groups. Default is 4000 to ensure that we don't "
+"collide with local groups or users primary groups gidNumber"
 msgstr ""
-"Alkupiste gidNumber-arvoille. Tämä numero lisätään numeroon, joka luodaan "
-"group.pk:sta. Tällä varmistetaan, että numerot eivät ole liian pieniä POSIX-"
-"ryhmille. Oletusarvo on 4000, niin että paikallisten käyttäjäryhmien tai "
-"käyttäjien ensisijaisten ryhmien gidNumber-arvojen kanssa ei tule "
-"yhteentörmäyksiä."
+"Alkupiste gidNumber-arvoille. Tämä numero lisätään numeroon, joka luodaan group.pk:sta. Tällä "
+"varmistetaan, että numerot eivät ole liian pieniä POSIX-ryhmille. Oletusarvo on 4000, niin että "
+"paikallisten käyttäjäryhmien tai käyttäjien ensisijaisten ryhmien gidNumber-arvojen kanssa ei "
+"tule yhteentörmäyksiä."
 
 #: authentik/providers/ldap/models.py authentik/providers/radius/models.py
 msgid ""
-"When enabled, code-based multi-factor authentication can be used by "
-"appending a semicolon and the TOTP code to the password. This should only be"
-" enabled if all users that will bind to this provider have a TOTP device "
-"configured, as otherwise a password may incorrectly be rejected if it "
+"When enabled, code-based multi-factor authentication can be used by appending a semicolon and the "
+"TOTP code to the password. This should only be enabled if all users that will bind to this "
+"provider have a TOTP device configured, as otherwise a password may incorrectly be rejected if it "
 "contains a semicolon."
 msgstr ""
-"Kun tämä asetus on käytössä, koodipohjaista monivaiheista todentamista "
-"voidaan käyttää lisäämällä puolipiste ja TOTP-koodi salasanan loppuun. Tätä "
-"tulisi käyttää vain, jos kaikilla tähän palveluntarjoajaan kytketyillä "
-"käyttäjillä on käytössä TOTP-laite, muussa tapauksessa salasana saatetaan "
-"virheellisesti hylätä, jos se sisältää puolipisteen."
+"Kun tämä asetus on käytössä, koodipohjaista monivaiheista todentamista voidaan käyttää lisäämällä "
+"puolipiste ja TOTP-koodi salasanan loppuun. Tätä tulisi käyttää vain, jos kaikilla tähän "
+"palveluntarjoajaan kytketyillä käyttäjillä on käytössä TOTP-laite, muussa tapauksessa salasana "
+"saatetaan virheellisesti hylätä, jos se sisältää puolipisteen."
 
 #: authentik/providers/ldap/models.py
 msgid "LDAP Provider"
@@ -1840,17 +1772,15 @@ msgstr "Käyttäjätunnuksen perusteella"
 #: authentik/providers/oauth2/constants.py
 msgid "Based on the User's Email. This is recommended over the UPN method."
 msgstr ""
-"Käyttäjän sähköpostiosoitteen perusteella. Tätä suositellaan ennemmin kuin "
-"UPN-menetelmän käyttöä."
+"Käyttäjän sähköpostiosoitteen perusteella. Tätä suositellaan ennemmin kuin UPN-menetelmän käyttöä."
 
 #: authentik/providers/oauth2/constants.py
 msgid ""
-"Based on the User's UPN, only works if user has a 'upn' attribute set. Use "
-"this method only if you have different UPN and Mail domains."
+"Based on the User's UPN, only works if user has a 'upn' attribute set. Use this method only if "
+"you have different UPN and Mail domains."
 msgstr ""
-"Käyttäjän UPNn perusteella. Toimii ainoastaan, jos käyttäjällä on "
-"'upn'-attribuutti asetettu. Käytä tätä ainoastaan, jos sinulla on eri "
-"verkkotunnus UPN:ssä ja sähköpostissa."
+"Käyttäjän UPNn perusteella. Toimii ainoastaan, jos käyttäjällä on 'upn'-attribuutti asetettu. "
+"Käytä tätä ainoastaan, jos sinulla on eri verkkotunnus UPN:ssä ja sähköpostissa."
 
 #: authentik/providers/oauth2/models.py
 msgid "Confidential"
@@ -1866,9 +1796,7 @@ msgstr "Samaa tunnistetta käytetään kaikkien palveluntarjoajien kanssa"
 
 #: authentik/providers/oauth2/models.py
 msgid "Each provider has a different issuer, based on the application slug."
-msgstr ""
-"Jokaisella palveluntarjoajalla on eri myöntäjä, sovelluksen "
-"polkutunnisteesta riippuen."
+msgstr "Jokaisella palveluntarjoajalla on eri myöntäjä, sovelluksen polkutunnisteesta riippuen."
 
 #: authentik/providers/oauth2/models.py
 msgid "Strict URL comparison"
@@ -1935,12 +1863,10 @@ msgid "Scope used by the client"
 msgstr "Asiakkaan käyttämä käyttöalue"
 
 #: authentik/providers/oauth2/models.py
-msgid ""
-"Description shown to the user when consenting. If left empty, the user won't"
-" be informed."
+msgid "Description shown to the user when consenting. If left empty, the user won't be informed."
 msgstr ""
-"Kuvaus, joka näytetään käyttäjälle hyväksynnän yhteydessä. Jos tämä jätetään"
-" tyhjäksi, käyttäjää ei informoida."
+"Kuvaus, joka näytetään käyttäjälle hyväksynnän yhteydessä. Jos tämä jätetään tyhjäksi, käyttäjää "
+"ei informoida."
 
 #: authentik/providers/oauth2/models.py
 msgid "Scope Mapping"
@@ -1956,11 +1882,11 @@ msgstr "Asiakkaan tyyppi"
 
 #: authentik/providers/oauth2/models.py
 msgid ""
-"Confidential clients are capable of maintaining the confidentiality of their"
-" credentials. Public clients are incapable"
+"Confidential clients are capable of maintaining the confidentiality of their credentials. Public "
+"clients are incapable"
 msgstr ""
-"Luottamukselliset asiakkaat pystyvät ylläpitämään tunnistetietojen "
-"luottamuksellisuutta. Julkiset asiakkaat eivät pysty"
+"Luottamukselliset asiakkaat pystyvät ylläpitämään tunnistetietojen luottamuksellisuutta. Julkiset "
+"asiakkaat eivät pysty"
 
 #: authentik/providers/oauth2/models.py
 msgid "Client ID"
@@ -1983,12 +1909,9 @@ msgid "Logout Method"
 msgstr "Uloskirjautumismenetelmä"
 
 #: authentik/providers/oauth2/models.py
-msgid ""
-"Backchannel logs out with server to server calls. Frontchannel uses iframes "
-"in your browser"
+msgid "Backchannel logs out with server to server calls. Frontchannel uses iframes in your browser"
 msgstr ""
-"Taustakanava kirjautuu ulos palvelinten välisillä kutsuilla. Etukanava "
-"käyttää selaimesi iframeja"
+"Taustakanava kirjautuu ulos palvelinten välisillä kutsuilla. Etukanava käyttää selaimesi iframeja"
 
 #: authentik/providers/oauth2/models.py
 msgid "Include claims in id_token"
@@ -1996,45 +1919,43 @@ msgstr "Sisällytä vaatimukset id_tokeniin"
 
 #: authentik/providers/oauth2/models.py
 msgid ""
-"Include User claims from scopes in the id_token, for applications that don't"
-" access the userinfo endpoint."
+"Include User claims from scopes in the id_token, for applications that don't access the userinfo "
+"endpoint."
 msgstr ""
-"Sisällytä käyttäjän vaatimukset käyttöalueista id_tokeniin, sovelluksille "
-"jotka eivät käytä userinfo-rajapintaa."
+"Sisällytä käyttäjän vaatimukset käyttöalueista id_tokeniin, sovelluksille jotka eivät käytä "
+"userinfo-rajapintaa."
 
 #: authentik/providers/oauth2/models.py
 msgid ""
 "Access codes not valid on or after current time + this value (Format: "
 "hours=1;minutes=2;seconds=3)."
 msgstr ""
-"Pääsykoodit eivät ole voimassa luontihetkestä lisättynä tällä arvolla "
-"(Muoto: hours=1;minutes=2;seconds=3)."
-
-#: authentik/providers/oauth2/models.py
-msgid ""
-"Tokens not valid on or after current time + this value (Format: "
-"hours=1;minutes=2;seconds=3)."
-msgstr ""
-"Tunnisteet eivät ole voimassa luontihetkestä lisättynä tällä arvolla (Muoto:"
-" hours=1;minutes=2;seconds=3)."
-
-#: authentik/providers/oauth2/models.py
-msgid ""
-"When refreshing a token, if the refresh token is valid for less than this "
-"duration, it will be renewed. When set to seconds=0, token will always be "
-"renewed. (Format: hours=1;minutes=2;seconds=3)."
-msgstr ""
-"Tunnusta päivitettäessä, jos päivitystunnus on voimassa vähemmän kuin tämän "
-"ajan, se uusitaan. Jos asetetaan seconds=0, tunnus uusitaan aina. (Muoto: "
+"Pääsykoodit eivät ole voimassa luontihetkestä lisättynä tällä arvolla (Muoto: "
 "hours=1;minutes=2;seconds=3)."
 
 #: authentik/providers/oauth2/models.py
 msgid ""
-"Configure what data should be used as unique User Identifier. For most "
-"cases, the default should be fine."
+"Tokens not valid on or after current time + this value (Format: hours=1;minutes=2;seconds=3)."
 msgstr ""
-"Määritä, mitä tietoa käytetään yksilöllisenä käyttäjän tunnisteena. "
-"Useimmissa tapauksissa oletusarvon pitäisi toimia sellaisenaan."
+"Tunnisteet eivät ole voimassa luontihetkestä lisättynä tällä arvolla (Muoto: "
+"hours=1;minutes=2;seconds=3)."
+
+#: authentik/providers/oauth2/models.py
+msgid ""
+"When refreshing a token, if the refresh token is valid for less than this duration, it will be "
+"renewed. When set to seconds=0, token will always be renewed. (Format: "
+"hours=1;minutes=2;seconds=3)."
+msgstr ""
+"Tunnusta päivitettäessä, jos päivitystunnus on voimassa vähemmän kuin tämän ajan, se uusitaan. "
+"Jos asetetaan seconds=0, tunnus uusitaan aina. (Muoto: hours=1;minutes=2;seconds=3)."
+
+#: authentik/providers/oauth2/models.py
+msgid ""
+"Configure what data should be used as unique User Identifier. For most cases, the default should "
+"be fine."
+msgstr ""
+"Määritä, mitä tietoa käytetään yksilöllisenä käyttäjän tunnisteena. Useimmissa tapauksissa "
+"oletusarvon pitäisi toimia sellaisenaan."
 
 #: authentik/providers/oauth2/models.py
 msgid "Configure how the issuer field of the ID Token should be filled."
@@ -2049,20 +1970,15 @@ msgid "Encryption Key"
 msgstr "Salausavain"
 
 #: authentik/providers/oauth2/models.py
-msgid ""
-"Key used to encrypt the tokens. When set, tokens will be encrypted and "
-"returned as JWEs."
+msgid "Key used to encrypt the tokens. When set, tokens will be encrypted and returned as JWEs."
 msgstr ""
-"Avain, jota käytetään tunnisteiden salaukseen. Kun tämä on asetettu, "
-"tunnisteet salataan ja palautetaan JWE-muodossa."
+"Avain, jota käytetään tunnisteiden salaukseen. Kun tämä on asetettu, tunnisteet salataan ja "
+"palautetaan JWE-muodossa."
 
 #: authentik/providers/oauth2/models.py
-msgid ""
-"Any JWT signed by the JWK of the selected source can be used to "
-"authenticate."
+msgid "Any JWT signed by the JWK of the selected source can be used to authenticate."
 msgstr ""
-"Mitä tahansa JWT:tä, joka on salattu valitun lähteen JWK:lla, voidaan "
-"käyttää todentamiseen."
+"Mitä tahansa JWT:tä, joka on salattu valitun lähteen JWK:lla, voidaan käyttää todentamiseen."
 
 #: authentik/providers/oauth2/models.py
 msgid "OAuth2/OpenID Provider"
@@ -2122,18 +2038,13 @@ msgstr "OAuth2-päivitystunnukset"
 
 #: authentik/providers/oauth2/tasks.py
 msgid "Send a back-channel logout request to the registered client"
-msgstr ""
-"Lähetä uloskirjautumispyyntö rekisteröidylle asiakkaalle taustakanavaa "
-"pitkin"
+msgstr "Lähetä uloskirjautumispyyntö rekisteröidylle asiakkaalle taustakanavaa pitkin"
 
 #: authentik/providers/oauth2/tasks.py
 msgid "Handle backchannel logout notifications dispatched via signal"
-msgstr ""
-"Käsittele taustakanavan uloskirjautumisnotifikaatiot, jotka on lähetetty "
-"signaalilla"
+msgstr "Käsittele taustakanavan uloskirjautumisnotifikaatiot, jotka on lähetetty signaalilla"
 
-#: authentik/providers/oauth2/views/authorize.py
-#: authentik/providers/saml/views/flows.py
+#: authentik/providers/oauth2/views/authorize.py authentik/providers/saml/views/flows.py
 #, python-brace-format
 msgid "Redirecting to {app}..."
 msgstr "Ohjataan sovellukseen {app}..."
@@ -2156,13 +2067,11 @@ msgstr "GitHub-yhteensopivuus: pääsy ryhmiisi"
 
 #: authentik/providers/proxy/api.py
 msgid "User and password attributes must be set when basic auth is enabled."
-msgstr ""
-"Käyttäjä- ja salasana-attribuutit on asetettava kun basic auth on valittuna."
+msgstr "Käyttäjä- ja salasana-attribuutit on asetettava kun basic auth on valittuna."
 
 #: authentik/providers/proxy/api.py
 msgid "Internal host cannot be empty when forward auth is disabled."
-msgstr ""
-"Sisäinen osoite ei voi olla tyhjä kun forward auth on poistettu käytöstä."
+msgstr "Sisäinen osoite ei voi olla tyhjä kun forward auth on poistettu käytöstä."
 
 #: authentik/providers/proxy/models.py
 msgid "Proxy Session"
@@ -2182,39 +2091,36 @@ msgstr "Sisäisen osoitteen SSL-varmennus"
 
 #: authentik/providers/proxy/models.py
 msgid ""
-"Enable support for forwardAuth in traefik and nginx auth_request. Exclusive "
-"with internal_host."
+"Enable support for forwardAuth in traefik and nginx auth_request. Exclusive with internal_host."
 msgstr ""
-"Kytke käyttöön tuki traefikin forwardAuthille ja nginx:n auth_requestille. "
-"Poissulkee internal_host-asetuksen."
+"Kytke käyttöön tuki traefikin forwardAuthille ja nginx:n auth_requestille. Poissulkee "
+"internal_host-asetuksen."
 
 #: authentik/providers/proxy/models.py
 msgid ""
-"Regular expressions for which authentication is not required. Each new line "
-"is interpreted as a new Regular Expression."
+"Regular expressions for which authentication is not required. Each new line is interpreted as a "
+"new Regular Expression."
 msgstr ""
-"Regular expressionit, joihin todentamista ei tarvita. Jokainen rivi "
-"tulkitaan uutena regular expressionina."
+"Regular expressionit, joihin todentamista ei tarvita. Jokainen rivi tulkitaan uutena regular "
+"expressionina."
 
 #: authentik/providers/proxy/models.py
 msgid ""
-"When enabled, this provider will intercept the authorization header and "
-"authenticate requests based on its value."
+"When enabled, this provider will intercept the authorization header and authenticate requests "
+"based on its value."
 msgstr ""
-"Kun tämä on käytössä, tämä palveluntarjoaja sieppaa valtuutusotsikkotiedon "
-"ja todentaa pyynnöt sen arvon perusteella."
+"Kun tämä on käytössä, tämä palveluntarjoaja sieppaa valtuutusotsikkotiedon ja todentaa pyynnöt "
+"sen arvon perusteella."
 
 #: authentik/providers/proxy/models.py
 msgid "Set HTTP-Basic Authentication"
 msgstr "Aseta HTTP-Basic Authentication"
 
 #: authentik/providers/proxy/models.py
-msgid ""
-"Set a custom HTTP-Basic Authentication header based on values from "
-"authentik."
+msgid "Set a custom HTTP-Basic Authentication header based on values from authentik."
 msgstr ""
-"Aseta mukautettu HTTP-Basic Authentication -otsikkotieto authentikista "
-"tulevien arvojen perusteella."
+"Aseta mukautettu HTTP-Basic Authentication -otsikkotieto authentikista tulevien arvojen "
+"perusteella."
 
 #: authentik/providers/proxy/models.py
 msgid "HTTP-Basic Username Key"
@@ -2222,23 +2128,19 @@ msgstr "HTTP-Basic käyttäjätunnuksen avain"
 
 #: authentik/providers/proxy/models.py
 msgid ""
-"User/Group Attribute used for the user part of the HTTP-Basic Header. If not"
-" set, the user's Email address is used."
+"User/Group Attribute used for the user part of the HTTP-Basic Header. If not set, the user's "
+"Email address is used."
 msgstr ""
-"Käyttäjän tai ryhmän attribuutti, jota käytetään HTTP-Basic -otsikkotiedon "
-"käyttäjäosassa. Jos tätä ei ole asetettu, käytetään käyttäjän "
-"sähköpostiosoitetta."
+"Käyttäjän tai ryhmän attribuutti, jota käytetään HTTP-Basic -otsikkotiedon käyttäjäosassa. Jos "
+"tätä ei ole asetettu, käytetään käyttäjän sähköpostiosoitetta."
 
 #: authentik/providers/proxy/models.py
 msgid "HTTP-Basic Password Key"
 msgstr "HTTP-Basic salasanan avain"
 
 #: authentik/providers/proxy/models.py
-msgid ""
-"User/Group Attribute used for the password part of the HTTP-Basic Header."
-msgstr ""
-"Käyttäjän tai ryhmän attribuutti, jota käytetään HTTP-Basic -otsikkotiedon "
-"salasanaosassa."
+msgid "User/Group Attribute used for the password part of the HTTP-Basic Header."
+msgstr "Käyttäjän tai ryhmän attribuutti, jota käytetään HTTP-Basic -otsikkotiedon salasanaosassa."
 
 #: authentik/providers/proxy/models.py
 msgid "Proxy Provider"
@@ -2254,17 +2156,15 @@ msgstr "Katkaise istunto välityspalvelutukikohdasta."
 
 #: authentik/providers/rac/models.py authentik/stages/user_login/models.py
 msgid ""
-"Determines how long a session lasts. Default of 0 means that the sessions "
-"lasts until the browser is closed. (Format: hours=-1;minutes=-2;seconds=-3)"
+"Determines how long a session lasts. Default of 0 means that the sessions lasts until the browser "
+"is closed. (Format: hours=-1;minutes=-2;seconds=-3)"
 msgstr ""
-"Määrittää istunnon keston. Oletusarvo 0 tarkoittaa, että istunto kestää "
-"kunnes selain suljetaan. (Muoto: hours=-1;minutes=-2;seconds=-3)"
+"Määrittää istunnon keston. Oletusarvo 0 tarkoittaa, että istunto kestää kunnes selain suljetaan. "
+"(Muoto: hours=-1;minutes=-2;seconds=-3)"
 
 #: authentik/providers/rac/models.py
 msgid "When set to true, connection tokens will be deleted upon disconnect."
-msgstr ""
-"Kun asetettu arvoon tosi, yhteystunnisteet poistetaan yhteyden katkaisemisen"
-" yhteydessä."
+msgstr "Kun asetettu arvoon tosi, yhteystunnisteet poistetaan yhteyden katkaisemisen yhteydessä."
 
 #: authentik/providers/rac/models.py
 msgid "RAC Provider"
@@ -2309,18 +2209,16 @@ msgstr "(Olet jo yhteydessä toisen selainvälilehden tai -ikkunan kautta)"
 #: authentik/providers/radius/models.py
 msgid "Shared secret between clients and server to hash packets."
 msgstr ""
-"Asiakkaiden ja palvelimen välillä jaettu salausavain, jolla lasketaan "
-"pakettien tiivisteitä."
+"Asiakkaiden ja palvelimen välillä jaettu salausavain, jolla lasketaan pakettien tiivisteitä."
 
 #: authentik/providers/radius/models.py
 msgid ""
-"List of CIDRs (comma-separated) that clients can connect from. A more "
-"specific CIDR will match before a looser one. Clients connecting from a non-"
-"specified CIDR will be dropped."
+"List of CIDRs (comma-separated) that clients can connect from. A more specific CIDR will match "
+"before a looser one. Clients connecting from a non-specified CIDR will be dropped."
 msgstr ""
-"Pilkuilla erotettu lista CIDR-alueista, joista asiakkaat voivat muodostaa "
-"yhteyksiä. Rajatumpia CIDR-alueita käytetään vertailussa ennen laajempia "
-"aluetta. Yhteydet, joita yritetään muodostaa muista CIDR-alueista estetään."
+"Pilkuilla erotettu lista CIDR-alueista, joista asiakkaat voivat muodostaa yhteyksiä. Rajatumpia "
+"CIDR-alueita käytetään vertailussa ennen laajempia aluetta. Yhteydet, joita yritetään muodostaa "
+"muista CIDR-alueista estetään."
 
 #: authentik/providers/radius/models.py
 msgid "Radius Provider"
@@ -2340,11 +2238,11 @@ msgstr "Radius-palveluntarjoajan ominaisuuskytkennät"
 
 #: authentik/providers/saml/api/providers.py
 msgid ""
-"With a signing keypair selected, at least one of 'Sign assertion' and 'Sign "
-"Response' must be selected."
+"With a signing keypair selected, at least one of 'Sign assertion' and 'Sign Response' must be "
+"selected."
 msgstr ""
-"Kun allekirjoitusavainpari on valittu, ainakin yksi vaihtoehdoista "
-"'Allekirjoita väite' ja 'Allekirjoita vastaus' täytyy olla valittuna."
+"Kun allekirjoitusavainpari on valittu, ainakin yksi vaihtoehdoista 'Allekirjoita väite' ja "
+"'Allekirjoita vastaus' täytyy olla valittuna."
 
 #: authentik/providers/saml/api/providers.py
 msgid "Invalid XML Syntax"
@@ -2364,20 +2262,14 @@ msgid "Service Provider Binding"
 msgstr "Palveluntarjoajaliitos"
 
 #: authentik/providers/saml/models.py
-msgid ""
-"This determines how authentik sends the response back to the Service "
-"Provider."
-msgstr ""
-"Tämä määrittää, kuinka authentik lähettää vastauksen takaisin "
-"palveluntarjoajalle."
+msgid "This determines how authentik sends the response back to the Service Provider."
+msgstr "Tämä määrittää, kuinka authentik lähettää vastauksen takaisin palveluntarjoajalle."
 
 #: authentik/providers/saml/models.py
 msgid ""
-"Value of the audience restriction field of the assertion. When left empty, "
-"no audience restriction will be added."
-msgstr ""
-"Väitteen yleisörajoituskentän arvo. Jos tämä jätetään tyhjäksi, "
-"yleisörajoitusta ei lisätä."
+"Value of the audience restriction field of the assertion. When left empty, no audience "
+"restriction will be added."
+msgstr "Väitteen yleisörajoituskentän arvo. Jos tämä jätetään tyhjäksi, yleisörajoitusta ei lisätä."
 
 #: authentik/providers/saml/models.py
 msgid "Also known as EntityID"
@@ -2390,35 +2282,29 @@ msgstr "SLS URL"
 #: authentik/providers/saml/models.py
 msgid "Single Logout Service URL where the logout response should be sent."
 msgstr ""
-"Kertauloskirjautumispalvelun (Single Logout Service) URL, johon "
-"uloskirjautuminen tulisi lähettää."
+"Kertauloskirjautumispalvelun (Single Logout Service) URL, johon uloskirjautuminen tulisi lähettää."
 
 #: authentik/providers/saml/models.py
 msgid "SLS Binding"
 msgstr "SLS-liitos"
 
 #: authentik/providers/saml/models.py
-msgid ""
-"This determines how authentik sends the logout response back to the Service "
-"Provider."
+msgid "This determines how authentik sends the logout response back to the Service Provider."
 msgstr ""
-"Tämä määrittää, kuinka authentik lähettää uloskirjautumisvastauksen takaisin"
-" palveluntarjoajalle."
+"Tämä määrittää, kuinka authentik lähettää uloskirjautumisvastauksen takaisin palveluntarjoajalle."
 
 #: authentik/providers/saml/models.py
 msgid ""
-"Method to use for logout. Front-channel iframe loads all logout URLs "
-"simultaneously in hidden iframes. Front-channel native uses your active "
-"browser tab to send post requests and redirect to providers. Back-channel "
-"sends logout requests directly from the server without user interaction "
+"Method to use for logout. Front-channel iframe loads all logout URLs simultaneously in hidden "
+"iframes. Front-channel native uses your active browser tab to send post requests and redirect to "
+"providers. Back-channel sends logout requests directly from the server without user interaction "
 "(requires POST SLS binding)."
 msgstr ""
-"Uloskirjautumiseen käytettävä menetelmä. Etukanavan iframe avaa kerralla "
-"kaikki uloskirjautumis-URLit piilotettuihin iframeihin. Natiivi etukanava "
-"lähettää post-pyyntöjä ja uudelleenohjauksia palveluntarjoajille "
-"aktiivisessa selaimen välilehdessä. Taustakanava lähettää "
-"uloskirjautumispyynnöt suoraan palvelimelta palvelimelle ilman käyttäjän "
-"toimintaa (vaatii POST SLS -kytkennän)."
+"Uloskirjautumiseen käytettävä menetelmä. Etukanavan iframe avaa kerralla kaikki uloskirjautumis-"
+"URLit piilotettuihin iframeihin. Natiivi etukanava lähettää post-pyyntöjä ja uudelleenohjauksia "
+"palveluntarjoajille aktiivisessa selaimen välilehdessä. Taustakanava lähettää "
+"uloskirjautumispyynnöt suoraan palvelimelta palvelimelle ilman käyttäjän toimintaa (vaatii POST "
+"SLS -kytkennän)."
 
 #: authentik/providers/saml/models.py
 msgid "NameID Property Mapping"
@@ -2426,11 +2312,11 @@ msgstr "NameID-ominaisuuden kytkentä"
 
 #: authentik/providers/saml/models.py
 msgid ""
-"Configure how the NameID value will be created. When left empty, the "
-"NameIDPolicy of the incoming request will be considered"
+"Configure how the NameID value will be created. When left empty, the NameIDPolicy of the incoming "
+"request will be considered"
 msgstr ""
-"Määritä, kuinka NameID:n arvo luodaan. Jos tämä jätetään tyhjäksi, käytetään"
-" sisääntulevan pyynnön NameIDPolicy-kentän arvoa."
+"Määritä, kuinka NameID:n arvo luodaan. Jos tämä jätetään tyhjäksi, käytetään sisääntulevan "
+"pyynnön NameIDPolicy-kentän arvoa."
 
 #: authentik/providers/saml/models.py
 msgid "AuthnContextClassRef Property Mapping"
@@ -2438,34 +2324,30 @@ msgstr "AuthnContextClassRef-ominaisuuskytkentä"
 
 #: authentik/providers/saml/models.py
 msgid ""
-"Configure how the AuthnContextClassRef value will be created. When left "
-"empty, the AuthnContextClassRef will be set based on which authentication "
-"methods the user used to authenticate."
+"Configure how the AuthnContextClassRef value will be created. When left empty, the "
+"AuthnContextClassRef will be set based on which authentication methods the user used to "
+"authenticate."
 msgstr ""
-"Määritä, kuinka AuthnContextClassRef-arvo luodaan. Kun tämä jätetään "
-"tyhjäksi, AuthnContextClassRef asetetaan käyttäjän todentamisessa käyttämien"
-" todentamismenetelmien mukaan."
+"Määritä, kuinka AuthnContextClassRef-arvo luodaan. Kun tämä jätetään tyhjäksi, "
+"AuthnContextClassRef asetetaan käyttäjän todentamisessa käyttämien todentamismenetelmien mukaan."
 
 #: authentik/providers/saml/models.py
 msgid ""
-"Assertion valid not before current time + this value (Format: "
-"hours=-1;minutes=-2;seconds=-3)."
+"Assertion valid not before current time + this value (Format: hours=-1;minutes=-2;seconds=-3)."
 msgstr ""
 "Väite ei ole voimassa ennen tätä hetkeä lisättynä tällä arvolla (Muoto: "
 "hours=-1;minutes=-2;seconds=-3)."
 
 #: authentik/providers/saml/models.py
 msgid ""
-"Assertion not valid on or after current time + this value (Format: "
-"hours=1;minutes=2;seconds=3)."
+"Assertion not valid on or after current time + this value (Format: hours=1;minutes=2;seconds=3)."
 msgstr ""
 "Väite ei ole voimassa tänä hetkenä lisättynä tällä arvolla (Muoto: "
 "hours=-1;minutes=-2;seconds=-3)."
 
 #: authentik/providers/saml/models.py
 msgid ""
-"Session not valid on or after current time + this value (Format: "
-"hours=1;minutes=2;seconds=3)."
+"Session not valid on or after current time + this value (Format: hours=1;minutes=2;seconds=3)."
 msgstr ""
 "Istunto ei ole voimassa tänä hetkenä lisättynä tällä arvolla (Muoto: "
 "hours=-1;minutes=-2;seconds=-3)."
@@ -2524,12 +2406,11 @@ msgstr "DSA-SHA1"
 
 #: authentik/providers/saml/models.py authentik/sources/saml/models.py
 msgid ""
-"When selected, incoming assertion's Signatures will be validated against "
-"this certificate. To allow unsigned Requests, leave on default."
+"When selected, incoming assertion's Signatures will be validated against this certificate. To "
+"allow unsigned Requests, leave on default."
 msgstr ""
-"Kun tämä on valittu, saapuvien väitteiden allekirjoitukset validoidaan tällä"
-" sertifikaatilla. Jätä tämä tyhjäksi hyväksyäksesi allekirjoittamattomat "
-"pyynnöt."
+"Kun tämä on valittu, saapuvien väitteiden allekirjoitukset validoidaan tällä sertifikaatilla. "
+"Jätä tämä tyhjäksi hyväksyäksesi allekirjoittamattomat pyynnöt."
 
 #: authentik/providers/saml/models.py authentik/sources/saml/models.py
 msgid "Verification Certificate"
@@ -2537,9 +2418,7 @@ msgstr "Vahvistussertifikaatti"
 
 #: authentik/providers/saml/models.py
 msgid "Keypair used to sign outgoing Responses going to the Service Provider."
-msgstr ""
-"Avainpari, jota käytetään allekirjoittamaan palveluntarjoajalle lähtevät "
-"vastaukset."
+msgstr "Avainpari, jota käytetään allekirjoittamaan palveluntarjoajalle lähtevät vastaukset."
 
 #: authentik/providers/saml/models.py authentik/sources/saml/models.py
 msgid "Signing Keypair"
@@ -2547,13 +2426,11 @@ msgstr "Allekirjoitusavainpari"
 
 #: authentik/providers/saml/models.py authentik/sources/saml/models.py
 msgid ""
-"When selected, incoming assertions are encrypted by the IdP using the public"
-" key of the encryption keypair. The assertion is decrypted by the SP using "
-"the the private key."
+"When selected, incoming assertions are encrypted by the IdP using the public key of the "
+"encryption keypair. The assertion is decrypted by the SP using the the private key."
 msgstr ""
-"Kun tämä on valittu, saapuvat väitteet salataan IdP:llä käyttäen "
-"allekirjoitusavainparin julkista avainta. SP purkaa väitteen käyttämällä "
-"yksityistä avainta."
+"Kun tämä on valittu, saapuvat väitteet salataan IdP:llä käyttäen allekirjoitusavainparin julkista "
+"avainta. SP purkaa väitteen käyttämällä yksityistä avainta."
 
 #: authentik/providers/saml/models.py authentik/sources/saml/models.py
 msgid "Encryption Keypair"
@@ -2561,8 +2438,7 @@ msgstr "Salausavainpari"
 
 #: authentik/providers/saml/models.py
 msgid "Default relay_state value for IDP-initiated logins"
-msgstr ""
-"Oletusarvoinen relay_state-kentän arvo IDP-lähtöisille kirjautumisille"
+msgstr "Oletusarvoinen relay_state-kentän arvo IDP-lähtöisille kirjautumisille"
 
 #: authentik/providers/saml/models.py
 msgid "SAML Provider"
@@ -2654,8 +2530,11 @@ msgstr "SCIM-yhteensopivuustila"
 
 #: authentik/providers/scim/models.py
 msgid "Alter authentik behavior for vendor-specific SCIM implementations."
+msgstr "Muuta authentikin toimintaa valmistajakohtaisten SCIM-toteutusten osalta."
+
+#: authentik/providers/scim/models.py
+msgid "Cache duration for ServiceProviderConfig responses. Set minutes=0 to disable."
 msgstr ""
-"Muuta authentikin toimintaa valmistajakohtaisten SCIM-toteutusten osalta."
 
 #: authentik/providers/scim/models.py
 msgid "SCIM Provider"
@@ -2683,15 +2562,12 @@ msgstr "SCIM-palveluntarjoajan täysi synkronointi."
 
 #: authentik/providers/scim/tasks.py
 msgid "Sync a direct object (user, group) for SCIM provider."
-msgstr ""
-"Synkronoi suoraan kytketty objekti (käyttäjä, ryhmä) SCIM-"
-"palveluntarjoajalla."
+msgstr "Synkronoi suoraan kytketty objekti (käyttäjä, ryhmä) SCIM-palveluntarjoajalla."
 
 #: authentik/providers/scim/tasks.py
 msgid "Dispatch syncs for a direct object (user, group) for SCIM providers."
 msgstr ""
-"Käynnistä suoraan kytketyn objektin (käyttäjä, ryhmä) synkronoinnit SCIM-"
-"palveluntarjoajille."
+"Käynnistä suoraan kytketyn objektin (käyttäjä, ryhmä) synkronoinnit SCIM-palveluntarjoajille."
 
 #: authentik/providers/scim/tasks.py
 msgid "Sync a related object (memberships) for SCIM provider."
@@ -2699,9 +2575,7 @@ msgstr "Sykronoi liittyvä objekti (jäsenyydet) SCIM-palveluntarjoajalla."
 
 #: authentik/providers/scim/tasks.py
 msgid "Dispatch syncs for a related object (memberships) for SCIM providers."
-msgstr ""
-"Käynnistä liittyvän objektin (jäsenyydet) synkronoinnit SCIM-"
-"palveluntarjoajille."
+msgstr "Käynnistä liittyvän objektin (jäsenyydet) synkronoinnit SCIM-palveluntarjoajille."
 
 #: authentik/rbac/models.py
 msgid "Role"
@@ -2747,6 +2621,16 @@ msgstr "Voi katsoa järjestelmäasetuksia"
 msgid "Can edit system settings"
 msgstr "Voi muokata järjestelmäasetuksia"
 
+#: authentik/rbac/models.py
+#, fuzzy
+#| msgid "Can view system info"
+msgid "Can view media files"
+msgstr "Voi katsoa järjestelmätietoja"
+
+#: authentik/rbac/models.py
+msgid "Can manage media files"
+msgstr ""
+
 #: authentik/recovery/management/commands/create_admin_group.py
 msgid "Create admin group if the default group gets deleted."
 msgstr "Luo ylläpidon ryhmä jos oletusryhmä poistetaan."
@@ -2765,9 +2649,7 @@ msgstr "Kerberos-toimialue"
 
 #: authentik/sources/kerberos/models.py
 msgid "Custom krb5.conf to use. Uses the system one by default"
-msgstr ""
-"Mukautettu krb5.conf, jota käytetään. Järjestelmän oletusta käytetään "
-"oletusarvoisesti."
+msgstr "Mukautettu krb5.conf, jota käytetään. Järjestelmän oletusta käytetään oletusarvoisesti."
 
 #: authentik/sources/kerberos/models.py
 msgid "KAdmin server type"
@@ -2783,55 +2665,44 @@ msgstr "Kun käyttäjä muuttaa salasanansa, synkronoi se Kerberosiin"
 
 #: authentik/sources/kerberos/models.py
 msgid "Principal to authenticate to kadmin for sync."
-msgstr ""
-"Käyttäjä, jota käytetään kadminiin todentamisessa synkronointia varten."
+msgstr "Käyttäjä, jota käytetään kadminiin todentamisessa synkronointia varten."
 
 #: authentik/sources/kerberos/models.py
 msgid "Password to authenticate to kadmin for sync"
-msgstr ""
-"Salasana, jota käytetään kdaminiin todentamisessa synkronointia varten."
+msgstr "Salasana, jota käytetään kdaminiin todentamisessa synkronointia varten."
 
 #: authentik/sources/kerberos/models.py
 msgid ""
-"Keytab to authenticate to kadmin for sync. Must be base64-encoded or in the "
-"form TYPE:residual"
+"Keytab to authenticate to kadmin for sync. Must be base64-encoded or in the form TYPE:residual"
 msgstr ""
-"Keytab-tiedosto, jota käytetään kadminiin todentamisessa synkronointia "
-"varten. Täytyy olla base64-koodattu tai muodossa TYPE:residual"
+"Keytab-tiedosto, jota käytetään kadminiin todentamisessa synkronointia varten. Täytyy olla base64-"
+"koodattu tai muodossa TYPE:residual"
 
 #: authentik/sources/kerberos/models.py
-msgid ""
-"Credentials cache to authenticate to kadmin for sync. Must be in the form "
-"TYPE:residual"
+msgid "Credentials cache to authenticate to kadmin for sync. Must be in the form TYPE:residual"
 msgstr ""
-"Tunnistetietojen välimuistitiedosto, jota käytetään kadminiin todentamisessa"
-" synkronointia varten. Täytyy olla muodossa TYPE:residual"
+"Tunnistetietojen välimuistitiedosto, jota käytetään kadminiin todentamisessa synkronointia "
+"varten. Täytyy olla muodossa TYPE:residual"
 
 #: authentik/sources/kerberos/models.py
-msgid ""
-"Force the use of a specific server name for SPNEGO. Must be in the form "
-"HTTP@hostname"
-msgstr ""
-"Pakotettu palvelimen nimi SPNEGOa varten. Täytyy olla muodossa HTTP@hostname"
+msgid "Force the use of a specific server name for SPNEGO. Must be in the form HTTP@hostname"
+msgstr "Pakotettu palvelimen nimi SPNEGOa varten. Täytyy olla muodossa HTTP@hostname"
 
 #: authentik/sources/kerberos/models.py
 msgid "SPNEGO keytab base64-encoded or path to keytab in the form FILE:path"
-msgstr ""
-"SPNEGOn keytab-tiedosto base64-koodattuna tai polku keytab-tiedostoon "
-"muodossa FILE:path"
+msgstr "SPNEGOn keytab-tiedosto base64-koodattuna tai polku keytab-tiedostoon muodossa FILE:path"
 
 #: authentik/sources/kerberos/models.py
 msgid "Credential cache to use for SPNEGO in form type:residual"
-msgstr ""
-"Tunnistetietojen välimuistitiedosto SPNEGOa varten muodossa type:residual"
+msgstr "Tunnistetietojen välimuistitiedosto SPNEGOa varten muodossa type:residual"
 
 #: authentik/sources/kerberos/models.py
 msgid ""
-"If enabled, the authentik-stored password will be updated upon login with "
-"the Kerberos password backend"
+"If enabled, the authentik-stored password will be updated upon login with the Kerberos password "
+"backend"
 msgstr ""
-"Jos tämä on käytössä, authentikiin tallennettu salasana päivitetään "
-"kirjauduttaessa Kerberosin salasanapalvelun kautta"
+"Jos tämä on käytössä, authentikiin tallennettu salasana päivitetään kirjauduttaessa Kerberosin "
+"salasanapalvelun kautta"
 
 #: authentik/sources/kerberos/models.py
 msgid "Kerberos Source"
@@ -2900,18 +2771,13 @@ msgid "Server URI"
 msgstr "Palvelimen URI"
 
 #: authentik/sources/ldap/models.py
-msgid ""
-"Optionally verify the LDAP Server's Certificate against the CA Chain in this"
-" keypair."
+msgid "Optionally verify the LDAP Server's Certificate against the CA Chain in this keypair."
 msgstr ""
-"Valinnaisesti vahvista LDAP-palvelimen sertifikaatti tässä avainparissa "
-"olevalla CA-ketjulla"
+"Valinnaisesti vahvista LDAP-palvelimen sertifikaatti tässä avainparissa olevalla CA-ketjulla"
 
 #: authentik/sources/ldap/models.py
-msgid ""
-"Client certificate to authenticate against the LDAP Server's Certificate."
-msgstr ""
-"Asiakkaan sertifikaatti, joka todennetaan LDAP-palvelimen sertifikaatilla"
+msgid "Client certificate to authenticate against the LDAP Server's Certificate."
+msgstr "Asiakkaan sertifikaatti, joka todennetaan LDAP-palvelimen sertifikaatilla"
 
 #: authentik/sources/ldap/models.py
 msgid "Bind CN"
@@ -2967,35 +2833,35 @@ msgstr "Kenttä, joka sisältää yksilöllisen tunnisteen."
 
 #: authentik/sources/ldap/models.py
 msgid "Update internal authentik password when login succeeds with LDAP"
-msgstr ""
-"Päivitä authentikin sisäinen salasana onnistuneen LDAP-kirjautumisen "
-"yhteydessä"
+msgstr "Päivitä authentikin sisäinen salasana onnistuneen LDAP-kirjautumisen yhteydessä"
 
 #: authentik/sources/ldap/models.py
 msgid ""
-"When a user changes their password, sync it back to LDAP. This can only be "
-"enabled on a single LDAP source."
+"When a user changes their password, sync it back to LDAP. This can only be enabled on a single "
+"LDAP source."
 msgstr ""
-"Kun käyttäjä muuttaa salasanansa, synkronoi se LDAPiin. Tämä voi olla "
-"käytössä vain yhden LDAP-lähteen kanssa."
+"Kun käyttäjä muuttaa salasanansa, synkronoi se LDAPiin. Tämä voi olla käytössä vain yhden LDAP-"
+"lähteen kanssa."
 
 #: authentik/sources/ldap/models.py
 msgid ""
-"Lookup group membership based on a user attribute instead of a group "
-"attribute. This allows nested group resolution on systems like FreeIPA and "
-"Active Directory"
+"Lookup group membership based on a user attribute instead of a group attribute. This allows "
+"nested group resolution on systems like FreeIPA and Active Directory"
 msgstr ""
-"Etsi ryhmän jäsenyys käyttäjäattribuutin perusteella ryhmäattribuutin "
-"sijaan. Tämä mahdollistaa sisäkkäisten ryhmien selvityksen järjestelmissä, "
-"kuten FreeIPA ja Active Directory"
+"Etsi ryhmän jäsenyys käyttäjäattribuutin perusteella ryhmäattribuutin sijaan. Tämä mahdollistaa "
+"sisäkkäisten ryhmien selvityksen järjestelmissä, kuten FreeIPA ja Active Directory"
 
 #: authentik/sources/ldap/models.py
 msgid ""
-"Delete authentik users and groups which were previously supplied by this "
-"source, but are now missing from it."
+"Delete authentik users and groups which were previously supplied by this source, but are now "
+"missing from it."
 msgstr ""
-"Poista authentik-käyttäjät ja ryhmät, jotka aiemmin luotiin tästä lähteestä,"
-" mutta joita ei enää löydy lähteestä."
+"Poista authentik-käyttäjät ja ryhmät, jotka aiemmin luotiin tästä lähteestä, mutta joita ei enää "
+"löydy lähteestä."
+
+#: authentik/sources/ldap/models.py
+msgid "N/A"
+msgstr ""
 
 #: authentik/sources/ldap/models.py
 msgid "LDAP Source"
@@ -3014,11 +2880,8 @@ msgid "LDAP Source Property Mappings"
 msgstr "LDAP-lähteen ominaisuuskytkennät"
 
 #: authentik/sources/ldap/models.py
-msgid ""
-"Unique ID used while checking if this object still exists in the directory."
-msgstr ""
-"Yksilöllinen ID, jota käytetään tarkistamaan, löytyykö objekti yhä "
-"hakemistosta."
+msgid "Unique ID used while checking if this object still exists in the directory."
+msgstr "Yksilöllinen ID, jota käytetään tarkistamaan, löytyykö objekti yhä hakemistosta."
 
 #: authentik/sources/ldap/models.py
 msgid "User LDAP Source Connection"
@@ -3081,12 +2944,9 @@ msgid "Request Token URL"
 msgstr "Pyyntötunnisteen URL"
 
 #: authentik/sources/oauth/models.py
-msgid ""
-"URL used to request the initial token. This URL is only required for OAuth "
-"1."
+msgid "URL used to request the initial token. This URL is only required for OAuth 1."
 msgstr ""
-"URL, jota käytetään ensimämisen tokenin hakemiseen. Tämä URL tarvitaan vain "
-"OAuth 1:n kanssa."
+"URL, jota käytetään ensimämisen tokenin hakemiseen. Tämä URL tarvitaan vain OAuth 1:n kanssa."
 
 #: authentik/sources/oauth/models.py
 msgid "Authorization URL"
@@ -3121,11 +2981,8 @@ msgid "PKCE"
 msgstr "PKCE"
 
 #: authentik/sources/oauth/models.py
-msgid ""
-"How to perform authentication during an authorization_code token request "
-"flow"
-msgstr ""
-"Kuinka todentaminen tehdään authorization_code-avainpyyntöprosessin aikana"
+msgid "How to perform authentication during an authorization_code token request flow"
+msgstr "Kuinka todentaminen tehdään authorization_code-avainpyyntöprosessin aikana"
 
 #: authentik/sources/oauth/models.py
 msgid "OAuth Source"
@@ -3190,6 +3047,18 @@ msgstr "Discord OAuth-lähde"
 #: authentik/sources/oauth/models.py
 msgid "Discord OAuth Sources"
 msgstr "Discord OAuth-lähteet"
+
+#: authentik/sources/oauth/models.py
+#, fuzzy
+#| msgid "Facebook OAuth Source"
+msgid "Slack OAuth Source"
+msgstr "Facebook OAuth-lähde"
+
+#: authentik/sources/oauth/models.py
+#, fuzzy
+#| msgid "Facebook OAuth Sources"
+msgid "Slack OAuth Sources"
+msgstr "Facebook OAuth-lähteet"
 
 #: authentik/sources/oauth/models.py
 msgid "Patreon OAuth Source"
@@ -3280,12 +3149,10 @@ msgid "Group OAuth Source Connections"
 msgstr "Ryhmän OAuth-lähteen yhteydet"
 
 #: authentik/sources/oauth/tasks.py
-msgid ""
-"Update OAuth sources' config from well_known, and JWKS info from the "
-"configured URL."
+msgid "Update OAuth sources' config from well_known, and JWKS info from the configured URL."
 msgstr ""
-"Päivitä OAuth-lähteiden konfiguraatiot well_known:ista, ja JWKS-tiedot "
-"määritellystä URL-osoitteesta."
+"Päivitä OAuth-lähteiden konfiguraatiot well_known:ista, ja JWKS-tiedot määritellystä URL-"
+"osoitteesta."
 
 #: authentik/sources/oauth/views/callback.py
 #, python-brace-format
@@ -3298,16 +3165,14 @@ msgstr "Käyttäjän tunnistetta käytettiin Plexin kanssa keskusteluun."
 
 #: authentik/sources/plex/models.py
 msgid ""
-"Which servers a user has to be a member of to be granted access. Empty list "
-"allows every server."
+"Which servers a user has to be a member of to be granted access. Empty list allows every server."
 msgstr ""
-"Minkä palvelinten jäsenenä käyttäjän täytyy olla, jotta pääsy sallitaan. "
-"Tyhjä lista sallii kaikki palvelimet."
+"Minkä palvelinten jäsenenä käyttäjän täytyy olla, jotta pääsy sallitaan. Tyhjä lista sallii "
+"kaikki palvelimet."
 
 #: authentik/sources/plex/models.py
 msgid "Allow friends to authenticate, even if you don't share a server."
-msgstr ""
-"Salli ystävien todentaa, vaikkei heillä olisi käytössä samoja palvelimia."
+msgstr "Salli ystävien todentaa, vaikkei heillä olisi käytössä samoja palvelimia."
 
 #: authentik/sources/plex/models.py
 msgid "Plex token used to check friends"
@@ -3351,12 +3216,11 @@ msgstr "Tarkista Plex-lähteen toiminta."
 
 #: authentik/sources/saml/api/source.py
 msgid ""
-"With a Verification Certificate selected, at least one of 'Verify Assertion "
-"Signature' or 'Verify Response Signature' must be selected."
+"With a Verification Certificate selected, at least one of 'Verify Assertion Signature' or 'Verify "
+"Response Signature' must be selected."
 msgstr ""
-"Kun varmennussertifikaatti on valittu, joko 'Tarkista väitteen "
-"allekirjoitus' tai 'Tarkista vastauksen allekirjoitus' täytyy olla "
-"valittuna."
+"Kun varmennussertifikaatti on valittu, joko 'Tarkista väitteen allekirjoitus' tai 'Tarkista "
+"vastauksen allekirjoitus' täytyy olla valittuna."
 
 #: authentik/sources/saml/models.py
 msgid "Redirect Binding"
@@ -3396,25 +3260,21 @@ msgstr "SLO URL"
 
 #: authentik/sources/saml/models.py
 msgid "Optional URL if your IDP supports Single-Logout."
-msgstr ""
-"Valinnainen URL, jos käyttämäsi IDP tukee keskitettyä uloskirjautumista "
-"(Single-Logout)."
+msgstr "Valinnainen URL, jos käyttämäsi IDP tukee keskitettyä uloskirjautumista (Single-Logout)."
 
 #: authentik/sources/saml/models.py
 msgid ""
-"Allows authentication flows initiated by the IdP. This can be a security "
-"risk, as no validation of the request ID is done."
+"Allows authentication flows initiated by the IdP. This can be a security risk, as no validation "
+"of the request ID is done."
 msgstr ""
-"Sallii IdP-lähtöiset todentamisprosessit. Tämä voi olla tietoturvariski, "
-"koska pyynnön ID:tä ei validoida."
+"Sallii IdP-lähtöiset todentamisprosessit. Tämä voi olla tietoturvariski, koska pyynnön ID:tä ei "
+"validoida."
 
 #: authentik/sources/saml/models.py
-msgid ""
-"NameID Policy sent to the IdP. Can be unset, in which case no Policy is "
-"sent."
+msgid "NameID Policy sent to the IdP. Can be unset, in which case no Policy is sent."
 msgstr ""
-"NameID-käytäntö, joka lähetetään IdP:lle. Voidaan jättää tyhjäksi, jolloin "
-"mitään käytäntöä ei lähetetä."
+"NameID-käytäntö, joka lähetetään IdP:lle. Voidaan jättää tyhjäksi, jolloin mitään käytäntöä ei "
+"lähetetä."
 
 #: authentik/sources/saml/models.py
 msgid "Delete temporary users after"
@@ -3422,20 +3282,17 @@ msgstr "Poista tilapäiset käyttäjät tämän ajan jälkeen:"
 
 #: authentik/sources/saml/models.py
 msgid ""
-"Time offset when temporary users should be deleted. This only applies if "
-"your IDP uses the NameID Format 'transient', and the user doesn't log out "
-"manually. (Format: hours=1;minutes=2;seconds=3)."
+"Time offset when temporary users should be deleted. This only applies if your IDP uses the NameID "
+"Format 'transient', and the user doesn't log out manually. (Format: hours=1;minutes=2;seconds=3)."
 msgstr ""
-"Viive, jonka jälkeen tilapäiset käyttäjät poistetaan. Tämä tehdään vain, jos"
-" IDP käyttää NameID:n muotoa 'transient', eikä käyttäjä kirjaudu ulos "
-"automaattisesti. (Muoto: hours=1;minutes=2;seconds=3)."
+"Viive, jonka jälkeen tilapäiset käyttäjät poistetaan. Tämä tehdään vain, jos IDP käyttää NameID:n "
+"muotoa 'transient', eikä käyttäjä kirjaudu ulos automaattisesti. (Muoto: "
+"hours=1;minutes=2;seconds=3)."
 
 #: authentik/sources/saml/models.py
-msgid ""
-"Keypair used to sign outgoing Responses going to the Identity Provider."
+msgid "Keypair used to sign outgoing Responses going to the Identity Provider."
 msgstr ""
-"Avainpari, jota käytetään allekirjoittamaan tunnistustietojen tarjoajalle "
-"lähtevät vastaukset."
+"Avainpari, jota käytetään allekirjoittamaan tunnistustietojen tarjoajalle lähtevät vastaukset."
 
 #: authentik/sources/saml/models.py
 msgid "SAML Source"
@@ -3558,21 +3415,17 @@ msgstr "Duo-laite"
 msgid "Duo Devices"
 msgstr "Duo-laitteet"
 
-#: authentik/stages/authenticator_email/models.py
-#: authentik/stages/email/models.py
+#: authentik/stages/authenticator_email/models.py authentik/stages/email/models.py
 msgid ""
-"When enabled, global Email connection settings will be used and connection "
-"settings below will be ignored."
+"When enabled, global Email connection settings will be used and connection settings below will be "
+"ignored."
 msgstr ""
-"Kun tämä on käytössä, käytetään globaaleja sähköpostiyhteysasetuksia, ja "
-"alla olevat yhteysasetukset ohitetaan."
+"Kun tämä on käytössä, käytetään globaaleja sähköpostiyhteysasetuksia, ja alla olevat "
+"yhteysasetukset ohitetaan."
 
-#: authentik/stages/authenticator_email/models.py
-#: authentik/stages/email/models.py
+#: authentik/stages/authenticator_email/models.py authentik/stages/email/models.py
 msgid "Time the token sent is valid (Format: hours=3,minutes=17,seconds=300)."
-msgstr ""
-"Aika, jonka lähtetty tunniste on voimassa (Muoto: "
-"hours=3,minutes=17,seconds=300)."
+msgstr "Aika, jonka lähtetty tunniste on voimassa (Muoto: hours=3,minutes=17,seconds=300)."
 
 #: authentik/stages/authenticator_email/models.py
 msgid "Email Authenticator Setup Stage"
@@ -3582,8 +3435,7 @@ msgstr "Sähköpostitodentajan asetusvaihe"
 msgid "Email Authenticator Setup Stages"
 msgstr "Sähköpostitodentajan asetusvaiheet"
 
-#: authentik/stages/authenticator_email/models.py
-#: authentik/stages/authenticator_email/stage.py
+#: authentik/stages/authenticator_email/models.py authentik/stages/authenticator_email/stage.py
 #: authentik/stages/email/stage.py
 msgid "Exception occurred while rendering E-mail template"
 msgstr "Sähköpostimallin käytössä tapahtui virhe"
@@ -3596,8 +3448,7 @@ msgstr "Sähköpostilaite"
 msgid "Email Devices"
 msgstr "Sähköpostilaitteet"
 
-#: authentik/stages/authenticator_email/stage.py
-#: authentik/stages/authenticator_sms/stage.py
+#: authentik/stages/authenticator_email/stage.py authentik/stages/authenticator_sms/stage.py
 #: authentik/stages/authenticator_totp/stage.py
 msgid "Code does not match"
 msgstr "Koodi ei täsmää"
@@ -3636,11 +3487,13 @@ msgstr ""
 #, python-format
 msgid ""
 "\n"
-"    If you did not request this code, please ignore this email. The code above is valid for %(expires)s.\n"
+"    If you did not request this code, please ignore this email. The code above is valid for "
+"%(expires)s.\n"
 "    "
 msgstr ""
 "\n"
-"    Jos et pyytänyt tätä koodia, jätä tämä viesti huomiotta. Yllä oleva koodi on voimassa %(expires)s.\n"
+"    Jos et pyytänyt tätä koodia, jätä tämä viesti huomiotta. Yllä oleva koodi on voimassa "
+"%(expires)s.\n"
 "    "
 
 #: authentik/stages/authenticator_email/templates/email/email_otp.txt
@@ -3661,26 +3514,25 @@ msgstr ""
 #, python-format
 msgid ""
 "\n"
-"If you did not request this code, please ignore this email. The code above is valid for %(expires)s.\n"
+"If you did not request this code, please ignore this email. The code above is valid for "
+"%(expires)s.\n"
 msgstr ""
 "\n"
-"Jos et pyytänyt tätä koodia, jätä tämä viesti huomiotta. Yllä oleva koodi on voimassa %(expires)s.\n"
+"Jos et pyytänyt tätä koodia, jätä tämä viesti huomiotta. Yllä oleva koodi on voimassa "
+"%(expires)s.\n"
 
 #: authentik/stages/authenticator_sms/models.py
 msgid ""
-"When enabled, the Phone number is only used during enrollment to verify the "
-"users authenticity. Only a hash of the phone number is saved to ensure it is"
-" not reused in the future."
+"When enabled, the Phone number is only used during enrollment to verify the users authenticity. "
+"Only a hash of the phone number is saved to ensure it is not reused in the future."
 msgstr ""
-"Kun tämä on käytössä, puhelinnumeroa käytetään vain rekisteröitymisen "
-"yhteydessä käyttäjän vahvistamiseen. Puhelinnumerosta tallennetaan vain "
-"tiiviste, jotta numeroa ei käytetä uudelleen jatkossa."
+"Kun tämä on käytössä, puhelinnumeroa käytetään vain rekisteröitymisen yhteydessä käyttäjän "
+"vahvistamiseen. Puhelinnumerosta tallennetaan vain tiiviste, jotta numeroa ei käytetä uudelleen "
+"jatkossa."
 
 #: authentik/stages/authenticator_sms/models.py
 msgid "Optionally modify the payload being sent to custom providers."
-msgstr ""
-"Valinnaisesti muokkaa tietosisältöä, joka lähetetään mukautetuille "
-"palveluntarjoajille."
+msgstr "Valinnaisesti muokkaa tietosisältöä, joka lähetetään mukautetuille palveluntarjoajille."
 
 #: authentik/stages/authenticator_sms/models.py
 #, python-brace-format
@@ -3737,8 +3589,7 @@ msgstr "6 merkkiä, laajasti yhteensopiva"
 
 #: authentik/stages/authenticator_totp/models.py
 msgid "8 digits, not compatible with apps like Google Authenticator"
-msgstr ""
-"8 numeroa, ei yhteensopiva sovellusten, kuten Google Authenticatorin kanssa"
+msgstr "8 numeroa, ei yhteensopiva sovellusten, kuten Google Authenticatorin kanssa"
 
 #: authentik/stages/authenticator_totp/models.py
 msgid "TOTP Authenticator Setup Stage"
@@ -3757,19 +3608,14 @@ msgid "TOTP Devices"
 msgstr "TOTP-laitteet"
 
 #: authentik/stages/authenticator_validate/challenge.py
-msgid ""
-"Invalid Token. Please ensure the time on your device is accurate and try "
-"again."
-msgstr ""
-"Virheelline tunniste. Varmista, että laitteesi kello on oikeassa ajassa ja "
-"yritä uudelleen."
+msgid "Invalid Token. Please ensure the time on your device is accurate and try again."
+msgstr "Virheelline tunniste. Varmista, että laitteesi kello on oikeassa ajassa ja yritä uudelleen."
 
 #: authentik/stages/authenticator_validate/challenge.py
 #: authentik/stages/authenticator_webauthn/stage.py
 #, python-brace-format
 msgid "Invalid device type. Contact your {brand} administrator for help."
-msgstr ""
-"Virheellinen laitetyyppi. Ota yhteyttä {brand}-ylläpitäjään saadaksesi apua."
+msgstr "Virheellinen laitetyyppi. Ota yhteyttä {brand}-ylläpitäjään saadaksesi apua."
 
 #: authentik/stages/authenticator_validate/models.py
 msgid "Static"
@@ -3793,25 +3639,19 @@ msgstr "SMS"
 
 #: authentik/stages/authenticator_validate/models.py
 msgid ""
-"Stages used to configure Authenticator when user doesn't have any compatible"
-" devices. After this configuration Stage passes, the user is not prompted "
-"again."
+"Stages used to configure Authenticator when user doesn't have any compatible devices. After this "
+"configuration Stage passes, the user is not prompted again."
 msgstr ""
-"Vaiheet, joilla määritellään todentaja siinä tilanteessa, kun käyttäjällä ei"
-" ole yhteensopivaa laitetta. Tämän asetusvaiheen jälkeen käyttäjältä ei "
-"kysytä enää uudelleen."
+"Vaiheet, joilla määritellään todentaja siinä tilanteessa, kun käyttäjällä ei ole yhteensopivaa "
+"laitetta. Tämän asetusvaiheen jälkeen käyttäjältä ei kysytä enää uudelleen."
 
 #: authentik/stages/authenticator_validate/models.py
 msgid "Device classes which can be used to authenticate"
 msgstr "Laitetyypit, joita voi käyttää todentamiseen"
 
 #: authentik/stages/authenticator_validate/models.py
-msgid ""
-"If any of the user's device has been used within this threshold, this stage "
-"will be skipped"
-msgstr ""
-"Jos mitä tahansa käyttäjän laitteista on käytetty tämän rajan sisällä, tämä "
-"vaihe ohitetaan"
+msgid "If any of the user's device has been used within this threshold, this stage will be skipped"
+msgstr "Jos mitä tahansa käyttäjän laitteista on käytetty tämän rajan sisällä, tämä vaihe ohitetaan"
 
 #: authentik/stages/authenticator_validate/models.py
 msgid "Enforce user verification for WebAuthn devices."
@@ -3854,10 +3694,8 @@ msgid "WebAuthn Device types"
 msgstr "WebAuthn-laitteiden tyypit"
 
 #: authentik/stages/authenticator_webauthn/tasks.py
-msgid ""
-"Background task to import FIDO Alliance MDS blob and AAGUIDs into database."
-msgstr ""
-"Taustatehtävä, joka tuo FIDO Alliance MDS:n blobit ja AAGUIDit tietokantaan."
+msgid "Background task to import FIDO Alliance MDS blob and AAGUIDs into database."
+msgstr "Taustatehtävä, joka tuo FIDO Alliance MDS:n blobit ja AAGUIDit tietokantaan."
 
 #: authentik/stages/captcha/models.py
 msgid "Public key, acquired your captcha Provider."
@@ -3869,15 +3707,13 @@ msgstr "Salainen avain, captcha-palveluntarjoajalta."
 
 #: authentik/stages/captcha/models.py
 msgid ""
-"When enabled and the received captcha score is outside of the given "
-"threshold, the stage will show an error message. When not enabled, the flow "
-"will continue, but the data from the captcha will be available in the "
-"context for policy decisions"
+"When enabled and the received captcha score is outside of the given threshold, the stage will "
+"show an error message. When not enabled, the flow will continue, but the data from the captcha "
+"will be available in the context for policy decisions"
 msgstr ""
-"Kun tämä on käytössä ja saatu captcha-pistemäärä ei vastaa annettua raja-"
-"arvoa, tämä vaihe näyttää virheilmoituksen. Kun tämä ei ole käytössä, "
-"prosessi jatkuu, mutta tiedot captchasta ovat silti saatavilla käytäntöjen "
-"päätöksentekoprosesseissa."
+"Kun tämä on käytössä ja saatu captcha-pistemäärä ei vastaa annettua raja-arvoa, tämä vaihe "
+"näyttää virheilmoituksen. Kun tämä ei ole käytössä, prosessi jatkuu, mutta tiedot captchasta ovat "
+"silti saatavilla käytäntöjen päätöksentekoprosesseissa."
 
 #: authentik/stages/captcha/models.py
 msgid "Captcha Stage"
@@ -3889,8 +3725,7 @@ msgstr "Captcha-vaiheet"
 
 #: authentik/stages/captcha/stage.py
 msgid "Invalid captcha response. Retrying may solve this issue."
-msgstr ""
-"Virheellinen captcha-vastaus. Uusi yritys saattaa korjata tämän ongelman."
+msgstr "Virheellinen captcha-vastaus. Uusi yritys saattaa korjata tämän ongelman."
 
 #: authentik/stages/captcha/stage.py
 msgid "Invalid captcha response"
@@ -3901,11 +3736,8 @@ msgid "Failed to validate token"
 msgstr "Tunnisteen vahvistaminen ei onnistunut"
 
 #: authentik/stages/consent/models.py
-msgid ""
-"Offset after which consent expires. (Format: hours=1;minutes=2;seconds=3)."
-msgstr ""
-"Viive, jonka jälkeen hyväksyntä vanhenee. (Muoto: "
-"hours=1;minutes=2;seconds=3)."
+msgid "Offset after which consent expires. (Format: hours=1;minutes=2;seconds=3)."
+msgstr "Viive, jonka jälkeen hyväksyntä vanhenee. (Muoto: hours=1;minutes=2;seconds=3)."
 
 #: authentik/stages/consent/models.py
 msgid "Consent Stage"
@@ -3969,14 +3801,13 @@ msgstr "Tapahtumanotifikaatio"
 
 #: authentik/stages/email/models.py
 msgid ""
-"The time window used to count recent account recovery attempts. If the "
-"number of attempts exceed recovery_max_attempts within this period, further "
-"attempts will be rate-limited. (Format: hours=1;minutes=2;seconds=3)."
+"The time window used to count recent account recovery attempts. If the number of attempts exceed "
+"recovery_max_attempts within this period, further attempts will be rate-limited. (Format: "
+"hours=1;minutes=2;seconds=3)."
 msgstr ""
-"Aikaväli, jota käytetään viimeisimpien tilinpalautusyritysten laskemiseen. "
-"Jos yritysten lukumäärä ylittää recovery_max_attempts-arvon tällä "
-"aikavälillä, seuraavien yritysten määrää rajoitetaan. (Muoto: "
-"hours=1,minutes=2,seconds=3)."
+"Aikaväli, jota käytetään viimeisimpien tilinpalautusyritysten laskemiseen. Jos yritysten "
+"lukumäärä ylittää recovery_max_attempts-arvon tällä aikavälillä, seuraavien yritysten määrää "
+"rajoitetaan. (Muoto: hours=1,minutes=2,seconds=3)."
 
 #: authentik/stages/email/models.py
 msgid "Activate users upon completion of stage."
@@ -4004,12 +3835,8 @@ msgstr "Sähköposti lähetetty."
 
 #: authentik/stages/email/stage.py
 #, python-brace-format
-msgid ""
-"Too many account verification attempts. Please try again after {minutes} "
-"minutes."
-msgstr ""
-"Liian monta tilin vahvistusyritystä. Yritä uudelleen {minutes} minuutin "
-"kuluttua."
+msgid "Too many account verification attempts. Please try again after {minutes} minutes."
+msgstr "Liian monta tilin vahvistusyritystä. Yritä uudelleen {minutes} minuutin kuluttua."
 
 #: authentik/stages/email/stage.py
 msgid "Email Successfully sent."
@@ -4026,10 +3853,9 @@ msgstr "Tervetuloa!"
 
 #: authentik/stages/email/templates/email/account_confirmation.html
 msgid ""
-"We're excited to have you get started. First, you need to confirm your "
-"account. Just press the button below."
-msgstr ""
-"Aloitetaan. Ensimmäseksi vahvistamme tunnuksesi. Paina alla olevaa nappia."
+"We're excited to have you get started. First, you need to confirm your account. Just press the "
+"button below."
+msgstr "Aloitetaan. Ensimmäseksi vahvistamme tunnuksesi. Paina alla olevaa nappia."
 
 #: authentik/stages/email/templates/email/account_confirmation.html
 msgid "Confirm Account"
@@ -4048,10 +3874,9 @@ msgstr ""
 
 #: authentik/stages/email/templates/email/account_confirmation.txt
 msgid ""
-"We're excited to have you get started. First, you need to confirm your "
-"account. Just open the link below."
-msgstr ""
-"Aloitetaan. Ensimmäseksi vahvistamme tunnuksesi. Avaa alla oleva linkki."
+"We're excited to have you get started. First, you need to confirm your account. Just open the "
+"link below."
+msgstr "Aloitetaan. Ensimmäseksi vahvistamme tunnuksesi. Avaa alla oleva linkki."
 
 #: authentik/stages/email/templates/email/event_notification.html
 #, python-format
@@ -4088,40 +3913,48 @@ msgstr ""
 #: authentik/stages/email/templates/email/password_reset.html
 msgid ""
 "\n"
-"          You recently requested to change your password for your authentik account. Use the button below to set a new password.\n"
+"          You recently requested to change your password for your authentik account. Use the "
+"button below to set a new password.\n"
 "          "
 msgstr ""
 "\n"
-"          Olet pyytänyt salasanan vaihtoa authentik-tunnuksellesi. Paina alla olevaa painiketta asettaaksesi uuden salasanan.\n"
+"          Olet pyytänyt salasanan vaihtoa authentik-tunnuksellesi. Paina alla olevaa painiketta "
+"asettaaksesi uuden salasanan.\n"
 "          "
 
 #: authentik/stages/email/templates/email/password_reset.html
 #, python-format
 msgid ""
 "\n"
-"    If you did not request a password change, please ignore this email. The link above is valid for %(expires)s.\n"
+"    If you did not request a password change, please ignore this email. The link above is valid "
+"for %(expires)s.\n"
 "    "
 msgstr ""
 "\n"
-"    Jos et ole pyytänyt salasanan vaihtoa, jätä tämä viesti huomiotta. Yllä oleva linkki on voimassa  %(expires)s.\n"
+"    Jos et ole pyytänyt salasanan vaihtoa, jätä tämä viesti huomiotta. Yllä oleva linkki on "
+"voimassa  %(expires)s.\n"
 "    "
 
 #: authentik/stages/email/templates/email/password_reset.txt
 msgid ""
 "\n"
-"You recently requested to change your password for your authentik account. Use the link below to set a new password.\n"
+"You recently requested to change your password for your authentik account. Use the link below to "
+"set a new password.\n"
 msgstr ""
 "\n"
-"Olet pyytänyt salasanan vaihtoa authentik-tunnuksellesi. Avaa alla oleva linkki asettaaksesi uuden salasanan.\n"
+"Olet pyytänyt salasanan vaihtoa authentik-tunnuksellesi. Avaa alla oleva linkki asettaaksesi "
+"uuden salasanan.\n"
 
 #: authentik/stages/email/templates/email/password_reset.txt
 #, python-format
 msgid ""
 "\n"
-"If you did not request a password change, please ignore this email. The link above is valid for %(expires)s.\n"
+"If you did not request a password change, please ignore this email. The link above is valid for "
+"%(expires)s.\n"
 msgstr ""
 "\n"
-"Jos et ole pyytänyt salasanan vaihtoa, jätä tämä viesti huomiotta. Yllä oleva linkki on voimassa %(expires)s.\n"
+"Jos et ole pyytänyt salasanan vaihtoa, jätä tämä viesti huomiotta. Yllä oleva linkki on voimassa "
+"%(expires)s.\n"
 
 #: authentik/stages/email/templates/email/setup.html
 msgid "authentik Test-Email"
@@ -4130,11 +3963,13 @@ msgstr "authentik testisähköposti"
 #: authentik/stages/email/templates/email/setup.html
 msgid ""
 "\n"
-"                    This is a test email to inform you, that you've successfully configured authentik emails.\n"
+"                    This is a test email to inform you, that you've successfully configured "
+"authentik emails.\n"
 "                    "
 msgstr ""
 "\n"
-"                    Tämä on testiviesti, jonka tarkoituksena on ilmoittaa sinulle, että olet määritellyt authentik-sähköpostiasetukset onnistuneesti.\n"
+"                    Tämä on testiviesti, jonka tarkoituksena on ilmoittaa sinulle, että olet "
+"määritellyt authentik-sähköpostiasetukset onnistuneesti.\n"
 "                    "
 
 #: authentik/stages/email/templates/email/setup.txt
@@ -4143,59 +3978,50 @@ msgid ""
 "This is a test email to inform you, that you've successfully configured authentik emails.\n"
 msgstr ""
 "\n"
-"Tämä on testiviesti, jonka tarkoituksena on ilmoittaa sinulle, että olet määritellyt authentik-sähköpostiasetukset onnistuneesti.\n"
+"Tämä on testiviesti, jonka tarkoituksena on ilmoittaa sinulle, että olet määritellyt authentik-"
+"sähköpostiasetukset onnistuneesti.\n"
 
 #: authentik/stages/identification/api.py
 msgid "When no user fields are selected, at least one source must be selected"
-msgstr ""
-"Kun yhtään käyttäjäkenttää ei ole valittu, ainakin yksi lähde on oltava "
-"valittuna."
+msgstr "Kun yhtään käyttäjäkenttää ei ole valittu, ainakin yksi lähde on oltava valittuna."
 
 #: authentik/stages/identification/models.py
-msgid ""
-"Fields of the user object to match against. (Hold shift to select multiple "
-"options)"
+msgid "Fields of the user object to match against. (Hold shift to select multiple options)"
 msgstr ""
-"Käyttäjäobjektin kentät, joita käytetään vertailussa. (Pidä shift-näppäintä "
-"pohjassa valitaksesi useampia vaihtoehtoja)"
+"Käyttäjäobjektin kentät, joita käytetään vertailussa. (Pidä shift-näppäintä pohjassa valitaksesi "
+"useampia vaihtoehtoja)"
 
 #: authentik/stages/identification/models.py
 msgid "When enabled, user fields are matched regardless of their casing."
 msgstr ""
-"Kun tämä on käytössä, käyttäjän kenttien arvojen vertailussa ei eritellä "
-"isoja ja pieniä kirjaimia."
+"Kun tämä on käytössä, käyttäjän kenttien arvojen vertailussa ei eritellä isoja ja pieniä "
+"kirjaimia."
 
 #: authentik/stages/identification/models.py
 msgid ""
-"When a valid username/email has been entered, and this option is enabled, "
-"the user's username and avatar will be shown. Otherwise, the text that the "
-"user entered will be shown"
+"When a valid username/email has been entered, and this option is enabled, the user's username and "
+"avatar will be shown. Otherwise, the text that the user entered will be shown"
 msgstr ""
-"Kun validi käyttäjätunnus tai sähköpostiosoite on syötetty ja tämä valinta "
-"on käytössä, käyttäjän käyttäjätunnus ja avatar näytetään. Muussa "
-"tapauksessa näytetään käyttäjän kirjoittama teksti."
+"Kun validi käyttäjätunnus tai sähköpostiosoite on syötetty ja tämä valinta on käytössä, käyttäjän "
+"käyttäjätunnus ja avatar näytetään. Muussa tapauksessa näytetään käyttäjän kirjoittama teksti."
+
+#: authentik/stages/identification/models.py
+msgid "When enabled, the stage will succeed and continue even when incorrect user info is entered."
+msgstr ""
+"Kun tämä on käytössä, vaihe onnistuu ja suoritus jatkuu, vaikka olisi syötetty virheelliset "
+"käyttäjätiedot."
 
 #: authentik/stages/identification/models.py
 msgid ""
-"When enabled, the stage will succeed and continue even when incorrect user "
-"info is entered."
+"Show the user the 'Remember me on this device' toggle, allowing repeat users to skip straight to "
+"entering their password."
 msgstr ""
-"Kun tämä on käytössä, vaihe onnistuu ja suoritus jatkuu, vaikka olisi "
-"syötetty virheelliset käyttäjätiedot."
-
-#: authentik/stages/identification/models.py
-msgid ""
-"Show the user the 'Remember me on this device' toggle, allowing repeat users"
-" to skip straight to entering their password."
-msgstr ""
-"Näytä käyttäjälle 'Muista minut tällä laitteella'-asetus, joka sallii "
-"toistuvasti kirjautuvien käyttäjien menemisen suoraan syöttämään "
-"salasanansa."
+"Näytä käyttäjälle 'Muista minut tällä laitteella'-asetus, joka sallii toistuvasti kirjautuvien "
+"käyttäjien menemisen suoraan syöttämään salasanansa."
 
 #: authentik/stages/identification/models.py
 msgid "Optional enrollment flow, which is linked at the bottom of the page."
-msgstr ""
-"Valinnainen rekisteröitymisprosessi, joka on linkitettynä sivun alalaitaan."
+msgstr "Valinnainen rekisteröitymisprosessi, joka on linkitettynä sivun alalaitaan."
 
 #: authentik/stages/identification/models.py
 msgid "Optional recovery flow, which is linked at the bottom of the page."
@@ -4203,8 +4029,7 @@ msgstr "Valinnainen palautusprosessi, joka on linkitettynä sivun alalaitaan."
 
 #: authentik/stages/identification/models.py
 msgid "Optional passwordless flow, which is linked at the bottom of the page."
-msgstr ""
-"Valinnainen salasanaton prosessi, joka on linkitettynä sivun alalaitaan."
+msgstr "Valinnainen salasanaton prosessi, joka on linkitettynä sivun alalaitaan."
 
 #: authentik/stages/identification/models.py
 msgid "Specify which sources should be shown."
@@ -4232,12 +4057,11 @@ msgstr "Jatka"
 
 #: authentik/stages/invitation/models.py
 msgid ""
-"If this flag is set, this Stage will jump to the next Stage when no "
-"Invitation is given. By default this Stage will cancel the Flow when no "
-"invitation is given."
+"If this flag is set, this Stage will jump to the next Stage when no Invitation is given. By "
+"default this Stage will cancel the Flow when no invitation is given."
 msgstr ""
-"Jos tämä asetus on käytössä, tämä vaihe hyppää seuraavaan vaiheeseen jos "
-"kutsua ei ole. Oletuksena tämä vaihe peruuttaa prosessin jos kutsua ei ole."
+"Jos tämä asetus on käytössä, tämä vaihe hyppää seuraavaan vaiheeseen jos kutsua ei ole. "
+"Oletuksena tämä vaihe peruuttaa prosessin jos kutsua ei ole."
 
 #: authentik/stages/invitation/models.py
 msgid "Invitation Stage"
@@ -4249,8 +4073,7 @@ msgstr "Kutsuvaiheet"
 
 #: authentik/stages/invitation/models.py
 msgid "When set, only the configured flow can use this invitation."
-msgstr ""
-"Kun tämä on asetettu, vain määritelty prosessi voi käyttää tätä kutsua."
+msgstr "Kun tämä on asetettu, vain määritelty prosessi voi käyttää tätä kutsua."
 
 #: authentik/stages/invitation/models.py
 msgid "When enabled, the invitation will be deleted after usage."
@@ -4258,8 +4081,7 @@ msgstr "Kun tämä on käytössä, kutsu poistetaan käytön jälkeen."
 
 #: authentik/stages/invitation/models.py
 msgid "Optional fixed data to enforce on user enrollment."
-msgstr ""
-"Valinnainen kiinteä data joka pakotetaan käyttäjän rekisteröitymisessä."
+msgstr "Valinnainen kiinteä data joka pakotetaan käyttäjän rekisteröitymisessä."
 
 #: authentik/stages/invitation/models.py
 msgid "Invitation"
@@ -4295,19 +4117,15 @@ msgstr "Valitut taustapalvelut, joita käytetään salasanan tarkistamiseen."
 
 #: authentik/stages/password/models.py
 msgid ""
-"How many attempts a user has before the flow is canceled. To lock the user "
-"out, use a reputation policy and a user_write stage."
+"How many attempts a user has before the flow is canceled. To lock the user out, use a reputation "
+"policy and a user_write stage."
 msgstr ""
-"Kuinka monta yritystä käyttäjälle sallitaan, ennen kuin prosessi perutaan. "
-"Käyttäjän lukitsemiseksi voit käyttää mainekäytäntöä ja user_write-vaihetta."
+"Kuinka monta yritystä käyttäjälle sallitaan, ennen kuin prosessi perutaan. Käyttäjän "
+"lukitsemiseksi voit käyttää mainekäytäntöä ja user_write-vaihetta."
 
 #: authentik/stages/password/models.py
-msgid ""
-"When enabled, provides a 'show password' button with the password input "
-"field."
-msgstr ""
-"Kun tämä on käytössä, salasanakentän yhteydessä näytetään 'näytä salasana' "
-"-painike."
+msgid "When enabled, provides a 'show password' button with the password input field."
+msgstr "Kun tämä on käytössä, salasanakentän yhteydessä näytetään 'näytä salasana' -painike."
 
 #: authentik/stages/password/models.py
 msgid "Password Stage"
@@ -4331,21 +4149,16 @@ msgstr "Tekstialue: Monirivinen tekstikenttä."
 
 #: authentik/stages/prompt/models.py
 msgid "Text (read-only): Simple Text input, but cannot be edited."
-msgstr ""
-"Vain luettava teksti: Yksinkertainen tekstikenttä, jota ei voi muokata."
+msgstr "Vain luettava teksti: Yksinkertainen tekstikenttä, jota ei voi muokata."
 
 #: authentik/stages/prompt/models.py
 msgid "Text area (read-only): Multiline Text input, but cannot be edited."
-msgstr ""
-"Vain luettava tekstialue: Monirivinen tekstikenttä, jota ei voi muokata."
+msgstr "Vain luettava tekstialue: Monirivinen tekstikenttä, jota ei voi muokata."
 
 #: authentik/stages/prompt/models.py
-msgid ""
-"Username: Same as Text input, but checks for and prevents duplicate "
-"usernames."
+msgid "Username: Same as Text input, but checks for and prevents duplicate usernames."
 msgstr ""
-"Käyttäjätunnus: Sama kuin tekstikenttä, mutta tarkistaa ja estää "
-"päällekkäiset käyttäjätunnukset."
+"Käyttäjätunnus: Sama kuin tekstikenttä, mutta tarkistaa ja estää päällekkäiset käyttäjätunnukset."
 
 #: authentik/stages/prompt/models.py
 msgid "Email: Text field with Email type."
@@ -4353,11 +4166,10 @@ msgstr "Sähköposti: Sähköpostityyppinen tekstikenttä."
 
 #: authentik/stages/prompt/models.py
 msgid ""
-"Password: Masked input, multiple inputs of this type on the same prompt need"
-" to be identical."
+"Password: Masked input, multiple inputs of this type on the same prompt need to be identical."
 msgstr ""
-"Salasana: Peitetty syöttökenttä. Jos näitä kenttiä on useampia kuin yksi, "
-"niihin syötettyjen arvojen tulee olla identtiset."
+"Salasana: Peitetty syöttökenttä. Jos näitä kenttiä on useampia kuin yksi, niihin syötettyjen "
+"arvojen tulee olla identtiset."
 
 #: authentik/stages/prompt/models.py
 msgid "Fixed choice field rendered as a group of radio buttons."
@@ -4369,11 +4181,10 @@ msgstr "Kiinteä valintakenttä joka esitetään alasvetovalikkona."
 
 #: authentik/stages/prompt/models.py
 msgid ""
-"File: File upload for arbitrary files. File content will be available in "
-"flow context as data-URI"
+"File: File upload for arbitrary files. File content will be available in flow context as data-URI"
 msgstr ""
-"Tiedosto: Mielivaltaisten tiedostojen lähetyskenttä. Tiedostojen sisältö on "
-"aatavilla prosessin kontekstissa data-URI-muodossa."
+"Tiedosto: Mielivaltaisten tiedostojen lähetyskenttä. Tiedostojen sisältö on aatavilla prosessin "
+"kontekstissa data-URI-muodossa."
 
 #: authentik/stages/prompt/models.py
 msgid "Separator: Static Separator Line"
@@ -4381,9 +4192,7 @@ msgstr "Erotin: Staattinen erotinviiva"
 
 #: authentik/stages/prompt/models.py
 msgid "Hidden: Hidden field, can be used to insert data into form."
-msgstr ""
-"Piilotettu: Piilotettu kenttä, tätä voidaan käyttää lisäämään lomakkeelle "
-"dataa."
+msgstr "Piilotettu: Piilotettu kenttä, tätä voidaan käyttää lisäämään lomakkeelle dataa."
 
 #: authentik/stages/prompt/models.py
 msgid "Static: Static value, displayed as-is."
@@ -4399,23 +4208,20 @@ msgstr "Lomakekentän nimi, käytetään myös arvon tallentamiseen"
 
 #: authentik/stages/prompt/models.py
 msgid ""
-"Optionally provide a short hint that describes the expected input value. "
-"When creating a fixed choice field, enable interpreting as expression and "
-"return a list to return multiple choices."
+"Optionally provide a short hint that describes the expected input value. When creating a fixed "
+"choice field, enable interpreting as expression and return a list to return multiple choices."
 msgstr ""
-"Halutessasi voit tarjota lyhyen vihjeen, joka kuvaa odotettua syöttökentän "
-"arvoa. Kun luot kiinteän valintakentän, kytke päälle ohjelmallinen tulkinta "
-"ja palauta lista palauttaaksesi monta vaihtoehtoa."
+"Halutessasi voit tarjota lyhyen vihjeen, joka kuvaa odotettua syöttökentän arvoa. Kun luot "
+"kiinteän valintakentän, kytke päälle ohjelmallinen tulkinta ja palauta lista palauttaaksesi monta "
+"vaihtoehtoa."
 
 #: authentik/stages/prompt/models.py
 msgid ""
-"Optionally pre-fill the input with an initial value. When creating a fixed "
-"choice field, enable interpreting as expression and return a list to return "
-"multiple default choices."
+"Optionally pre-fill the input with an initial value. When creating a fixed choice field, enable "
+"interpreting as expression and return a list to return multiple default choices."
 msgstr ""
-"Halutessasi voit syöttää kenttään oletusarvon. Kun luot kiinteän "
-"valintakentän, kytke päälle ohjelmallinen tulkinta ja palauta lista "
-"palauttaaksesi monta oletusvaihtoehtoa."
+"Halutessasi voit syöttää kenttään oletusarvon. Kun luot kiinteän valintakentän, kytke päälle "
+"ohjelmallinen tulkinta ja palauta lista palauttaaksesi monta oletusvaihtoehtoa."
 
 #: authentik/stages/prompt/models.py
 msgid "Prompt"
@@ -4479,23 +4285,20 @@ msgstr "Päätä kaikki muut käyttäjän istunnot kirjautumisen yhteydessä."
 
 #: authentik/stages/user_login/models.py
 msgid ""
-"Offset the session will be extended by when the user picks the remember me "
-"option. Default of 0 means that the remember me option will not be shown. "
-"(Format: hours=-1;minutes=-2;seconds=-3)"
+"Offset the session will be extended by when the user picks the remember me option. Default of 0 "
+"means that the remember me option will not be shown. (Format: hours=-1;minutes=-2;seconds=-3)"
 msgstr ""
-"Lisäaika, jonka verran istuntoa pidennetään kun käyttäjä valitsee \"muista "
-"minut\"-asetuksen. Oletusarvo 0 tarkoittaa, että valintaa ei näytetä. "
-"(Muoto: hours=-1;minutes=-2;seconds=-3)"
+"Lisäaika, jonka verran istuntoa pidennetään kun käyttäjä valitsee \"muista minut\"-asetuksen. "
+"Oletusarvo 0 tarkoittaa, että valintaa ei näytetä. (Muoto: hours=-1;minutes=-2;seconds=-3)"
 
 #: authentik/stages/user_login/models.py
 msgid ""
-"When set to a non-zero value, authentik will save a cookie with a longer "
-"expiry,to remember the device the user is logging in from. (Format: "
-"hours=-1;minutes=-2;seconds=-3)"
+"When set to a non-zero value, authentik will save a cookie with a longer expiry,to remember the "
+"device the user is logging in from. (Format: hours=-1;minutes=-2;seconds=-3)"
 msgstr ""
-"Kun tähän on asetettu nollasta poikkeava arvo, authentik tallentaa evästeen "
-"pidemmällä vanhenemisajalla käyttäjän kirjautumiseen käyttämän laitteen "
-"muistamiseksi. (Muoto: hours=1,minutes=2,seconds=3)"
+"Kun tähän on asetettu nollasta poikkeava arvo, authentik tallentaa evästeen pidemmällä "
+"vanhenemisajalla käyttäjän kirjautumiseen käyttämän laitteen muistamiseksi. (Muoto: "
+"hours=1,minutes=2,seconds=3)"
 
 #: authentik/stages/user_login/models.py
 msgid "User Login Stage"
@@ -4520,8 +4323,7 @@ msgstr "Käyttäjän uloskirjautumisvaiheet"
 #: authentik/stages/user_write/models.py
 msgid "When set, newly created users are inactive and cannot login."
 msgstr ""
-"Kun tämä on käytössä, uudet käyttäjät eivät ole aktiivisia eivätkä he pysty "
-"kirjautumaan sisään."
+"Kun tämä on käytössä, uudet käyttäjät eivät ole aktiivisia eivätkä he pysty kirjautumaan sisään."
 
 #: authentik/stages/user_write/models.py
 msgid "Optionally add newly created users to this group."
@@ -4594,11 +4396,11 @@ msgstr "Lipun {flag_key} arvon tulee olla tyyppiä {type}."
 
 #: authentik/tenants/models.py
 msgid ""
-"Schema name must start with t_, only contain lowercase letters and numbers "
-"and be less than 63 characters."
+"Schema name must start with t_, only contain lowercase letters and numbers and be less than 63 "
+"characters."
 msgstr ""
-"Skeeman nimen tulee alkaa merkeillä t_, se saa sisältää vain pieniä "
-"kirjaimia ja numeroita ja sen täytyy olla alle 63 merkkiä pitkä."
+"Skeeman nimen tulee alkaa merkeillä t_, se saa sisältää vain pieniä kirjaimia ja numeroita ja sen "
+"täytyy olla alle 63 merkkiä pitkä."
 
 #: authentik/tenants/models.py
 msgid "Configure how authentik should show avatars for users."
@@ -4617,12 +4419,8 @@ msgid "Enable the ability for users to change their username."
 msgstr "Salli käyttäjien vaihtaa käyttäjätunnustaan."
 
 #: authentik/tenants/models.py
-msgid ""
-"Events will be deleted after this duration.(Format: "
-"weeks=3;days=2;hours=3,seconds=2)."
-msgstr ""
-"Tapahtumat poistetaan tämän ajan jälkeen. (Muoto: "
-"weeks=3;days=2;hours=3;seconds=2)."
+msgid "Events will be deleted after this duration.(Format: weeks=3;days=2;hours=3,seconds=2)."
+msgstr "Tapahtumat poistetaan tämän ajan jälkeen. (Muoto: weeks=3;days=2;hours=3;seconds=2)."
 
 #: authentik/tenants/models.py
 msgid "Reputation cannot decrease lower than this value. Zero or negative."
@@ -4634,17 +4432,13 @@ msgstr "Maine ei voi kasvaa tätä arvoa korkeammaksi. Nolla tai positiivinen."
 
 #: authentik/tenants/models.py
 msgid "The option configures the footer links on the flow executor pages."
-msgstr ""
-"Tämä asetus määrittää prosessien suoritussivujen alatunnisteissa näytettävät"
-" linkit."
+msgstr "Tämä asetus määrittää prosessien suoritussivujen alatunnisteissa näytettävät linkit."
 
 #: authentik/tenants/models.py
-msgid ""
-"When enabled, all the events caused by a user will be deleted upon the "
-"user's deletion."
+msgid "When enabled, all the events caused by a user will be deleted upon the user's deletion."
 msgstr ""
-"Kun tämä on päällä, kaikki käyttäjän aiheuttamat tapahtumat poistetaan "
-"käyttäjän poiston yhteydessä."
+"Kun tämä on päällä, kaikki käyttäjän aiheuttamat tapahtumat poistetaan käyttäjän poiston "
+"yhteydessä."
 
 #: authentik/tenants/models.py
 msgid "Globally enable/disable impersonation."
@@ -4652,8 +4446,7 @@ msgstr "Salli/estä toisena käyttäjänä esiintyminen globaalisti."
 
 #: authentik/tenants/models.py
 msgid "Require administrators to provide a reason for impersonating a user."
-msgstr ""
-"Edellytä, että ylläpitäjät kirjaavat syyn toisena käyttäjänä esiintymiseen."
+msgstr "Edellytä, että ylläpitäjät kirjaavat syyn toisena käyttäjänä esiintymiseen."
 
 #: authentik/tenants/models.py
 msgid "Default token duration"

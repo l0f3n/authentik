@@ -2,26 +2,52 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # Eunsung Kim, 2023
 # NavyStack, 2023
 # Jeongeon An, 2025
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-01 15:07+0000\n"
+"Report-Msgid-Bugs-To: https://github.com/goauthentik/authentik/issues\n"
+"POT-Creation-Date: 2025-12-07 23:33+0000\n"
 "PO-Revision-Date: 2022-09-26 16:47+0000\n"
 "Last-Translator: Jeongeon An, 2025\n"
 "Language-Team: Korean (https://app.transifex.com/authentik/teams/119923/ko/)\n"
+"Language: ko_KR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ko_KR\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+#: authentik/admin/files/validation.py
+msgid "File name cannot be empty"
+msgstr ""
+
+#: authentik/admin/files/validation.py
+msgid ""
+"File name can only contain letters (a-z, A-Z), numbers (0-9), dots (.), hyphens (-), underscores "
+"(_), and forward slashes (/)"
+msgstr ""
+
+#: authentik/admin/files/validation.py
+msgid "File name cannot contain duplicate /"
+msgstr ""
+
+#: authentik/admin/files/validation.py
+msgid "Absolute paths are not allowed"
+msgstr ""
+
+#: authentik/admin/files/validation.py
+msgid "Parent directory references ('..') are not allowed"
+msgstr ""
+
+#: authentik/admin/files/validation.py
+msgid "Paths cannot start with '.'"
+msgstr ""
 
 #: authentik/admin/models.py
 msgid "Version history"
@@ -78,13 +104,13 @@ msgstr "authentik에서 관리"
 
 #: authentik/blueprints/models.py
 msgid ""
-"Objects that are managed by authentik. These objects are created and updated"
-" automatically. This flag only indicates that an object can be overwritten "
-"by migrations. You can still modify the objects via the API, but expect "
-"changes to be overwritten in a later update."
+"Objects that are managed by authentik. These objects are created and updated automatically. This "
+"flag only indicates that an object can be overwritten by migrations. You can still modify the "
+"objects via the API, but expect changes to be overwritten in a later update."
 msgstr ""
-"authentik에서 관리하는 오브젝트입니다. 자동으로 생성 및 업데이트됩니다. 이 플래그는 객체가 마이그레이션에 의해 덮어쓰일 수 "
-"있음을 나타냅니다. 여전히 API를 통해 오브젝트를 수정할 수 있지만, 나중에 업데이트에서 덮어 쓰여집니다."
+"authentik에서 관리하는 오브젝트입니다. 자동으로 생성 및 업데이트됩니다. 이 플래그는 객체가 마이그"
+"레이션에 의해 덮어쓰일 수 있음을 나타냅니다. 여전히 API를 통해 오브젝트를 수정할 수 있지만, 나중"
+"에 업데이트에서 덮어 쓰여집니다."
 
 #: authentik/blueprints/models.py
 msgid "Blueprint Instance"
@@ -116,15 +142,11 @@ msgid "Remove blueprints which couldn't be fetched."
 msgstr ""
 
 #: authentik/brands/models.py
-msgid ""
-"Domain that activates this brand. Can be a superset, i.e. `a.b` for `aa.b` "
-"and `ba.b`"
+msgid "Domain that activates this brand. Can be a superset, i.e. `a.b` for `aa.b` and `ba.b`"
 msgstr ""
 
 #: authentik/brands/models.py
-msgid ""
-"When set, external users will be redirected to this application after "
-"authenticating."
+msgid "When set, external users will be redirected to this application after authenticating."
 msgstr ""
 
 #: authentik/brands/models.py
@@ -158,9 +180,8 @@ msgstr ""
 
 #: authentik/core/api/providers.py
 msgid ""
-"When not set all providers are returned. When set to true, only backchannel "
-"providers are returned. When set to false, backchannel providers are "
-"excluded"
+"When not set all providers are returned. When set to true, only backchannel providers are "
+"returned. When set to false, backchannel providers are excluded"
 msgstr ""
 
 #: authentik/core/api/transactional_applications.py
@@ -228,8 +249,8 @@ msgstr ""
 msgid "User's display name."
 msgstr "사용자의 표시 이름"
 
-#: authentik/core/models.py authentik/providers/oauth2/models.py
-#: authentik/providers/saml/models.py authentik/rbac/models.py
+#: authentik/core/models.py authentik/providers/oauth2/models.py authentik/providers/saml/models.py
+#: authentik/rbac/models.py
 msgid "User"
 msgstr "사용자"
 
@@ -237,8 +258,7 @@ msgstr "사용자"
 msgid "Users"
 msgstr "사용자"
 
-#: authentik/core/models.py
-#: authentik/stages/email/templates/email/password_reset.html
+#: authentik/core/models.py authentik/stages/email/templates/email/password_reset.html
 msgid "Reset Password"
 msgstr "비밀번호 초기화"
 
@@ -264,8 +284,8 @@ msgstr ""
 
 #: authentik/core/models.py
 msgid ""
-"Flow used for authentication when the associated application is accessed by "
-"an un-authenticated user."
+"Flow used for authentication when the associated application is accessed by an un-authenticated "
+"user."
 msgstr "플로우는 연결된 응용 프로그램이 인증되지 않은 사용자에게 액세스될 때 사용됩니다."
 
 #: authentik/core/models.py
@@ -277,9 +297,7 @@ msgid "Flow used ending the session from a provider."
 msgstr ""
 
 #: authentik/core/models.py
-msgid ""
-"Accessed from applications; optional backchannel providers for protocols "
-"like LDAP and SCIM."
+msgid "Accessed from applications; optional backchannel providers for protocols like LDAP and SCIM."
 msgstr "애플리케이션에서 액세스, LDAP 및 SCIM과 같은 프로토콜을 위한 선택적 백채널 공급자입니다."
 
 #: authentik/core/models.py
@@ -316,34 +334,32 @@ msgstr "소스별 식별자를 사용합니다."
 
 #: authentik/core/models.py
 msgid ""
-"Link to a user with identical email address. Can have security implications "
-"when a source doesn't validate email addresses."
+"Link to a user with identical email address. Can have security implications when a source doesn't "
+"validate email addresses."
 msgstr ""
-"이메일 주소가 동일한 사용자에게 링크합니다. 소스에서 이메일 주소의 유효성을 검사하지 않을 경우 보안에 영향을 미칠 수 있습니다."
+"이메일 주소가 동일한 사용자에게 링크합니다. 소스에서 이메일 주소의 유효성을 검사하지 않을 경우 보"
+"안에 영향을 미칠 수 있습니다."
 
 #: authentik/core/models.py
-msgid ""
-"Use the user's email address, but deny enrollment when the email address "
-"already exists."
+msgid "Use the user's email address, but deny enrollment when the email address already exists."
 msgstr "사용자의 이메일 주소를 사용하되, 이메일 주소가 이미 존재하는 경우 등록을 거부합니다."
 
 #: authentik/core/models.py
 msgid ""
-"Link to a user with identical username. Can have security implications when "
-"a username is used with another source."
+"Link to a user with identical username. Can have security implications when a username is used "
+"with another source."
 msgstr ""
-"동일한 사용자 아이디를 가진 사용자와 연결합니다. 사용자 아이디가 다른 소스와 함께 사용될 경우 보안에 영향을 미칠 수 있습니다."
+"동일한 사용자 아이디를 가진 사용자와 연결합니다. 사용자 아이디가 다른 소스와 함께 사용될 경우 보안"
+"에 영향을 미칠 수 있습니다."
 
 #: authentik/core/models.py
-msgid ""
-"Use the user's username, but deny enrollment when the username already "
-"exists."
+msgid "Use the user's username, but deny enrollment when the username already exists."
 msgstr "사용자의 사용자명을 사용하지만, 사용자명이 이미 존재하는 경우 등록을 거부합니다."
 
 #: authentik/core/models.py
 msgid ""
-"Link to a group with identical name. Can have security implications when a "
-"group name is used with another source."
+"Link to a group with identical name. Can have security implications when a group name is used "
+"with another source."
 msgstr ""
 
 #: authentik/core/models.py
@@ -360,8 +376,8 @@ msgstr "URL에 사용되는, 내부 소스 이름입니다."
 
 #: authentik/core/models.py
 msgid ""
-"When enabled, this source will be displayed as a prominent button on the "
-"login page, instead of a small icon."
+"When enabled, this source will be displayed as a prominent button on the login page, instead of a "
+"small icon."
 msgstr ""
 
 #: authentik/core/models.py
@@ -374,14 +390,11 @@ msgstr "새 사용자를 등록할 때 사용되는 플로우입니다."
 
 #: authentik/core/models.py
 msgid ""
-"How the source determines if an existing user should be authenticated or a "
-"new user enrolled."
+"How the source determines if an existing user should be authenticated or a new user enrolled."
 msgstr "소스가 기존 사용자를 인증할지 또는 새 사용자를 등록할지를 결정하는 방법입니다."
 
 #: authentik/core/models.py
-msgid ""
-"How the source determines if an existing group should be used or a new group"
-" created."
+msgid "How the source determines if an existing group should be used or a new group created."
 msgstr ""
 
 #: authentik/core/models.py authentik/providers/scim/models.py
@@ -431,8 +444,8 @@ msgstr "인증된 세션"
 #: authentik/core/sources/flow_manager.py
 #, python-brace-format
 msgid ""
-"Request to authenticate with {source} has been denied. Please authenticate "
-"with the source you've previously signed up with."
+"Request to authenticate with {source} has been denied. Please authenticate with the source you've "
+"previously signed up with."
 msgstr ""
 
 #: authentik/core/sources/flow_manager.py
@@ -461,19 +474,16 @@ msgstr ""
 msgid "Remove temporary users created by SAML Sources."
 msgstr ""
 
-#: authentik/core/templates/if/error.html
-#: authentik/policies/templates/policies/denied.html
+#: authentik/core/templates/if/error.html authentik/policies/templates/policies/denied.html
 msgid "Go home"
 msgstr "홈으로 가기"
 
-#: authentik/core/templates/login/base_full.html
-#: authentik/flows/templates/if/flow-sfe.html
+#: authentik/core/templates/login/base_full.html authentik/flows/templates/if/flow-sfe.html
 msgid "Powered by authentik"
 msgstr "Powered by authentik"
 
 #: authentik/core/views/apps.py authentik/providers/oauth2/views/authorize.py
-#: authentik/providers/oauth2/views/device_init.py
-#: authentik/providers/saml/views/sso.py
+#: authentik/providers/oauth2/views/device_init.py authentik/providers/saml/views/sso.py
 #, python-format
 msgid "You're about to sign into %(application)s."
 msgstr "%(application)s에 로그인하려고 합니다."
@@ -519,9 +529,7 @@ msgid "PEM-encoded Certificate data"
 msgstr "PEM 인코딩된 인증서 데이터"
 
 #: authentik/crypto/models.py
-msgid ""
-"Optional Private Key. If this is set, you can use this keypair for "
-"encryption."
+msgid "Optional Private Key. If this is set, you can use this keypair for encryption."
 msgstr "선택적 개인 키. 이 옵션을 설정하면 이 키쌍을 암호화에 사용할 수 있습니다."
 
 #: authentik/crypto/models.py
@@ -530,6 +538,18 @@ msgstr "인증서-키 쌍"
 
 #: authentik/crypto/models.py
 msgid "Certificate-Key Pairs"
+msgstr "인증서-키 쌍"
+
+#: authentik/crypto/models.py
+#, fuzzy
+#| msgid "Certificate-Key Pairs"
+msgid "View Certificate-Key pair's certificate"
+msgstr "인증서-키 쌍"
+
+#: authentik/crypto/models.py
+#, fuzzy
+#| msgid "Certificate-Key Pairs"
+msgid "View Certificate-Key pair's private key"
 msgstr "인증서-키 쌍"
 
 #: authentik/crypto/tasks.py
@@ -556,13 +576,11 @@ msgstr ""
 msgid "Agent Connectors"
 msgstr ""
 
-#: authentik/endpoints/connectors/agent/models.py
-#: authentik/providers/oauth2/models.py
+#: authentik/endpoints/connectors/agent/models.py authentik/providers/oauth2/models.py
 msgid "Device Token"
 msgstr "디바이스 토큰"
 
-#: authentik/endpoints/connectors/agent/models.py
-#: authentik/providers/oauth2/models.py
+#: authentik/endpoints/connectors/agent/models.py authentik/providers/oauth2/models.py
 msgid "Device Tokens"
 msgstr "디바이스 토큰"
 
@@ -630,6 +648,18 @@ msgstr ""
 msgid "Device access groups"
 msgstr ""
 
+#: authentik/endpoints/models.py
+#, fuzzy
+#| msgid "Consent Stage"
+msgid "Endpoint Stage"
+msgstr "동의 스테이지"
+
+#: authentik/endpoints/models.py
+#, fuzzy
+#| msgid "Consent Stages"
+msgid "Endpoint Stages"
+msgstr "동의 스테이지"
+
 #: authentik/endpoints/tasks.py
 msgid "Sync endpoints."
 msgstr ""
@@ -654,8 +684,7 @@ msgstr "라이선스 사용"
 msgid "License Usage Records"
 msgstr "라이선스 사용 기록"
 
-#: authentik/enterprise/policies/unique_password/models.py
-#: authentik/policies/password/models.py
+#: authentik/enterprise/policies/unique_password/models.py authentik/policies/password/models.py
 msgid "Field key to check, field keys defined in Prompt stages are available."
 msgstr "확인하려는 필드 키, 프롬프트 스테이지에서 정의된 필드 키를 사용할 수 있습니다."
 
@@ -663,8 +692,7 @@ msgstr "확인하려는 필드 키, 프롬프트 스테이지에서 정의된 �
 msgid "Number of passwords to check against."
 msgstr ""
 
-#: authentik/enterprise/policies/unique_password/models.py
-#: authentik/policies/password/models.py
+#: authentik/enterprise/policies/unique_password/models.py authentik/policies/password/models.py
 msgid "Password not set in context"
 msgstr "비밀번호가 컨텍스트에 설정되지 않음"
 
@@ -685,9 +713,7 @@ msgid "User Password History"
 msgstr "사용자 비밀번호 기록"
 
 #: authentik/enterprise/policies/unique_password/tasks.py
-msgid ""
-"Check if any UniquePasswordPolicy exists, and if not, purge the password "
-"history table."
+msgid "Check if any UniquePasswordPolicy exists, and if not, purge the password history table."
 msgstr ""
 
 #: authentik/enterprise/policies/unique_password/tasks.py
@@ -719,8 +745,7 @@ msgid "Google Workspace Provider Groups"
 msgstr "Google Workspace 공급자 그룹"
 
 #: authentik/enterprise/providers/google_workspace/models.py
-#: authentik/enterprise/providers/microsoft_entra/models.py
-#: authentik/providers/scim/models.py
+#: authentik/enterprise/providers/microsoft_entra/models.py authentik/providers/scim/models.py
 msgid "Property mappings used for group creation/updating."
 msgstr "그룹 생성/업데이트에 사용될 속성 매핑입니다."
 
@@ -753,9 +778,7 @@ msgid "Sync a direct object (user, group) for Google Workspace provider."
 msgstr ""
 
 #: authentik/enterprise/providers/google_workspace/tasks.py
-msgid ""
-"Dispatch syncs for a direct object (user, group) for Google Workspace "
-"providers."
+msgid "Dispatch syncs for a direct object (user, group) for Google Workspace providers."
 msgstr ""
 
 #: authentik/enterprise/providers/google_workspace/tasks.py
@@ -763,9 +786,7 @@ msgid "Sync a related object (memberships) for Google Workspace provider."
 msgstr ""
 
 #: authentik/enterprise/providers/google_workspace/tasks.py
-msgid ""
-"Dispatch syncs for a related object (memberships) for Google Workspace "
-"providers."
+msgid "Dispatch syncs for a related object (memberships) for Google Workspace providers."
 msgstr ""
 
 #: authentik/enterprise/providers/microsoft_entra/models.py
@@ -809,9 +830,7 @@ msgid "Sync a direct object (user, group) for Microsoft Entra provider."
 msgstr ""
 
 #: authentik/enterprise/providers/microsoft_entra/tasks.py
-msgid ""
-"Dispatch syncs for a direct object (user, group) for Microsoft Entra "
-"providers."
+msgid "Dispatch syncs for a direct object (user, group) for Microsoft Entra providers."
 msgstr ""
 
 #: authentik/enterprise/providers/microsoft_entra/tasks.py
@@ -819,9 +838,7 @@ msgid "Sync a related object (memberships) for Microsoft Entra provider."
 msgstr ""
 
 #: authentik/enterprise/providers/microsoft_entra/tasks.py
-msgid ""
-"Dispatch syncs for a related object (memberships) for Microsoft Entra "
-"providers."
+msgid "Dispatch syncs for a related object (memberships) for Microsoft Entra providers."
 msgstr ""
 
 #: authentik/enterprise/providers/radius/api.py
@@ -832,8 +849,7 @@ msgstr ""
 msgid "Enterprise is required to use the OAuth mode."
 msgstr ""
 
-#: authentik/enterprise/providers/ssf/models.py
-#: authentik/providers/oauth2/models.py
+#: authentik/enterprise/providers/ssf/models.py authentik/providers/oauth2/models.py
 msgid "Signing Key"
 msgstr "서명 키"
 
@@ -899,9 +915,8 @@ msgstr ""
 
 #: authentik/enterprise/stages/mtls/models.py
 msgid ""
-"Configure certificate authorities to validate the certificate against. This "
-"option has a higher priority than the `client_certificate` option on "
-"`Brand`."
+"Configure certificate authorities to validate the certificate against. This option has a higher "
+"priority than the `client_certificate` option on `Brand`."
 msgstr ""
 
 #: authentik/enterprise/stages/mtls/models.py
@@ -926,8 +941,8 @@ msgstr ""
 
 #: authentik/enterprise/stages/source/models.py
 msgid ""
-"Amount of time a user can take to return from the source to continue the "
-"flow (Format: hours=-1;minutes=-2;seconds=-3)"
+"Amount of time a user can take to return from the source to continue the flow (Format: "
+"hours=-1;minutes=-2;seconds=-3)"
 msgstr ""
 
 #: authentik/enterprise/stages/source/models.py
@@ -962,27 +977,21 @@ msgstr "일반 웹훅"
 msgid "Slack Webhook (Slack/Discord)"
 msgstr "Slack 웹훅 (Slack/Discord)"
 
-#: authentik/events/models.py
-#: authentik/stages/authenticator_validate/models.py
+#: authentik/events/models.py authentik/stages/authenticator_validate/models.py
 msgid "Email"
 msgstr "이메일"
 
 #: authentik/events/models.py
-msgid ""
-"Only send notification once, for example when sending a webhook into a chat "
-"channel."
+msgid "Only send notification once, for example when sending a webhook into a chat channel."
 msgstr "예를 들어 채팅 채널로 웹훅을 보낼 때 알림을 한 번만 보내세요."
 
 #: authentik/events/models.py
-msgid ""
-"Customize the body of the request. Mapping should return data that is JSON-"
-"serializable."
+msgid "Customize the body of the request. Mapping should return data that is JSON-serializable."
 msgstr ""
 
 #: authentik/events/models.py
 msgid ""
-"Configure additional headers to be sent. Mapping should return a dictionary "
-"of key-value pairs"
+"Configure additional headers to be sent. Mapping should return a dictionary of key-value pairs"
 msgstr ""
 
 #: authentik/events/models.py
@@ -1027,10 +1036,11 @@ msgstr "통지"
 
 #: authentik/events/models.py
 msgid ""
-"Select which transports should be used to notify the user. If none are "
-"selected, the notification will only be shown in the authentik UI."
+"Select which transports should be used to notify the user. If none are selected, the notification "
+"will only be shown in the authentik UI."
 msgstr ""
-"사용자에게 통지를 보내는 데 사용할 전송을 선택합니다. 아무것도 선택하지 않으면 통지는 authentik UI에만 표시됩니다."
+"사용자에게 통지를 보내는 데 사용할 전송을 선택합니다. 아무것도 선택하지 않으면 통지는 authentik UI"
+"에만 표시됩니다."
 
 #: authentik/events/models.py
 msgid "Controls which severity level the created notifications will have."
@@ -1038,14 +1048,14 @@ msgstr "생성된 통지의 심각도 수준을 제어합니다."
 
 #: authentik/events/models.py
 msgid ""
-"Define which group of users this notification should be sent and shown to. "
-"If left empty, Notification won't ben sent."
+"Define which group of users this notification should be sent and shown to. If left empty, "
+"Notification won't ben sent."
 msgstr "이 통지를 받고 표시할 사용자 그룹을 정의합니다. 비워 둘 경우 통지가 전송되지 않습니다."
 
 #: authentik/events/models.py
 msgid ""
-"When enabled, notification will be sent to user the user that triggered the "
-"event.When destination_group is configured, notification is sent to both."
+"When enabled, notification will be sent to user the user that triggered the event.When "
+"destination_group is configured, notification is sent to both."
 msgstr ""
 
 #: authentik/events/models.py
@@ -1069,9 +1079,7 @@ msgid "Dispatch new event notifications."
 msgstr ""
 
 #: authentik/events/tasks.py
-msgid ""
-"Check if policies attached to NotificationRule match event and dispatch "
-"notification tasks."
+msgid "Check if policies attached to NotificationRule match event and dispatch notification tasks."
 msgstr ""
 
 #: authentik/events/tasks.py
@@ -1157,19 +1165,18 @@ msgstr "플로우 페이지에서 타이틀로 표시됩니다."
 
 #: authentik/flows/models.py
 msgid ""
-"Decides what this Flow is used for. For example, the Authentication flow is "
-"redirect to when an un-authenticated user visits authentik."
+"Decides what this Flow is used for. For example, the Authentication flow is redirect to when an "
+"un-authenticated user visits authentik."
 msgstr ""
-"이 플로우가 사용되는 용도를 결정합니다. 예를 들어, 인증되지 않은 사용자가 authentik을 방문할 때 인증 플로우가 리디렉션됩니다."
+"이 플로우가 사용되는 용도를 결정합니다. 예를 들어, 인증되지 않은 사용자가 authentik을 방문할 때 인"
+"증 플로우가 리디렉션됩니다."
 
 #: authentik/flows/models.py
 msgid "Background shown during execution"
 msgstr "실행 중에 표시되는 배경"
 
 #: authentik/flows/models.py
-msgid ""
-"Enable compatibility mode, increases compatibility with password managers on"
-" mobile devices."
+msgid "Enable compatibility mode, increases compatibility with password managers on mobile devices."
 msgstr "호환성 모드를 활성화하면, 모바일 장치에서 비밀번호 관리자와의 호환성이 향상됩니다."
 
 #: authentik/flows/models.py
@@ -1210,14 +1217,13 @@ msgstr ""
 
 #: authentik/flows/models.py
 msgid ""
-"Configure how the flow executor should handle an invalid response to a "
-"challenge. RETRY returns the error message and a similar challenge to the "
-"executor. RESTART restarts the flow from the beginning, and "
-"RESTART_WITH_CONTEXT restarts the flow while keeping the current context."
+"Configure how the flow executor should handle an invalid response to a challenge. RETRY returns "
+"the error message and a similar challenge to the executor. RESTART restarts the flow from the "
+"beginning, and RESTART_WITH_CONTEXT restarts the flow while keeping the current context."
 msgstr ""
-"플로우 실행기가 챌린지에 대한 유효하지 않은 응답을 처리하는 방법을 구성합니다. RETRY는 오류 메시지와 유사한 챌린지를 실행기에 "
-"반환합니다. RESTART는 플로우를 처음부터 다시 시작하고, RESTART_WITH_CONTEXT는 현재 컨텍스트를 유지하면서 플로우를"
-" 다시 시작합니다."
+"플로우 실행기가 챌린지에 대한 유효하지 않은 응답을 처리하는 방법을 구성합니다. RETRY는 오류 메시지"
+"와 유사한 챌린지를 실행기에 반환합니다. RESTART는 플로우를 처음부터 다시 시작하고, "
+"RESTART_WITH_CONTEXT는 현재 컨텍스트를 유지하면서 플로우를 다시 시작합니다."
 
 #: authentik/flows/models.py
 msgid "Flow Stage Binding"
@@ -1229,9 +1235,11 @@ msgstr "플로우 스테이지 바인딩"
 
 #: authentik/flows/models.py
 msgid ""
-"Flow used by an authenticated user to configure this Stage. If empty, user "
-"will not be able to configure this stage."
-msgstr "이 스테이지를 구성하는 데 사용되는 인증된 사용자의 플로우입니다. 비어 있으면 사용자가 이 스테이지를 구성할 수 없습니다."
+"Flow used by an authenticated user to configure this Stage. If empty, user will not be able to "
+"configure this stage."
+msgstr ""
+"이 스테이지를 구성하는 데 사용되는 인증된 사용자의 플로우입니다. 비어 있으면 사용자가 이 스테이지"
+"를 구성할 수 없습니다."
 
 #: authentik/flows/models.py
 msgid "Flow Token"
@@ -1258,9 +1266,7 @@ msgid "Timeout for synchronization of a single page"
 msgstr ""
 
 #: authentik/lib/sync/outgoing/models.py
-msgid ""
-"When enabled, provider will not modify or create objects in the remote "
-"system."
+msgid "When enabled, provider will not modify or create objects in the remote system."
 msgstr ""
 
 #: authentik/lib/utils/time.py
@@ -1274,8 +1280,7 @@ msgid "The fields {field_names} must be used together."
 msgstr "{field_names} 필드는 함께 사용되어야 합니다."
 
 #: authentik/outposts/api/service_connections.py
-msgid ""
-"You can only use an empty kubeconfig when connecting to a local cluster."
+msgid "You can only use an empty kubeconfig when connecting to a local cluster."
 msgstr "로컬 클러스터에 연결할 때만 빈 kubeconfig을 사용할 수 있습니다."
 
 #: authentik/outposts/api/service_connections.py
@@ -1283,9 +1288,7 @@ msgid "Invalid kubeconfig"
 msgstr "kubeconfig이 올바르지 않음"
 
 #: authentik/outposts/models.py
-msgid ""
-"If enabled, use the local connection. Required Docker socket/Kubernetes "
-"Integration"
+msgid "If enabled, use the local connection. Required Docker socket/Kubernetes Integration"
 msgstr "활성화되면 로컬 연결을 사용합니다. 필요한 Docker 소켓/쿠버네티스 통합에 필요합니다"
 
 #: authentik/outposts/models.py
@@ -1298,22 +1301,19 @@ msgstr "Outpost 서비스 연결"
 
 #: authentik/outposts/models.py
 msgid ""
-"Can be in the format of 'unix://<path>' when connecting to a local docker "
-"daemon, or 'https://<hostname>:2376' when connecting to a remote system."
+"Can be in the format of 'unix://<path>' when connecting to a local docker daemon, or 'https://"
+"<hostname>:2376' when connecting to a remote system."
 msgstr ""
-"로컬 도커 데몬에 연결할 때는 'unix://<path>' 형식, 원격 시스템에 연결할 때는 "
-"'https://<hostname>:2376' 형식일 수 있습니다."
+"로컬 도커 데몬에 연결할 때는 'unix://<path>' 형식, 원격 시스템에 연결할 때는 'https://"
+"<hostname>:2376' 형식일 수 있습니다."
 
 #: authentik/outposts/models.py
 msgid ""
-"CA which the endpoint's Certificate is verified against. Can be left empty "
-"for no validation."
+"CA which the endpoint's Certificate is verified against. Can be left empty for no validation."
 msgstr "엔드포인트의 인증서를 검증하는 CA입니다. 검증을 수행하지 않으려면 비워둘 수 있습니다."
 
 #: authentik/outposts/models.py
-msgid ""
-"Certificate/Key used for authentication. Can be left empty for no "
-"authentication."
+msgid "Certificate/Key used for authentication. Can be left empty for no authentication."
 msgstr "인증에 사용되는 인증서/키입니다. 인증이 필요하지 않은 경우 비워 둘 수 있습니다."
 
 #: authentik/outposts/models.py
@@ -1325,9 +1325,7 @@ msgid "Docker Service-Connections"
 msgstr "도커 서비스 연결"
 
 #: authentik/outposts/models.py
-msgid ""
-"Paste your kubeconfig here. authentik will automatically use the currently "
-"selected context."
+msgid "Paste your kubeconfig here. authentik will automatically use the currently selected context."
 msgstr "여기에 kubeconfig를 붙여넣습니다. authentik은 자동으로 현재 선택된 컨텍스트를 사용합니다."
 
 #: authentik/outposts/models.py
@@ -1344,10 +1342,11 @@ msgstr "쿠버네티스 서비스 연결"
 
 #: authentik/outposts/models.py
 msgid ""
-"Select Service-Connection authentik should use to manage this outpost. Leave"
-" empty if authentik should not handle the deployment."
+"Select Service-Connection authentik should use to manage this outpost. Leave empty if authentik "
+"should not handle the deployment."
 msgstr ""
-"이 Outpost를 관리하는 데 사용할 서비스 연결을 선택하십시오. authentik이 배포를 처리하지 않아야 하는 경우 비워 두십시오."
+"이 Outpost를 관리하는 데 사용할 서비스 연결을 선택하십시오. authentik이 배포를 처리하지 않아야 하"
+"는 경우 비워 두십시오."
 
 #: authentik/outposts/models.py
 msgid "Outpost"
@@ -1393,21 +1392,19 @@ msgstr "더미 정책"
 msgid "Dummy Policies"
 msgstr "더미 정책"
 
-#: authentik/policies/event_matcher/api.py
-#: authentik/policies/event_matcher/models.py
-msgid ""
-"Match events created by selected application. When left empty, all "
-"applications are matched."
-msgstr "선택한 응용 프로그램에서 생성된 이벤트와 일치시킵니다. 비워 둘 경우 모든 응용 프로그램이 일치합니다."
-
-#: authentik/policies/event_matcher/api.py
-#: authentik/policies/event_matcher/models.py
-msgid ""
-"Match events created by selected model. When left empty, all models are "
-"matched. When an app is selected, all the application's models are matched."
+#: authentik/policies/event_matcher/api.py authentik/policies/event_matcher/models.py
+msgid "Match events created by selected application. When left empty, all applications are matched."
 msgstr ""
-"선택한 모델에서 생성된 이벤트와 일치시킵니다. 비워 두면 모든 모델이 일치합니다. 응용 프로그램이 선택된 경우 해당 응용 프로그램의 모든"
-" 모델이 일치합니다."
+"선택한 응용 프로그램에서 생성된 이벤트와 일치시킵니다. 비워 둘 경우 모든 응용 프로그램이 일치합니"
+"다."
+
+#: authentik/policies/event_matcher/api.py authentik/policies/event_matcher/models.py
+msgid ""
+"Match events created by selected model. When left empty, all models are matched. When an app is "
+"selected, all the application's models are matched."
+msgstr ""
+"선택한 모델에서 생성된 이벤트와 일치시킵니다. 비워 두면 모든 모델이 일치합니다. 응용 프로그램이 선"
+"택된 경우 해당 응용 프로그램의 모든 모델이 일치합니다."
 
 #: authentik/policies/event_matcher/api.py
 msgid "At least one criteria must be set."
@@ -1415,15 +1412,13 @@ msgstr "기준을 하나 이상 설정해야 합니다."
 
 #: authentik/policies/event_matcher/models.py
 msgid ""
-"Match created events with this action type. When left empty, all action "
-"types will be matched."
+"Match created events with this action type. When left empty, all action types will be matched."
 msgstr "생성된 이벤트를 이 액션 유형과 일치시킵니다. 비워두면 모든 액션 유형이 일치합니다."
 
 #: authentik/policies/event_matcher/models.py
-msgid ""
-"Matches Event's Client IP (strict matching, for network matching use an "
-"Expression Policy)"
-msgstr "이벤트의 클라이언트 IP와 일치시킵니다 (엄격한 일치, 네트워크 일치에는 표현식 정책을 사용하세요)."
+msgid "Matches Event's Client IP (strict matching, for network matching use an Expression Policy)"
+msgstr ""
+"이벤트의 클라이언트 IP와 일치시킵니다 (엄격한 일치, 네트워크 일치에는 표현식 정책을 사용하세요)."
 
 #: authentik/policies/event_matcher/models.py
 msgid "Event Matcher Policy"
@@ -1528,8 +1523,8 @@ msgstr "정책 바인딩"
 
 #: authentik/policies/models.py
 msgid ""
-"When this option is enabled, all executions of this policy will be logged. "
-"By default, only execution errors are logged."
+"When this option is enabled, all executions of this policy will be logged. By default, only "
+"execution errors are logged."
 msgstr "이 옵션을 활성화하면 이 정책의 모든 실행이 기록됩니다. 기본적으로 실행 오류만 기록됩니다."
 
 #: authentik/policies/models.py
@@ -1553,8 +1548,7 @@ msgid "How many times the password hash is allowed to be on haveibeenpwned"
 msgstr "비밀번호 해시가 허용되는 해시 횟수"
 
 #: authentik/policies/password/models.py
-msgid ""
-"If the zxcvbn score is equal or less than this value, the policy will fail."
+msgid "If the zxcvbn score is equal or less than this value, the policy will fail."
 msgstr "만약 zxcvbn 점수가 이 값과 같거나 이 값보다 작다면, 정책이 실패합니다."
 
 #: authentik/policies/password/models.py
@@ -1604,8 +1598,8 @@ msgstr ""
 
 #: authentik/policies/templates/policies/buffer.html
 msgid ""
-"You're already authenticating in another tab. This page will refresh once "
-"authentication is completed."
+"You're already authenticating in another tab. This page will refresh once authentication is "
+"completed."
 msgstr ""
 
 #: authentik/policies/templates/policies/buffer.html
@@ -1661,34 +1655,33 @@ msgstr "개체에 액세스할 수 있는 DN입니다."
 
 #: authentik/providers/ldap/models.py
 msgid ""
-"The start for uidNumbers, this number is added to the user.pk to make sure "
-"that the numbers aren't too low for POSIX users. Default is 2000 to ensure "
-"that we don't collide with local users uidNumber"
+"The start for uidNumbers, this number is added to the user.pk to make sure that the numbers "
+"aren't too low for POSIX users. Default is 2000 to ensure that we don't collide with local users "
+"uidNumber"
 msgstr ""
-"UID의 시작값입니다. 이 숫자는 user.Pk에 추가되어 POSIX 사용자의 숫자가 너무 낮지 않도록 합니다. 기본값은 2000으로 "
-"설정되어 로컬 사용자 UID와 충돌하지 않도록 합니다."
+"UID의 시작값입니다. 이 숫자는 user.Pk에 추가되어 POSIX 사용자의 숫자가 너무 낮지 않도록 합니다. 기"
+"본값은 2000으로 설정되어 로컬 사용자 UID와 충돌하지 않도록 합니다."
 
 #: authentik/providers/ldap/models.py
 msgid ""
-"The start for gidNumbers, this number is added to a number generated from "
-"the group.pk to make sure that the numbers aren't too low for POSIX groups. "
-"Default is 4000 to ensure that we don't collide with local groups or users "
-"primary groups gidNumber"
+"The start for gidNumbers, this number is added to a number generated from the group.pk to make "
+"sure that the numbers aren't too low for POSIX groups. Default is 4000 to ensure that we don't "
+"collide with local groups or users primary groups gidNumber"
 msgstr ""
-"GID의 시작값입니다. 이 숫자는 group.Pk에서 생성된 숫자에 추가되어 POSIX 그룹의 숫자가 너무 낮지 않도록 합니다. 기본값은"
-" 4000으로 설정되어 로컬 그룹 또는 사용자의 기본 그룹 gidNumber와 충돌하지 않도록 합니다."
+"GID의 시작값입니다. 이 숫자는 group.Pk에서 생성된 숫자에 추가되어 POSIX 그룹의 숫자가 너무 낮지 않"
+"도록 합니다. 기본값은 4000으로 설정되어 로컬 그룹 또는 사용자의 기본 그룹 gidNumber와 충돌하지 않"
+"도록 합니다."
 
 #: authentik/providers/ldap/models.py authentik/providers/radius/models.py
 msgid ""
-"When enabled, code-based multi-factor authentication can be used by "
-"appending a semicolon and the TOTP code to the password. This should only be"
-" enabled if all users that will bind to this provider have a TOTP device "
-"configured, as otherwise a password may incorrectly be rejected if it "
+"When enabled, code-based multi-factor authentication can be used by appending a semicolon and the "
+"TOTP code to the password. This should only be enabled if all users that will bind to this "
+"provider have a TOTP device configured, as otherwise a password may incorrectly be rejected if it "
 "contains a semicolon."
 msgstr ""
-"이 옵션을 활성화하면, 비밀번호에 세미콜론과 TOTP 코드를 추가하여 코드 기반 멀티팩터 인증을 사용할 수 있습니다. 비밀번호에 "
-"세미콜론이 포함되어 있으면 비밀번호가 거부될 수 있으므로, 이 공급자에 바인딩할 모든 사용자가 TOTP 디바이스를 구성한 경우에만 이 "
-"기능을 사용하도록 설정해야 합니다."
+"이 옵션을 활성화하면, 비밀번호에 세미콜론과 TOTP 코드를 추가하여 코드 기반 멀티팩터 인증을 사용할 "
+"수 있습니다. 비밀번호에 세미콜론이 포함되어 있으면 비밀번호가 거부될 수 있으므로, 이 공급자에 바인"
+"딩할 모든 사용자가 TOTP 디바이스를 구성한 경우에만 이 기능을 사용하도록 설정해야 합니다."
 
 #: authentik/providers/ldap/models.py
 msgid "LDAP Provider"
@@ -1729,11 +1722,11 @@ msgstr "사용자 이메일 기반. 이 방법은 UPN 방법보다 권장됩니�
 
 #: authentik/providers/oauth2/constants.py
 msgid ""
-"Based on the User's UPN, only works if user has a 'upn' attribute set. Use "
-"this method only if you have different UPN and Mail domains."
+"Based on the User's UPN, only works if user has a 'upn' attribute set. Use this method only if "
+"you have different UPN and Mail domains."
 msgstr ""
-"사용자의 UPN을 기반으로 하며, 사용자에게 'upn' 특성이 설정되어 있는 경우에만 작동합니다. 이 방법은 UPN과 메일 도메인이 다른"
-" 경우에만 사용하세요."
+"사용자의 UPN을 기반으로 하며, 사용자에게 'upn' 특성이 설정되어 있는 경우에만 작동합니다. 이 방법"
+"은 UPN과 메일 도메인이 다른 경우에만 사용하세요."
 
 #: authentik/providers/oauth2/models.py
 msgid "Confidential"
@@ -1816,9 +1809,7 @@ msgid "Scope used by the client"
 msgstr "클라이언트에서 사용할 스코프"
 
 #: authentik/providers/oauth2/models.py
-msgid ""
-"Description shown to the user when consenting. If left empty, the user won't"
-" be informed."
+msgid "Description shown to the user when consenting. If left empty, the user won't be informed."
 msgstr "동의할 때 사용자에게 표시되는 설명입니다. 비워두면 사용자에게 통지가 표시되지 않습니다."
 
 #: authentik/providers/oauth2/models.py
@@ -1835,8 +1826,8 @@ msgstr "클라이언트 유형"
 
 #: authentik/providers/oauth2/models.py
 msgid ""
-"Confidential clients are capable of maintaining the confidentiality of their"
-" credentials. Public clients are incapable"
+"Confidential clients are capable of maintaining the confidentiality of their credentials. Public "
+"clients are incapable"
 msgstr "기밀 클라이언트는 자격 증명의 기밀을 유지할 수 있습니다. 공개 클라이언트는 불가능"
 
 #: authentik/providers/oauth2/models.py
@@ -1860,9 +1851,7 @@ msgid "Logout Method"
 msgstr ""
 
 #: authentik/providers/oauth2/models.py
-msgid ""
-"Backchannel logs out with server to server calls. Frontchannel uses iframes "
-"in your browser"
+msgid "Backchannel logs out with server to server calls. Frontchannel uses iframes in your browser"
 msgstr ""
 
 #: authentik/providers/oauth2/models.py
@@ -1871,34 +1860,37 @@ msgstr "id_token에 클레임 포함"
 
 #: authentik/providers/oauth2/models.py
 msgid ""
-"Include User claims from scopes in the id_token, for applications that don't"
-" access the userinfo endpoint."
-msgstr "사용자 정보 엔드포인트에 액세스하지 않는 애플리케이션의 경우, 범위의 사용자 선언을 Id_token에 포함하세요."
+"Include User claims from scopes in the id_token, for applications that don't access the userinfo "
+"endpoint."
+msgstr ""
+"사용자 정보 엔드포인트에 액세스하지 않는 애플리케이션의 경우, 범위의 사용자 선언을 Id_token에 포함"
+"하세요."
 
 #: authentik/providers/oauth2/models.py
 msgid ""
 "Access codes not valid on or after current time + this value (Format: "
 "hours=1;minutes=2;seconds=3)."
-msgstr "현재 시간 이후로 이 값 (형식: hours=1;minutes=2;seconds=3)만큼 유효한 액세스 코드가 아닙니다."
+msgstr ""
+"현재 시간 이후로 이 값 (형식: hours=1;minutes=2;seconds=3)만큼 유효한 액세스 코드가 아닙니다."
 
 #: authentik/providers/oauth2/models.py
 msgid ""
-"Tokens not valid on or after current time + this value (Format: "
-"hours=1;minutes=2;seconds=3)."
+"Tokens not valid on or after current time + this value (Format: hours=1;minutes=2;seconds=3)."
 msgstr "현재 시간 이후로 이 값 (형식: hours=1;minutes=2;seconds=3)만큼 토큰이 유효하지 않습니다."
 
 #: authentik/providers/oauth2/models.py
 msgid ""
-"When refreshing a token, if the refresh token is valid for less than this "
-"duration, it will be renewed. When set to seconds=0, token will always be "
-"renewed. (Format: hours=1;minutes=2;seconds=3)."
+"When refreshing a token, if the refresh token is valid for less than this duration, it will be "
+"renewed. When set to seconds=0, token will always be renewed. (Format: "
+"hours=1;minutes=2;seconds=3)."
 msgstr ""
 
 #: authentik/providers/oauth2/models.py
 msgid ""
-"Configure what data should be used as unique User Identifier. For most "
-"cases, the default should be fine."
-msgstr "고유 사용자 식별자로 사용할 데이터를 구성합니다. 대부분의 경우 기본값을 사용해도 무방합니다."
+"Configure what data should be used as unique User Identifier. For most cases, the default should "
+"be fine."
+msgstr ""
+"고유 사용자 식별자로 사용할 데이터를 구성합니다. 대부분의 경우 기본값을 사용해도 무방합니다."
 
 #: authentik/providers/oauth2/models.py
 msgid "Configure how the issuer field of the ID Token should be filled."
@@ -1913,15 +1905,11 @@ msgid "Encryption Key"
 msgstr ""
 
 #: authentik/providers/oauth2/models.py
-msgid ""
-"Key used to encrypt the tokens. When set, tokens will be encrypted and "
-"returned as JWEs."
+msgid "Key used to encrypt the tokens. When set, tokens will be encrypted and returned as JWEs."
 msgstr ""
 
 #: authentik/providers/oauth2/models.py
-msgid ""
-"Any JWT signed by the JWK of the selected source can be used to "
-"authenticate."
+msgid "Any JWT signed by the JWK of the selected source can be used to authenticate."
 msgstr "선택한 소스의 JWK로 서명된 모든 JWT는 인증에 사용될 수 있습니다."
 
 #: authentik/providers/oauth2/models.py
@@ -1988,8 +1976,7 @@ msgstr ""
 msgid "Handle backchannel logout notifications dispatched via signal"
 msgstr ""
 
-#: authentik/providers/oauth2/views/authorize.py
-#: authentik/providers/saml/views/flows.py
+#: authentik/providers/oauth2/views/authorize.py authentik/providers/saml/views/flows.py
 #, python-brace-format
 msgid "Redirecting to {app}..."
 msgstr ""
@@ -2036,21 +2023,19 @@ msgstr "내부 호스트 SSL 유효성 검사"
 
 #: authentik/providers/proxy/models.py
 msgid ""
-"Enable support for forwardAuth in traefik and nginx auth_request. Exclusive "
-"with internal_host."
-msgstr ""
-"traefik과 nginx auth_request의 forwardAuth 지원을 사용합니다. internal_host는 제외입니다."
+"Enable support for forwardAuth in traefik and nginx auth_request. Exclusive with internal_host."
+msgstr "traefik과 nginx auth_request의 forwardAuth 지원을 사용합니다. internal_host는 제외입니다."
 
 #: authentik/providers/proxy/models.py
 msgid ""
-"Regular expressions for which authentication is not required. Each new line "
-"is interpreted as a new Regular Expression."
+"Regular expressions for which authentication is not required. Each new line is interpreted as a "
+"new Regular Expression."
 msgstr "인증이 필요하지 않은 정규 표현식. 각 새 줄은 새 표현식으로 해석됩니다."
 
 #: authentik/providers/proxy/models.py
 msgid ""
-"When enabled, this provider will intercept the authorization header and "
-"authenticate requests based on its value."
+"When enabled, this provider will intercept the authorization header and authenticate requests "
+"based on its value."
 msgstr "활성화하면 이 공급자는 권한 부여 헤더를 가로채고 그 값에 따라 요청을 인증합니다."
 
 #: authentik/providers/proxy/models.py
@@ -2058,9 +2043,7 @@ msgid "Set HTTP-Basic Authentication"
 msgstr "HTTP-Basic 인증 설정"
 
 #: authentik/providers/proxy/models.py
-msgid ""
-"Set a custom HTTP-Basic Authentication header based on values from "
-"authentik."
+msgid "Set a custom HTTP-Basic Authentication header based on values from authentik."
 msgstr "authentik의 값을 기반으로 커스텀 HTTP-Basic 인증 헤더를 설정합니다."
 
 #: authentik/providers/proxy/models.py
@@ -2069,18 +2052,18 @@ msgstr "HTTP-Basic 사용자명 키"
 
 #: authentik/providers/proxy/models.py
 msgid ""
-"User/Group Attribute used for the user part of the HTTP-Basic Header. If not"
-" set, the user's Email address is used."
+"User/Group Attribute used for the user part of the HTTP-Basic Header. If not set, the user's "
+"Email address is used."
 msgstr ""
-"HTTP-Basic 헤더의 사용자 부분에 사용되는 사용자/그룹 속성입니다. 설정하지 않으면 사용자의 이메일 주소가 사용됩니다."
+"HTTP-Basic 헤더의 사용자 부분에 사용되는 사용자/그룹 속성입니다. 설정하지 않으면 사용자의 이메일 "
+"주소가 사용됩니다."
 
 #: authentik/providers/proxy/models.py
 msgid "HTTP-Basic Password Key"
 msgstr "HTTP-Basic 비밀번호 키"
 
 #: authentik/providers/proxy/models.py
-msgid ""
-"User/Group Attribute used for the password part of the HTTP-Basic Header."
+msgid "User/Group Attribute used for the password part of the HTTP-Basic Header."
 msgstr "HTTP-Basic 헤더의 비밀번호 부분에 사용되는 사용자/그룹 속성입니다."
 
 #: authentik/providers/proxy/models.py
@@ -2097,11 +2080,11 @@ msgstr ""
 
 #: authentik/providers/rac/models.py authentik/stages/user_login/models.py
 msgid ""
-"Determines how long a session lasts. Default of 0 means that the sessions "
-"lasts until the browser is closed. (Format: hours=-1;minutes=-2;seconds=-3)"
+"Determines how long a session lasts. Default of 0 means that the sessions lasts until the browser "
+"is closed. (Format: hours=-1;minutes=-2;seconds=-3)"
 msgstr ""
-"세션이 지속되는 시간을 결정합니다. 기본값인 0초는 브라우저가 닫힐 때까지 세션이 지속된다는 의미입니다. (서식: "
-"hours=-1;minutes=-2;seconds=-3)"
+"세션이 지속되는 시간을 결정합니다. 기본값인 0초는 브라우저가 닫힐 때까지 세션이 지속된다는 의미입"
+"니다. (서식: hours=-1;minutes=-2;seconds=-3)"
 
 #: authentik/providers/rac/models.py
 msgid "When set to true, connection tokens will be deleted upon disconnect."
@@ -2153,12 +2136,11 @@ msgstr "클라이언트와 서버가 패킷을 해시하기 위해 공유하는 
 
 #: authentik/providers/radius/models.py
 msgid ""
-"List of CIDRs (comma-separated) that clients can connect from. A more "
-"specific CIDR will match before a looser one. Clients connecting from a non-"
-"specified CIDR will be dropped."
+"List of CIDRs (comma-separated) that clients can connect from. A more specific CIDR will match "
+"before a looser one. Clients connecting from a non-specified CIDR will be dropped."
 msgstr ""
-"클라이언트가 연결할 수 있는 CIDR 목록(쉼표로 구분). 더 구체적인 CIDR은 더 일반적인 CIDR 앞에 매칭됩니다. 지정되지 않은 "
-"CIDR에서 연결된 클라이언트는 드롭됩니다."
+"클라이언트가 연결할 수 있는 CIDR 목록(쉼표로 구분). 더 구체적인 CIDR은 더 일반적인 CIDR 앞에 매칭"
+"됩니다. 지정되지 않은 CIDR에서 연결된 클라이언트는 드롭됩니다."
 
 #: authentik/providers/radius/models.py
 msgid "Radius Provider"
@@ -2178,8 +2160,8 @@ msgstr ""
 
 #: authentik/providers/saml/api/providers.py
 msgid ""
-"With a signing keypair selected, at least one of 'Sign assertion' and 'Sign "
-"Response' must be selected."
+"With a signing keypair selected, at least one of 'Sign assertion' and 'Sign Response' must be "
+"selected."
 msgstr ""
 
 #: authentik/providers/saml/api/providers.py
@@ -2200,15 +2182,13 @@ msgid "Service Provider Binding"
 msgstr "서비스 공급자 바인딩"
 
 #: authentik/providers/saml/models.py
-msgid ""
-"This determines how authentik sends the response back to the Service "
-"Provider."
+msgid "This determines how authentik sends the response back to the Service Provider."
 msgstr "이는 Authentik이 응답을 서비스 제공자에게 다시 전송하는 방식을 결정합니다."
 
 #: authentik/providers/saml/models.py
 msgid ""
-"Value of the audience restriction field of the assertion. When left empty, "
-"no audience restriction will be added."
+"Value of the audience restriction field of the assertion. When left empty, no audience "
+"restriction will be added."
 msgstr "어설션의 대상 제한 필드의 값입니다. 비워두면 대상 제한이 추가되지 않습니다."
 
 #: authentik/providers/saml/models.py
@@ -2228,17 +2208,14 @@ msgid "SLS Binding"
 msgstr ""
 
 #: authentik/providers/saml/models.py
-msgid ""
-"This determines how authentik sends the logout response back to the Service "
-"Provider."
+msgid "This determines how authentik sends the logout response back to the Service Provider."
 msgstr ""
 
 #: authentik/providers/saml/models.py
 msgid ""
-"Method to use for logout. Front-channel iframe loads all logout URLs "
-"simultaneously in hidden iframes. Front-channel native uses your active "
-"browser tab to send post requests and redirect to providers. Back-channel "
-"sends logout requests directly from the server without user interaction "
+"Method to use for logout. Front-channel iframe loads all logout URLs simultaneously in hidden "
+"iframes. Front-channel native uses your active browser tab to send post requests and redirect to "
+"providers. Back-channel sends logout requests directly from the server without user interaction "
 "(requires POST SLS binding)."
 msgstr ""
 
@@ -2248,9 +2225,10 @@ msgstr "NameID 속성 매핑"
 
 #: authentik/providers/saml/models.py
 msgid ""
-"Configure how the NameID value will be created. When left empty, the "
-"NameIDPolicy of the incoming request will be considered"
-msgstr "NameID 값이 어떻게 생성될지 구성합니다. 비워 둘 경우, 들어오는 요청의 NameIDPolicy을 고려합니다."
+"Configure how the NameID value will be created. When left empty, the NameIDPolicy of the incoming "
+"request will be considered"
+msgstr ""
+"NameID 값이 어떻게 생성될지 구성합니다. 비워 둘 경우, 들어오는 요청의 NameIDPolicy을 고려합니다."
 
 #: authentik/providers/saml/models.py
 msgid "AuthnContextClassRef Property Mapping"
@@ -2258,27 +2236,24 @@ msgstr ""
 
 #: authentik/providers/saml/models.py
 msgid ""
-"Configure how the AuthnContextClassRef value will be created. When left "
-"empty, the AuthnContextClassRef will be set based on which authentication "
-"methods the user used to authenticate."
+"Configure how the AuthnContextClassRef value will be created. When left empty, the "
+"AuthnContextClassRef will be set based on which authentication methods the user used to "
+"authenticate."
 msgstr ""
 
 #: authentik/providers/saml/models.py
 msgid ""
-"Assertion valid not before current time + this value (Format: "
-"hours=-1;minutes=-2;seconds=-3)."
+"Assertion valid not before current time + this value (Format: hours=-1;minutes=-2;seconds=-3)."
 msgstr "어설션이 현재 시간 + 이 값 이후에만 유효합니다 (형식: hours=-1;minutes=-2;seconds=-3)."
 
 #: authentik/providers/saml/models.py
 msgid ""
-"Assertion not valid on or after current time + this value (Format: "
-"hours=1;minutes=2;seconds=3)."
+"Assertion not valid on or after current time + this value (Format: hours=1;minutes=2;seconds=3)."
 msgstr "어설션이 현재 시간 + 이 값 이전에만 유효합니다 (형식: hours=1;minutes=2;seconds=3)."
 
 #: authentik/providers/saml/models.py
 msgid ""
-"Session not valid on or after current time + this value (Format: "
-"hours=1;minutes=2;seconds=3)."
+"Session not valid on or after current time + this value (Format: hours=1;minutes=2;seconds=3)."
 msgstr "세션이 현재 시간 + 이 값 이전에만 유효합니다 (형식: hours=1;minutes=2;seconds=3)."
 
 #: authentik/providers/saml/models.py authentik/sources/saml/models.py
@@ -2335,10 +2310,11 @@ msgstr "DSA-SHA1"
 
 #: authentik/providers/saml/models.py authentik/sources/saml/models.py
 msgid ""
-"When selected, incoming assertion's Signatures will be validated against "
-"this certificate. To allow unsigned Requests, leave on default."
+"When selected, incoming assertion's Signatures will be validated against this certificate. To "
+"allow unsigned Requests, leave on default."
 msgstr ""
-"이 옵션을 선택하면 들어오는 어설션의 서명이 이 인증서에 대해 유효성을 검사합니다. 서명되지 않은 요청을 허용하려면 기본값으로 둡니다."
+"이 옵션을 선택하면 들어오는 어설션의 서명이 이 인증서에 대해 유효성을 검사합니다. 서명되지 않은 요"
+"청을 허용하려면 기본값으로 둡니다."
 
 #: authentik/providers/saml/models.py authentik/sources/saml/models.py
 msgid "Verification Certificate"
@@ -2354,9 +2330,8 @@ msgstr "서명 키 쌍"
 
 #: authentik/providers/saml/models.py authentik/sources/saml/models.py
 msgid ""
-"When selected, incoming assertions are encrypted by the IdP using the public"
-" key of the encryption keypair. The assertion is decrypted by the SP using "
-"the the private key."
+"When selected, incoming assertions are encrypted by the IdP using the public key of the "
+"encryption keypair. The assertion is decrypted by the SP using the the private key."
 msgstr ""
 
 #: authentik/providers/saml/models.py authentik/sources/saml/models.py
@@ -2460,6 +2435,10 @@ msgid "Alter authentik behavior for vendor-specific SCIM implementations."
 msgstr ""
 
 #: authentik/providers/scim/models.py
+msgid "Cache duration for ServiceProviderConfig responses. Set minutes=0 to disable."
+msgstr ""
+
+#: authentik/providers/scim/models.py
 msgid "SCIM Provider"
 msgstr "SCIM 공급자"
 
@@ -2543,6 +2522,16 @@ msgstr ""
 msgid "Can edit system settings"
 msgstr ""
 
+#: authentik/rbac/models.py
+#, fuzzy
+#| msgid "Can view system info"
+msgid "Can view media files"
+msgstr "시스템 정보를 볼 수 있음"
+
+#: authentik/rbac/models.py
+msgid "Can manage media files"
+msgstr ""
+
 #: authentik/recovery/management/commands/create_admin_group.py
 msgid "Create admin group if the default group gets deleted."
 msgstr "기본 그룹이 삭제되면 관리자 그룹을 만듭니다."
@@ -2585,20 +2574,15 @@ msgstr ""
 
 #: authentik/sources/kerberos/models.py
 msgid ""
-"Keytab to authenticate to kadmin for sync. Must be base64-encoded or in the "
-"form TYPE:residual"
+"Keytab to authenticate to kadmin for sync. Must be base64-encoded or in the form TYPE:residual"
 msgstr ""
 
 #: authentik/sources/kerberos/models.py
-msgid ""
-"Credentials cache to authenticate to kadmin for sync. Must be in the form "
-"TYPE:residual"
+msgid "Credentials cache to authenticate to kadmin for sync. Must be in the form TYPE:residual"
 msgstr ""
 
 #: authentik/sources/kerberos/models.py
-msgid ""
-"Force the use of a specific server name for SPNEGO. Must be in the form "
-"HTTP@hostname"
+msgid "Force the use of a specific server name for SPNEGO. Must be in the form HTTP@hostname"
 msgstr ""
 
 #: authentik/sources/kerberos/models.py
@@ -2611,8 +2595,8 @@ msgstr ""
 
 #: authentik/sources/kerberos/models.py
 msgid ""
-"If enabled, the authentik-stored password will be updated upon login with "
-"the Kerberos password backend"
+"If enabled, the authentik-stored password will be updated upon login with the Kerberos password "
+"backend"
 msgstr ""
 
 #: authentik/sources/kerberos/models.py
@@ -2677,14 +2661,11 @@ msgid "Server URI"
 msgstr "서버 URI"
 
 #: authentik/sources/ldap/models.py
-msgid ""
-"Optionally verify the LDAP Server's Certificate against the CA Chain in this"
-" keypair."
+msgid "Optionally verify the LDAP Server's Certificate against the CA Chain in this keypair."
 msgstr "선택적으로 이 키 쌍의 CA 체인에 대해 LDAP 서버의 인증서를 인증합니다."
 
 #: authentik/sources/ldap/models.py
-msgid ""
-"Client certificate to authenticate against the LDAP Server's Certificate."
+msgid "Client certificate to authenticate against the LDAP Server's Certificate."
 msgstr "클라이언트 인증서를 사용하여 LDAP 서버의 인증서에 대해 인증합니다."
 
 #: authentik/sources/ldap/models.py
@@ -2745,21 +2726,26 @@ msgstr ""
 
 #: authentik/sources/ldap/models.py
 msgid ""
-"When a user changes their password, sync it back to LDAP. This can only be "
-"enabled on a single LDAP source."
-msgstr "사용자가 비밀번호를 변경하면 LDAP로 다시 동기화합니다. 이 기능은 단일의 LDAP 소스에서만 활성화할 수 있습니다."
+"When a user changes their password, sync it back to LDAP. This can only be enabled on a single "
+"LDAP source."
+msgstr ""
+"사용자가 비밀번호를 변경하면 LDAP로 다시 동기화합니다. 이 기능은 단일의 LDAP 소스에서만 활성화할 "
+"수 있습니다."
 
 #: authentik/sources/ldap/models.py
 msgid ""
-"Lookup group membership based on a user attribute instead of a group "
-"attribute. This allows nested group resolution on systems like FreeIPA and "
-"Active Directory"
+"Lookup group membership based on a user attribute instead of a group attribute. This allows "
+"nested group resolution on systems like FreeIPA and Active Directory"
 msgstr ""
 
 #: authentik/sources/ldap/models.py
 msgid ""
-"Delete authentik users and groups which were previously supplied by this "
-"source, but are now missing from it."
+"Delete authentik users and groups which were previously supplied by this source, but are now "
+"missing from it."
+msgstr ""
+
+#: authentik/sources/ldap/models.py
+msgid "N/A"
 msgstr ""
 
 #: authentik/sources/ldap/models.py
@@ -2779,8 +2765,7 @@ msgid "LDAP Source Property Mappings"
 msgstr ""
 
 #: authentik/sources/ldap/models.py
-msgid ""
-"Unique ID used while checking if this object still exists in the directory."
+msgid "Unique ID used while checking if this object still exists in the directory."
 msgstr ""
 
 #: authentik/sources/ldap/models.py
@@ -2844,9 +2829,7 @@ msgid "Request Token URL"
 msgstr "토큰 요청 URL"
 
 #: authentik/sources/oauth/models.py
-msgid ""
-"URL used to request the initial token. This URL is only required for OAuth "
-"1."
+msgid "URL used to request the initial token. This URL is only required for OAuth 1."
 msgstr "초기 토큰을 요청하는 데 사용되는 URL입니다. 이 URL은 OAuth 1에만 필요합니다."
 
 #: authentik/sources/oauth/models.py
@@ -2882,9 +2865,7 @@ msgid "PKCE"
 msgstr ""
 
 #: authentik/sources/oauth/models.py
-msgid ""
-"How to perform authentication during an authorization_code token request "
-"flow"
+msgid "How to perform authentication during an authorization_code token request flow"
 msgstr ""
 
 #: authentik/sources/oauth/models.py
@@ -2950,6 +2931,18 @@ msgstr "Discord OAuth 소스"
 #: authentik/sources/oauth/models.py
 msgid "Discord OAuth Sources"
 msgstr "Discord OAuth 소스"
+
+#: authentik/sources/oauth/models.py
+#, fuzzy
+#| msgid "Facebook OAuth Source"
+msgid "Slack OAuth Source"
+msgstr "Facebook OAuth 소스"
+
+#: authentik/sources/oauth/models.py
+#, fuzzy
+#| msgid "Facebook OAuth Sources"
+msgid "Slack OAuth Sources"
+msgstr "Facebook OAuth 소스"
 
 #: authentik/sources/oauth/models.py
 msgid "Patreon OAuth Source"
@@ -3040,9 +3033,7 @@ msgid "Group OAuth Source Connections"
 msgstr ""
 
 #: authentik/sources/oauth/tasks.py
-msgid ""
-"Update OAuth sources' config from well_known, and JWKS info from the "
-"configured URL."
+msgid "Update OAuth sources' config from well_known, and JWKS info from the configured URL."
 msgstr ""
 
 #: authentik/sources/oauth/views/callback.py
@@ -3056,9 +3047,9 @@ msgstr "Plex와 통신하는 데 사용되는 클라이언트 식별자입니다
 
 #: authentik/sources/plex/models.py
 msgid ""
-"Which servers a user has to be a member of to be granted access. Empty list "
-"allows every server."
-msgstr "사용자가 액세스를 허용받기 위해 소속되어야 하는 서버입니다. 빈 목록은 모든 서버를 허용합니다."
+"Which servers a user has to be a member of to be granted access. Empty list allows every server."
+msgstr ""
+"사용자가 액세스를 허용받기 위해 소속되어야 하는 서버입니다. 빈 목록은 모든 서버를 허용합니다."
 
 #: authentik/sources/plex/models.py
 msgid "Allow friends to authenticate, even if you don't share a server."
@@ -3106,8 +3097,8 @@ msgstr ""
 
 #: authentik/sources/saml/api/source.py
 msgid ""
-"With a Verification Certificate selected, at least one of 'Verify Assertion "
-"Signature' or 'Verify Response Signature' must be selected."
+"With a Verification Certificate selected, at least one of 'Verify Assertion Signature' or 'Verify "
+"Response Signature' must be selected."
 msgstr ""
 
 #: authentik/sources/saml/models.py
@@ -3152,15 +3143,14 @@ msgstr "IDP가 단일 로그아웃을 지원하는 경우 사용하는 선택적
 
 #: authentik/sources/saml/models.py
 msgid ""
-"Allows authentication flows initiated by the IdP. This can be a security "
-"risk, as no validation of the request ID is done."
+"Allows authentication flows initiated by the IdP. This can be a security risk, as no validation "
+"of the request ID is done."
 msgstr ""
-"IdP에 의해 시작된 인증 플로우를 허용합니다. 요청 ID에 대한 유효성 검사가 수행되지 않으므로 보안 위험이 있을 수 있습니다."
+"IdP에 의해 시작된 인증 플로우를 허용합니다. 요청 ID에 대한 유효성 검사가 수행되지 않으므로 보안 위"
+"험이 있을 수 있습니다."
 
 #: authentik/sources/saml/models.py
-msgid ""
-"NameID Policy sent to the IdP. Can be unset, in which case no Policy is "
-"sent."
+msgid "NameID Policy sent to the IdP. Can be unset, in which case no Policy is sent."
 msgstr "IdP로 보낼 NameID 정책입니다. 비워둘 수 있으며, 비워둘 경우 정책이 전송되지 않습니다."
 
 #: authentik/sources/saml/models.py
@@ -3169,16 +3159,14 @@ msgstr "다음 이후 임시 사용자를 삭제"
 
 #: authentik/sources/saml/models.py
 msgid ""
-"Time offset when temporary users should be deleted. This only applies if "
-"your IDP uses the NameID Format 'transient', and the user doesn't log out "
-"manually. (Format: hours=1;minutes=2;seconds=3)."
+"Time offset when temporary users should be deleted. This only applies if your IDP uses the NameID "
+"Format 'transient', and the user doesn't log out manually. (Format: hours=1;minutes=2;seconds=3)."
 msgstr ""
-"임시 사용자를 삭제해야 하는 시간 오프셋입니다. 이 설정은 IDP가 'Transient' NameID 형식을 사용하고 사용자가 수동으로 "
-"로그아웃하지 않는 경우에만 적용됩니다. (형식: hours=1;minutes=2;seconds=3)"
+"임시 사용자를 삭제해야 하는 시간 오프셋입니다. 이 설정은 IDP가 'Transient' NameID 형식을 사용하고 "
+"사용자가 수동으로 로그아웃하지 않는 경우에만 적용됩니다. (형식: hours=1;minutes=2;seconds=3)"
 
 #: authentik/sources/saml/models.py
-msgid ""
-"Keypair used to sign outgoing Responses going to the Identity Provider."
+msgid "Keypair used to sign outgoing Responses going to the Identity Provider."
 msgstr "인증 공급자에게 보내는 응답에 서명하는 데 사용되는 키 쌍입니다."
 
 #: authentik/sources/saml/models.py
@@ -3302,15 +3290,13 @@ msgstr "Duo 디바이스"
 msgid "Duo Devices"
 msgstr "Duo 디바이스"
 
-#: authentik/stages/authenticator_email/models.py
-#: authentik/stages/email/models.py
+#: authentik/stages/authenticator_email/models.py authentik/stages/email/models.py
 msgid ""
-"When enabled, global Email connection settings will be used and connection "
-"settings below will be ignored."
+"When enabled, global Email connection settings will be used and connection settings below will be "
+"ignored."
 msgstr "활성화하면, 전역 이메일 연결 설정이 사용되며 아래의 연결 설정은 무시됩니다."
 
-#: authentik/stages/authenticator_email/models.py
-#: authentik/stages/email/models.py
+#: authentik/stages/authenticator_email/models.py authentik/stages/email/models.py
 msgid "Time the token sent is valid (Format: hours=3,minutes=17,seconds=300)."
 msgstr ""
 
@@ -3322,8 +3308,7 @@ msgstr ""
 msgid "Email Authenticator Setup Stages"
 msgstr ""
 
-#: authentik/stages/authenticator_email/models.py
-#: authentik/stages/authenticator_email/stage.py
+#: authentik/stages/authenticator_email/models.py authentik/stages/authenticator_email/stage.py
 #: authentik/stages/email/stage.py
 msgid "Exception occurred while rendering E-mail template"
 msgstr "이메일 템플릿 렌더링 중 예외가 발생"
@@ -3336,8 +3321,7 @@ msgstr ""
 msgid "Email Devices"
 msgstr ""
 
-#: authentik/stages/authenticator_email/stage.py
-#: authentik/stages/authenticator_sms/stage.py
+#: authentik/stages/authenticator_email/stage.py authentik/stages/authenticator_sms/stage.py
 #: authentik/stages/authenticator_totp/stage.py
 msgid "Code does not match"
 msgstr "코드가 일치하지 않음"
@@ -3373,7 +3357,8 @@ msgstr ""
 #, python-format
 msgid ""
 "\n"
-"    If you did not request this code, please ignore this email. The code above is valid for %(expires)s.\n"
+"    If you did not request this code, please ignore this email. The code above is valid for "
+"%(expires)s.\n"
 "    "
 msgstr ""
 
@@ -3393,17 +3378,17 @@ msgstr ""
 #, python-format
 msgid ""
 "\n"
-"If you did not request this code, please ignore this email. The code above is valid for %(expires)s.\n"
+"If you did not request this code, please ignore this email. The code above is valid for "
+"%(expires)s.\n"
 msgstr ""
 
 #: authentik/stages/authenticator_sms/models.py
 msgid ""
-"When enabled, the Phone number is only used during enrollment to verify the "
-"users authenticity. Only a hash of the phone number is saved to ensure it is"
-" not reused in the future."
+"When enabled, the Phone number is only used during enrollment to verify the users authenticity. "
+"Only a hash of the phone number is saved to ensure it is not reused in the future."
 msgstr ""
-"활성화되면 전화번호는 사용자의 신원을 확인하는 데 사용되며 등록 중에만 사용됩니다. 전화번호의 해시만 저장되어 나중에 재사용되지 않도록 "
-"보장됩니다."
+"활성화되면 전화번호는 사용자의 신원을 확인하는 데 사용되며 등록 중에만 사용됩니다. 전화번호의 해시"
+"만 저장되어 나중에 재사용되지 않도록 보장됩니다."
 
 #: authentik/stages/authenticator_sms/models.py
 msgid "Optionally modify the payload being sent to custom providers."
@@ -3483,9 +3468,7 @@ msgid "TOTP Devices"
 msgstr "TOTP 디바이스"
 
 #: authentik/stages/authenticator_validate/challenge.py
-msgid ""
-"Invalid Token. Please ensure the time on your device is accurate and try "
-"again."
+msgid "Invalid Token. Please ensure the time on your device is accurate and try again."
 msgstr ""
 
 #: authentik/stages/authenticator_validate/challenge.py
@@ -3516,21 +3499,18 @@ msgstr "SMS"
 
 #: authentik/stages/authenticator_validate/models.py
 msgid ""
-"Stages used to configure Authenticator when user doesn't have any compatible"
-" devices. After this configuration Stage passes, the user is not prompted "
-"again."
+"Stages used to configure Authenticator when user doesn't have any compatible devices. After this "
+"configuration Stage passes, the user is not prompted again."
 msgstr ""
-"사용자에게 호환되는 디바이스가 없는 경우 인증기를 구성하는 데 사용되는 단계입니다. 이 구성 스테이지를 통과한 후에는 사용자에게 다시 "
-"메시지가 표시되지 않습니다."
+"사용자에게 호환되는 디바이스가 없는 경우 인증기를 구성하는 데 사용되는 단계입니다. 이 구성 스테이"
+"지를 통과한 후에는 사용자에게 다시 메시지가 표시되지 않습니다."
 
 #: authentik/stages/authenticator_validate/models.py
 msgid "Device classes which can be used to authenticate"
 msgstr "인증에 사용할 수 있는 디바이스 클래스"
 
 #: authentik/stages/authenticator_validate/models.py
-msgid ""
-"If any of the user's device has been used within this threshold, this stage "
-"will be skipped"
+msgid "If any of the user's device has been used within this threshold, this stage will be skipped"
 msgstr "사용자의 장치 중 하나라도 이 기간 내에 사용된 경우, 이 단계는 건너뜁니다."
 
 #: authentik/stages/authenticator_validate/models.py
@@ -3574,8 +3554,7 @@ msgid "WebAuthn Device types"
 msgstr ""
 
 #: authentik/stages/authenticator_webauthn/tasks.py
-msgid ""
-"Background task to import FIDO Alliance MDS blob and AAGUIDs into database."
+msgid "Background task to import FIDO Alliance MDS blob and AAGUIDs into database."
 msgstr ""
 
 #: authentik/stages/captcha/models.py
@@ -3588,10 +3567,9 @@ msgstr "개인 키, 캡챠 공급자에서 얻을 수 있습니다."
 
 #: authentik/stages/captcha/models.py
 msgid ""
-"When enabled and the received captcha score is outside of the given "
-"threshold, the stage will show an error message. When not enabled, the flow "
-"will continue, but the data from the captcha will be available in the "
-"context for policy decisions"
+"When enabled and the received captcha score is outside of the given threshold, the stage will "
+"show an error message. When not enabled, the flow will continue, but the data from the captcha "
+"will be available in the context for policy decisions"
 msgstr ""
 
 #: authentik/stages/captcha/models.py
@@ -3615,8 +3593,7 @@ msgid "Failed to validate token"
 msgstr ""
 
 #: authentik/stages/consent/models.py
-msgid ""
-"Offset after which consent expires. (Format: hours=1;minutes=2;seconds=3)."
+msgid "Offset after which consent expires. (Format: hours=1;minutes=2;seconds=3)."
 msgstr "동의의 만료 후 오프셋입니다. (형식: hours=1;minutes=2;seconds=3)"
 
 #: authentik/stages/consent/models.py
@@ -3681,9 +3658,9 @@ msgstr ""
 
 #: authentik/stages/email/models.py
 msgid ""
-"The time window used to count recent account recovery attempts. If the "
-"number of attempts exceed recovery_max_attempts within this period, further "
-"attempts will be rate-limited. (Format: hours=1;minutes=2;seconds=3)."
+"The time window used to count recent account recovery attempts. If the number of attempts exceed "
+"recovery_max_attempts within this period, further attempts will be rate-limited. (Format: "
+"hours=1;minutes=2;seconds=3)."
 msgstr ""
 
 #: authentik/stages/email/models.py
@@ -3712,9 +3689,7 @@ msgstr "이메일을 보냈습니다."
 
 #: authentik/stages/email/stage.py
 #, python-brace-format
-msgid ""
-"Too many account verification attempts. Please try again after {minutes} "
-"minutes."
+msgid "Too many account verification attempts. Please try again after {minutes} minutes."
 msgstr ""
 
 #: authentik/stages/email/stage.py
@@ -3732,8 +3707,8 @@ msgstr "반갑습니다!"
 
 #: authentik/stages/email/templates/email/account_confirmation.html
 msgid ""
-"We're excited to have you get started. First, you need to confirm your "
-"account. Just press the button below."
+"We're excited to have you get started. First, you need to confirm your account. Just press the "
+"button below."
 msgstr "시작하게 되어 기쁩니다. 먼저 계정을 확인해야 합니다. 아래 버튼을 누르기만 하면 됩니다."
 
 #: authentik/stages/email/templates/email/account_confirmation.html
@@ -3753,8 +3728,8 @@ msgstr ""
 
 #: authentik/stages/email/templates/email/account_confirmation.txt
 msgid ""
-"We're excited to have you get started. First, you need to confirm your "
-"account. Just open the link below."
+"We're excited to have you get started. First, you need to confirm your account. Just open the "
+"link below."
 msgstr ""
 
 #: authentik/stages/email/templates/email/event_notification.html
@@ -3790,32 +3765,37 @@ msgstr ""
 #: authentik/stages/email/templates/email/password_reset.html
 msgid ""
 "\n"
-"          You recently requested to change your password for your authentik account. Use the button below to set a new password.\n"
+"          You recently requested to change your password for your authentik account. Use the "
+"button below to set a new password.\n"
 "          "
 msgstr ""
 "\n"
-"          최근에 인증 계정의 비밀번호 변경을 요청하셨습니다. 아래 버튼을 사용하여 새 비밀번호를 설정하세요.\n"
+"          최근에 인증 계정의 비밀번호 변경을 요청하셨습니다. 아래 버튼을 사용하여 새 비밀번호를 설"
+"정하세요.\n"
 "          "
 
 #: authentik/stages/email/templates/email/password_reset.html
 #, python-format
 msgid ""
 "\n"
-"    If you did not request a password change, please ignore this email. The link above is valid for %(expires)s.\n"
+"    If you did not request a password change, please ignore this email. The link above is valid "
+"for %(expires)s.\n"
 "    "
 msgstr ""
 
 #: authentik/stages/email/templates/email/password_reset.txt
 msgid ""
 "\n"
-"You recently requested to change your password for your authentik account. Use the link below to set a new password.\n"
+"You recently requested to change your password for your authentik account. Use the link below to "
+"set a new password.\n"
 msgstr ""
 
 #: authentik/stages/email/templates/email/password_reset.txt
 #, python-format
 msgid ""
 "\n"
-"If you did not request a password change, please ignore this email. The link above is valid for %(expires)s.\n"
+"If you did not request a password change, please ignore this email. The link above is valid for "
+"%(expires)s.\n"
 msgstr ""
 
 #: authentik/stages/email/templates/email/setup.html
@@ -3825,11 +3805,13 @@ msgstr "authentik 테스트 이메일"
 #: authentik/stages/email/templates/email/setup.html
 msgid ""
 "\n"
-"                    This is a test email to inform you, that you've successfully configured authentik emails.\n"
+"                    This is a test email to inform you, that you've successfully configured "
+"authentik emails.\n"
 "                    "
 msgstr ""
 "\n"
-"                    이 이메일은 인증 이메일을 성공적으로 구성했음을 알려주는 테스트 이메일입니다.\n"
+"                    이 이메일은 인증 이메일을 성공적으로 구성했음을 알려주는 테스트 이메일입니"
+"다.\n"
 "                    "
 
 #: authentik/stages/email/templates/email/setup.txt
@@ -3843,10 +3825,9 @@ msgid "When no user fields are selected, at least one source must be selected"
 msgstr "사용자 필드를 선택하지 않은 경우 하나 이상의 소스를 선택해야 합니다."
 
 #: authentik/stages/identification/models.py
-msgid ""
-"Fields of the user object to match against. (Hold shift to select multiple "
-"options)"
-msgstr "사용자 오브젝트와 일치시키기 위한 사용자 필드입니다. (여러 옵션을 선택하려면 Shift 키를 누르세요)"
+msgid "Fields of the user object to match against. (Hold shift to select multiple options)"
+msgstr ""
+"사용자 오브젝트와 일치시키기 위한 사용자 필드입니다. (여러 옵션을 선택하려면 Shift 키를 누르세요)"
 
 #: authentik/stages/identification/models.py
 msgid "When enabled, user fields are matched regardless of their casing."
@@ -3854,23 +3835,20 @@ msgstr "활성화하면, 사용자 필드를 대소문자에 관계없이 일치
 
 #: authentik/stages/identification/models.py
 msgid ""
-"When a valid username/email has been entered, and this option is enabled, "
-"the user's username and avatar will be shown. Otherwise, the text that the "
-"user entered will be shown"
+"When a valid username/email has been entered, and this option is enabled, the user's username and "
+"avatar will be shown. Otherwise, the text that the user entered will be shown"
 msgstr ""
-"유효한 사용자 아이디/이메일을 입력하고 이 옵션을 활성화하면 사용자의 사용자 아이디와 아바타가 표시됩니다. 그렇지 않으면 사용자가 입력한"
-" 텍스트가 표시됩니다."
+"유효한 사용자 아이디/이메일을 입력하고 이 옵션을 활성화하면 사용자의 사용자 아이디와 아바타가 표시"
+"됩니다. 그렇지 않으면 사용자가 입력한 텍스트가 표시됩니다."
 
 #: authentik/stages/identification/models.py
-msgid ""
-"When enabled, the stage will succeed and continue even when incorrect user "
-"info is entered."
+msgid "When enabled, the stage will succeed and continue even when incorrect user info is entered."
 msgstr "활성화되면 잘못된 사용자 정보가 입력되더라도 단계가 성공하고 계속됩니다."
 
 #: authentik/stages/identification/models.py
 msgid ""
-"Show the user the 'Remember me on this device' toggle, allowing repeat users"
-" to skip straight to entering their password."
+"Show the user the 'Remember me on this device' toggle, allowing repeat users to skip straight to "
+"entering their password."
 msgstr ""
 
 #: authentik/stages/identification/models.py
@@ -3911,12 +3889,11 @@ msgstr "계속"
 
 #: authentik/stages/invitation/models.py
 msgid ""
-"If this flag is set, this Stage will jump to the next Stage when no "
-"Invitation is given. By default this Stage will cancel the Flow when no "
-"invitation is given."
+"If this flag is set, this Stage will jump to the next Stage when no Invitation is given. By "
+"default this Stage will cancel the Flow when no invitation is given."
 msgstr ""
-"이 플래그를 설정하면 초대를 받지 못했을 때 이 스테이지가 다음 스테이지로 이동합니다. 기본적으로 이 스테이지는 초대를 받지 못하면 "
-"플로우를 취소합니다."
+"이 플래그를 설정하면 초대를 받지 못했을 때 이 스테이지가 다음 스테이지로 이동합니다. 기본적으로 "
+"이 스테이지는 초대를 받지 못하면 플로우를 취소합니다."
 
 #: authentik/stages/invitation/models.py
 msgid "Invitation Stage"
@@ -3972,15 +3949,14 @@ msgstr "비밀번호를 테스트할 백엔드를 선택합니다."
 
 #: authentik/stages/password/models.py
 msgid ""
-"How many attempts a user has before the flow is canceled. To lock the user "
-"out, use a reputation policy and a user_write stage."
+"How many attempts a user has before the flow is canceled. To lock the user out, use a reputation "
+"policy and a user_write stage."
 msgstr ""
-"플로우가 취소되기 전에 사용자가 시도할 수 있는 횟수입니다. 사용자를 잠그려면 평판 정책과 user_write 단계를 사용하세요."
+"플로우가 취소되기 전에 사용자가 시도할 수 있는 횟수입니다. 사용자를 잠그려면 평판 정책과 "
+"user_write 단계를 사용하세요."
 
 #: authentik/stages/password/models.py
-msgid ""
-"When enabled, provides a 'show password' button with the password input "
-"field."
+msgid "When enabled, provides a 'show password' button with the password input field."
 msgstr ""
 
 #: authentik/stages/password/models.py
@@ -4012,9 +3988,7 @@ msgid "Text area (read-only): Multiline Text input, but cannot be edited."
 msgstr "텍스트 영역(읽기 전용): 여러 줄 텍스트 입력이 가능하지만 편집은 불가능합니다."
 
 #: authentik/stages/prompt/models.py
-msgid ""
-"Username: Same as Text input, but checks for and prevents duplicate "
-"usernames."
+msgid "Username: Same as Text input, but checks for and prevents duplicate usernames."
 msgstr "사용자이름: 텍스트 입력과 동일하지만 중복된 사용자이름을 확인하고 방지합니다."
 
 #: authentik/stages/prompt/models.py
@@ -4023,9 +3997,9 @@ msgstr "이메일: 이메일 유형이 있는 텍스트 필드입니다."
 
 #: authentik/stages/prompt/models.py
 msgid ""
-"Password: Masked input, multiple inputs of this type on the same prompt need"
-" to be identical."
-msgstr "비밀번호: 마스킹 입력, 동일한 프롬프트에서 이 유형의 입력을 여러 번 입력할 경우 동일해야 합니다."
+"Password: Masked input, multiple inputs of this type on the same prompt need to be identical."
+msgstr ""
+"비밀번호: 마스킹 입력, 동일한 프롬프트에서 이 유형의 입력을 여러 번 입력할 경우 동일해야 합니다."
 
 #: authentik/stages/prompt/models.py
 msgid "Fixed choice field rendered as a group of radio buttons."
@@ -4037,9 +4011,10 @@ msgstr "고정된 선택 필드는 드롭다운으로 렌더링됩니다."
 
 #: authentik/stages/prompt/models.py
 msgid ""
-"File: File upload for arbitrary files. File content will be available in "
-"flow context as data-URI"
-msgstr "파일: 임의의 파일을 업로드하는 데 사용됩니다. 파일 내용은 데이터 URI로 플로우 컨텍스트에서 사용 가능합니다."
+"File: File upload for arbitrary files. File content will be available in flow context as data-URI"
+msgstr ""
+"파일: 임의의 파일을 업로드하는 데 사용됩니다. 파일 내용은 데이터 URI로 플로우 컨텍스트에서 사용 가"
+"능합니다."
 
 #: authentik/stages/prompt/models.py
 msgid "Separator: Static Separator Line"
@@ -4063,21 +4038,19 @@ msgstr "값을 저장하는 데 사용되는, 양식 필드의 이름입니다."
 
 #: authentik/stages/prompt/models.py
 msgid ""
-"Optionally provide a short hint that describes the expected input value. "
-"When creating a fixed choice field, enable interpreting as expression and "
-"return a list to return multiple choices."
+"Optionally provide a short hint that describes the expected input value. When creating a fixed "
+"choice field, enable interpreting as expression and return a list to return multiple choices."
 msgstr ""
-"옵션으로 예상되는 입력값을 설명하는 짧은 힌트를 제공할 수 있습니다. 고정 선택 필드를 만들 때, 식으로 해석을 활성화하고 여러 선택지를"
-" 반환하려면 목록을 반환하세요."
+"옵션으로 예상되는 입력값을 설명하는 짧은 힌트를 제공할 수 있습니다. 고정 선택 필드를 만들 때, 식으"
+"로 해석을 활성화하고 여러 선택지를 반환하려면 목록을 반환하세요."
 
 #: authentik/stages/prompt/models.py
 msgid ""
-"Optionally pre-fill the input with an initial value. When creating a fixed "
-"choice field, enable interpreting as expression and return a list to return "
-"multiple default choices."
+"Optionally pre-fill the input with an initial value. When creating a fixed choice field, enable "
+"interpreting as expression and return a list to return multiple default choices."
 msgstr ""
-"옵션으로 입력을 초기 값으로 채울 수 있습니다. 고정 선택 필드를 만들 때, 정규표현식으로 해석을 활성화하고 목록을 반환하여 여러 개의 "
-"기본 선택지를 반환합니다."
+"옵션으로 입력을 초기 값으로 채울 수 있습니다. 고정 선택 필드를 만들 때, 정규표현식으로 해석을 활성"
+"화하고 목록을 반환하여 여러 개의 기본 선택지를 반환합니다."
 
 #: authentik/stages/prompt/models.py
 msgid "Prompt"
@@ -4141,18 +4114,16 @@ msgstr "로그인하는 사용자의 다른 모든 세션을 종료합니다."
 
 #: authentik/stages/user_login/models.py
 msgid ""
-"Offset the session will be extended by when the user picks the remember me "
-"option. Default of 0 means that the remember me option will not be shown. "
-"(Format: hours=-1;minutes=-2;seconds=-3)"
+"Offset the session will be extended by when the user picks the remember me option. Default of 0 "
+"means that the remember me option will not be shown. (Format: hours=-1;minutes=-2;seconds=-3)"
 msgstr ""
-"사용자가 나를 기억 옵션을 선택하면 세션이 연장될 시간의 오프셋입니다. 기본값 0은 나를 기억 옵션이 표시되지 않음을 의미합니다. "
-"(서식: hours=-1;minutes=-2;seconds=-3)"
+"사용자가 나를 기억 옵션을 선택하면 세션이 연장될 시간의 오프셋입니다. 기본값 0은 나를 기억 옵션이 "
+"표시되지 않음을 의미합니다. (서식: hours=-1;minutes=-2;seconds=-3)"
 
 #: authentik/stages/user_login/models.py
 msgid ""
-"When set to a non-zero value, authentik will save a cookie with a longer "
-"expiry,to remember the device the user is logging in from. (Format: "
-"hours=-1;minutes=-2;seconds=-3)"
+"When set to a non-zero value, authentik will save a cookie with a longer expiry,to remember the "
+"device the user is logging in from. (Format: hours=-1;minutes=-2;seconds=-3)"
 msgstr ""
 
 #: authentik/stages/user_login/models.py
@@ -4250,8 +4221,8 @@ msgstr ""
 
 #: authentik/tenants/models.py
 msgid ""
-"Schema name must start with t_, only contain lowercase letters and numbers "
-"and be less than 63 characters."
+"Schema name must start with t_, only contain lowercase letters and numbers and be less than 63 "
+"characters."
 msgstr ""
 
 #: authentik/tenants/models.py
@@ -4271,9 +4242,7 @@ msgid "Enable the ability for users to change their username."
 msgstr ""
 
 #: authentik/tenants/models.py
-msgid ""
-"Events will be deleted after this duration.(Format: "
-"weeks=3;days=2;hours=3,seconds=2)."
+msgid "Events will be deleted after this duration.(Format: weeks=3;days=2;hours=3,seconds=2)."
 msgstr "이 기간이 지나면 이벤트가 삭제됩니다. (서식: hours=-1;minutes=-2;seconds=-3)"
 
 #: authentik/tenants/models.py
@@ -4289,9 +4258,7 @@ msgid "The option configures the footer links on the flow executor pages."
 msgstr ""
 
 #: authentik/tenants/models.py
-msgid ""
-"When enabled, all the events caused by a user will be deleted upon the "
-"user's deletion."
+msgid "When enabled, all the events caused by a user will be deleted upon the user's deletion."
 msgstr ""
 
 #: authentik/tenants/models.py
